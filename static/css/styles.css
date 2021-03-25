@@ -326,3 +326,8 @@ div.dataTables_wrapper div.dataTables_info {
 .share-new-data {
     background-color: #de2c6c!important;
 }
+
+.alert {
+    background-color: #EED202;
+    text-align: center;
+}
