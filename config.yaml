@@ -1,10 +1,10 @@
-baseURL: "https://www.covid19dataportal.se/"
-title: "COVID-19 Data Portal Sweden"
+baseURL: "https://www.covid19dataportal.ee/"
+title: "COVID-19 Data Portal Estonia"
 params:
-  title: "COVID-19 Data Portal Sweden"
-  description: COVID-19 Data Portal for Swedish Research
+  title: "COVID-19 Data Portal Estonia"
+  description: COVID-19 Data Portal for Estonian Research
   images:
-    - /img/site_logo/CV19DP_logo_social_card_SWE.png
+    - /img/site_logo/CDP-19_Estonia.png
 
   # There is a hugo i18n package, but it seems like overkill for so few strings
   lang_strings:
@@ -43,39 +43,39 @@ params:
       pubs_year: Year
       pubs_funder: Funder
     sv:
-      home_title: Snabbare forskning genom datadelning
-      enquire_email_footer_dc: "Kontakta den svenska Covid-19 dataportalen"
-      enquire_email_footer_bioinformatics: "För support inom bioinformatik, kontakta"
-      support_feedback: Support och Feedback
-      privacy: Integritetspolicy
-      github_link: Webbplatskod på GitHub
-      skip_to_content: Hoppa till innehållet
-      readmore_text: Läs mer
-      published_text: Publicerad
-      all_highlights: Se alla data i fokus
-      next_highlight: Nästa
-      previous_highlight: Föregående
+      home_title: Teadusele hoogu juurde läbi andmete jagamise
+      enquire_email_footer_dc: "Võta Eesti Covid-19 andmeportaaliga ühendust"
+      enquire_email_footer_bioinformatics: "Bioinformaatika alase abi saamiseks, kontakteeru"
+      support_feedback: Küsimused ja tagasiside
+      privacy: Privaatsuspoliitika
+      github_link: Veebilehe kood GitHubis
+      skip_to_content: Tagasi põhilehele
+      readmore_text: Loe rohkem
+      published_text: Avaldatud
+      all_highlights: Vaata esile tõstetud andmeid 
+      next_highlight: Järgmine
+      previous_highlight: Eelmine
       dt_project: Projekt
-      dt_last_updated: Senast uppdaterad
-      dt_available_data: Tillgängliga data
-      dt_data_types: Datatyper
-      dt_entries_in_total: resultat
-      projects_title: Projektitel
-      projects_area: Forskningsområde
-      projects_pi: Projektledare
-      projects_piaff: Koordinerande organisation
-      projects_duration: Start och slutdatum
-      projects_funder: Forskningsfinansiär
-      menu_moretypes: Flera
-      menu_biobanks: Biobanker
-      menu_projects: Forskningprojekt
-      pubs_pub: Artikel
-      pubs_updated: Publicerad
-      pubs_field: Ämne
-      pubs_availability: Tillgängliga forskningsdata
-      pubs_type: Publikationstyp
-      pubs_year: År
-      pubs_funder: Forskningsfinansiär
+      dt_last_updated: Viimati uuendatud
+      dt_available_data: Avalikud andmed
+      dt_data_types: Andmetüübid
+      dt_entries_in_total: kokku tulemusi
+      projects_title: Projekti pealkiri
+      projects_area: Teadussuund
+      projects_pi: Projektijuht
+      projects_piaff: Organisatsioon
+      projects_duration: Algus- ja lõpukuupäev
+      projects_funder: Rahastaja
+      menu_moretypes: Rohkem
+      menu_biobanks: Biobangad
+      menu_projects: Teadusprojekt
+      pubs_pub: Publikatsioon
+      pubs_updated: Avaldatud
+      pubs_field: Teemavaldkond
+      pubs_availability: Andmete kättesaadavus
+      pubs_type: Publikatsiooni tüüp
+      pubs_year: Aasta
+      pubs_funder: Rahastaja
 
 languages:
   en:
@@ -83,11 +83,11 @@ languages:
     contentDir: content/english
     weight: 1
 
-  sv:
-    languageName: Svenska
-    contentDir: content/svenska
+  ee:
+    languageName: Eesti
+    contentDir: content/eesti
     weight: 2
-    description: Covid-19 Dataportal för svensk forskning
+    description: Covid-19 andmeportaal
 
 markup:
   goldmark:

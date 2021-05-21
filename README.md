@@ -1,9 +1,9 @@
-# ![COVID-19 Data Portal Sweden](static/img/site_logo/CV19DP_logo_oneliner_SWE.png)
+# ![COVID-19 Data Portal Sweden](static/img/site_logo/CDP-19_Estonia.png)
 
 ## COVID-19 Data Portal Sweden
 
 This is the source code for the Swedish Covid-19 Data Portal:
-[https://www.covid19dataportal.se/](https://www.covid19dataportal.se/)
+[https://www.covid19dataportal.ee/](https://www.covid19dataportal.ee/)
 
 The website is the Swedish node for the European Covid-19 Data Portal project.
 The main European site can be seen at [https://www.covid19dataportal.org/](https://www.covid19dataportal.org/)
@@ -19,7 +19,7 @@ The main European site can be seen at [https://www.covid19dataportal.org/](https
 
 ## Introduction
 
-This website is developed for [Vetenskapsrådet](https://www.vr.se/) by the [SciLifeLab Data Centre](https://www.scilifelab.se/data/).
+This website is developed by the [ELIXIR Estonia](https://elixir.ut.ee/).
 It is intended to provide a central place to provide information about:
 
 - Available COVID-19 datasets

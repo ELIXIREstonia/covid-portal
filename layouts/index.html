@@ -56,11 +56,11 @@
       {{ end }}
 
       {{/*
-        The following bit ensures that it is not necessary to copy the datatypes_to_display list in the Swedish version of the page
+        The following bit ensures that it is not necessary to copy the datatypes_to_display list in the Estonian version of the page
       */}}
 
       {{ $datatypes_to_display := slice }}
-      {{ $path := strings.TrimPrefix "/sv" (strings.TrimRight "/" (string .Page.RelPermalink)) }}
+      {{ $path := strings.TrimPrefix "/ee" (strings.TrimRight "/" (string .Page.RelPermalink)) }}
       {{ with .Sites.First.GetPage $path }}
           {{ $datatypes_to_display = .Params.datatypes_to_display }}
       {{ end }}
@@ -76,7 +76,7 @@
                 <div class="col-md-4"><h5><a href="{{ .Page.RelPermalink }}">
                   {{ .Name }}
                   {{ $section_title := string "" }}
-                  {{ if eq $.Site.Language.LanguageName "Svenska" }}
+                  {{ if eq $.Site.Language.LanguageName "Eesti" }}
                     {{ $section_title =  .Params.title_eng}}
                   {{ else }}
                     {{ $section_title = .Title}}
@@ -104,7 +104,7 @@
         {{ end }}
         <div class="row">
         {{ $news_high := where .Site.RegularPages "Section" "news" }}
-        {{ if eq $.Site.Language.LanguageName "Svenska" }}
+        {{ if eq $.Site.Language.LanguageName "Eesti" }}
         {{ $display_alert := false }}
         {{ range first 3 $news_high }} {{ if .Params.needs_translation }} {{ $display_alert = true }} {{ end }} {{ end }}
         {{ if $display_alert }}<div class="alert alert-info">
@@ -133,10 +133,10 @@
         {{ end }}
         <div class="row">
           <div class="col-md-4">
-          <div class="row"><h5>{{ if eq $.Site.Language.LanguageName "Svenska" }}Biobanker{{ else }}Biobanks{{ end }}: 16</h5></div>
-          <div class="row"><h5>{{ if eq $.Site.Language.LanguageName "Svenska" }}Provsamlingar{{ else }}Collections{{ end }}: 28</h5></div>
+          <div class="row"><h5>{{ if eq $.Site.Language.LanguageName "Eesti" }}Biobanker{{ else }}Biobanks{{ end }}: 16</h5></div>
+          <div class="row"><h5>{{ if eq $.Site.Language.LanguageName "Eesti" }}Provsamlingar{{ else }}Collections{{ end }}: 28</h5></div>
           <div class="row align-items-end">
-            <h5><a target="_blank" href="https://biobanks.covid19dataportal.se/">{{ if eq $.Site.Language.LanguageName "Svenska" }}Sök i provsamlingsregistret{{ else }}Search in the database{{ end }} <i class="fas fa-arrow-circle-right"></i></a></h5></div>
+            <h5><a target="_blank" href="https://biobanks.covid19dataportal.se/">{{ if eq $.Site.Language.LanguageName "Eesti" }}Sök i provsamlingsregistret{{ else }}Search in the database{{ end }} <i class="fas fa-arrow-circle-right"></i></a></h5></div>
           </div>
           <div class="col-md-8">
             <img class="img-thumbnail" src="/img/biobanks/scd_scr.png" alt="Sample Collection Database">
@@ -152,15 +152,15 @@
         {{ end }}
         <div class="row">
           <div class="col-md-6">
-            <div class="row"><h5>{{ if eq $.Site.Language.LanguageName "Svenska" }}<a href="/sv/publications/">Publikationer ({{ len $.Site.Data.publications.publications }}) <i class="fas fa-arrow-circle-right"></i></a>{{ else }}<a href="/publications/">Publications ({{ len $.Site.Data.publications.publications }}) <i class="fas fa-arrow-circle-right"></i></a>{{ end }}</h5></div>
-            <div class="row"><h5>{{ if eq $.Site.Language.LanguageName "Svenska" }}<a href="/sv/projects/ongoing/">Stora forskningsprojekt ({{ len $.Site.Data.funded_projects }}) <i class="fas fa-arrow-circle-right"></i></a>{{ else }}<a href="/projects/ongoing/">Ongoing research projects ({{ len $.Site.Data.funded_projects }}) <i class="fas fa-arrow-circle-right"></i></a>{{ end }}</h5></div>
+            <div class="row"><h5>{{ if eq $.Site.Language.LanguageName "Eesti" }}<a href="/ee/publications/">Publikationer ({{ len $.Site.Data.publications.publications }}) <i class="fas fa-arrow-circle-right"></i></a>{{ else }}<a href="/publications/">Publications ({{ len $.Site.Data.publications.publications }}) <i class="fas fa-arrow-circle-right"></i></a>{{ end }}</h5></div>
+            <div class="row"><h5>{{ if eq $.Site.Language.LanguageName "Eesti" }}<a href="/ee/projects/ongoing/">Stora forskningsprojekt ({{ len $.Site.Data.funded_projects }}) <i class="fas fa-arrow-circle-right"></i></a>{{ else }}<a href="/projects/ongoing/">Ongoing research projects ({{ len $.Site.Data.funded_projects }}) <i class="fas fa-arrow-circle-right"></i></a>{{ end }}</h5></div>
             {{ $funding_opportunities := 0 }}
             {{ range $.Site.Data.funding_opportunities }}
               {{ if ne .status "closed" }}
                 {{ $funding_opportunities = add $funding_opportunities 1}}
               {{ end }}
             {{ end }}
-            <div class="row"><h5>{{ if eq $.Site.Language.LanguageName "Svenska" }}<a href="/sv/projects/funding/">Kommande forskningsanslag ({{ $funding_opportunities }}) <i class="fas fa-arrow-circle-right"></i></a>{{ else }}<a href="/projects/funding/">Funding opportunities ({{ $funding_opportunities }}) <i class="fas fa-arrow-circle-right"></i></a>{{ end }}</h5></div>
+            <div class="row"><h5>{{ if eq $.Site.Language.LanguageName "Eesti" }}<a href="/ee/projects/funding/">Kommande forskningsanslag ({{ $funding_opportunities }}) <i class="fas fa-arrow-circle-right"></i></a>{{ else }}<a href="/projects/funding/">Funding opportunities ({{ $funding_opportunities }}) <i class="fas fa-arrow-circle-right"></i></a>{{ end }}</h5></div>
           </div>
         </div>
       </div>
@@ -172,9 +172,9 @@
         <!-- Serology testing -->
         <div class="row">
           <div class="col-md mb-2">
-            <div class="row"><h6><a href="{{ if eq $.Site.Language.LanguageName "Svenska" }}/sv{{ end}}/data_types/health_data/serology-statistics/">{{ $.Param "teststats.serologytitle" }} <i class="fas fa-arrow-circle-right"></i></a></h6></div>
+            <div class="row"><h6><a href="{{ if eq $.Site.Language.LanguageName "Eesti" }}/ee{{ end}}/data_types/health_data/serology-statistics/">{{ $.Param "teststats.serologytitle" }} <i class="fas fa-arrow-circle-right"></i></a></h6></div>
             <div class="row">
-              <div class="d-md-none alert alert-info">{{ if eq $.Site.Language.LanguageName "Svenska" }}Skrolla grafen horisontellt för att se alla data.{{ else }}Scroll the plot sideways to view all data.{{ end }}</div>
+              <div class="d-md-none alert alert-info">{{ if eq $.Site.Language.LanguageName "Eesti" }}Skrolla grafen horisontellt för att se alla data.{{ else }}Scroll the plot sideways to view all data.{{ end }}</div>
               <div class="table-responsive" id="serology"></div>
             </div>
             </div>
@@ -182,9 +182,9 @@
         <!-- Wastewater Uppsala -->
         <div class="row">
           <div class="col-md mb-2">
-            <div class="row"><h6><a href="{{ if eq $.Site.Language.LanguageName "Svenska" }}/sv{{ end}}/data_types/environment/wastewater/#uppsala">{{ $.Param "teststats.uppsala_wastewater_title" }} <i class="fas fa-arrow-circle-right"></i></a></h6></div>
+            <div class="row"><h6><a href="{{ if eq $.Site.Language.LanguageName "Eesti" }}/ee{{ end}}/data_types/environment/wastewater/#uppsala">{{ $.Param "teststats.uppsala_wastewater_title" }} <i class="fas fa-arrow-circle-right"></i></a></h6></div>
             <div class="row">
-              <div class="d-md-none alert alert-info">{{ if eq $.Site.Language.LanguageName "Svenska" }}Skrolla grafen horisontellt för att se alla data.{{ else }}Scroll the plot sideways to view all data.{{ end }}</div>
+              <div class="d-md-none alert alert-info">{{ if eq $.Site.Language.LanguageName "Eesti" }}Skrolla grafen horisontellt för att se alla data.{{ else }}Scroll the plot sideways to view all data.{{ end }}</div>
               <div class="table-responsive" id="uppsala_wastewater"></div>
             </div>
           </div>
@@ -192,9 +192,9 @@
         <!-- Wastewater Stockholm -->
         <div class="row">
           <div class="col-md mb-2">
-            <div class="row"><h6><a href="{{ if eq $.Site.Language.LanguageName "Svenska" }}/sv{{ end}}/data_types/environment/wastewater/#stockholm">{{ $.Param "teststats.stockholm_wastewater_title" }} <i class="fas fa-arrow-circle-right"></i></a></h6></div>
+            <div class="row"><h6><a href="{{ if eq $.Site.Language.LanguageName "Eesti" }}/ee{{ end}}/data_types/environment/wastewater/#stockholm">{{ $.Param "teststats.stockholm_wastewater_title" }} <i class="fas fa-arrow-circle-right"></i></a></h6></div>
             <div class="row">
-              <div class="d-md-none alert alert-info">{{ if eq $.Site.Language.LanguageName "Svenska" }}Skrolla grafen horisontellt för att se alla data.{{ else }}Scroll the plot sideways to view all data.{{ end }}</div>
+              <div class="d-md-none alert alert-info">{{ if eq $.Site.Language.LanguageName "Eesti" }}Skrolla grafen horisontellt för att se alla data.{{ else }}Scroll the plot sideways to view all data.{{ end }}</div>
               <div class="table-responsive" id="stockholm_wastewater"></div>
             </div>
           </div>
@@ -202,9 +202,9 @@
         <!-- Wastewater Umeå -->
         <div class="row">
           <div class="col-md mb-2">
-            <div class="row"><h6><a href="{{ if eq $.Site.Language.LanguageName "Svenska" }}/sv{{ end}}/data_types/environment/wastewater/#umea">{{ $.Param "teststats.umeaa_wastewater_title" }} <i class="fas fa-arrow-circle-right"></i></a></h6></div>
+            <div class="row"><h6><a href="{{ if eq $.Site.Language.LanguageName "Eesti" }}/ee{{ end}}/data_types/environment/wastewater/#umea">{{ $.Param "teststats.umeaa_wastewater_title" }} <i class="fas fa-arrow-circle-right"></i></a></h6></div>
             <div class="row">
-              <div class="d-md-none alert alert-info">{{ if eq $.Site.Language.LanguageName "Svenska" }}Skrolla grafen horisontellt för att se alla data.{{ else }}Scroll the plot sideways to view all data.{{ end }}</div>
+              <div class="d-md-none alert alert-info">{{ if eq $.Site.Language.LanguageName "Eesti" }}Skrolla grafen horisontellt för att se alla data.{{ else }}Scroll the plot sideways to view all data.{{ end }}</div>
             <div class="table-responsive" id="umea_wastewater"></div>
           </div>
           </div>
@@ -212,9 +212,9 @@
         <!-- Wastewater Örebro -->
         <div class="row">
           <div class="col-md mb-2">
-            <div class="row"><h6><a href="{{ if eq $.Site.Language.LanguageName "Svenska" }}/sv{{ end}}/data_types/environment/wastewater/#orebro">{{ $.Param "teststats.orebro_wastewater_title" }} <i class="fas fa-arrow-circle-right"></i></a></h6></div>
+            <div class="row"><h6><a href="{{ if eq $.Site.Language.LanguageName "Eesti" }}/ee{{ end}}/data_types/environment/wastewater/#orebro">{{ $.Param "teststats.orebro_wastewater_title" }} <i class="fas fa-arrow-circle-right"></i></a></h6></div>
             <div class="row">
-              <div class="d-md-none alert alert-info">{{ if eq $.Site.Language.LanguageName "Svenska" }}Skrolla grafen horisontellt för att se alla data.{{ else }}Scroll the plot sideways to view all data.{{ end }}</div>
+              <div class="d-md-none alert alert-info">{{ if eq $.Site.Language.LanguageName "Eesti" }}Skrolla grafen horisontellt för att se alla data.{{ else }}Scroll the plot sideways to view all data.{{ end }}</div>
               <div class="table-responsive" id="orebro_wastewater"></div>
             </div>
           </div>
@@ -228,7 +228,7 @@
 
       <!-- About the portal -->
       <div class="container">
-        <div class="row"><h4>{{ if eq $.Site.Language.LanguageName "Svenska" }}Om dataportalen{{ else }}About this portal{{ end }}</h4></div>
+        <div class="row"><h4>{{ if eq $.Site.Language.LanguageName "Eesti" }}Andmeportaalist lähemalt{ else }}About this portal{{ end }}</h4></div>
         <div class="row">
           {{ .Content }}
         </div>
@@ -236,14 +236,14 @@
 
       <!-- Your your data ad -->
       <div class="container mt-2">
-        <div class="row share-new-data text-white pt-2 px-3"><h4>{{ if eq $.Site.Language.LanguageName "Svenska" }}Dela nya covid-19 data{{ else }}Share new COVID-19 data{{ end }}</h4></div>
-        <div class="row share-new-data text-white pb-3 px-3">{{ if eq $.Site.Language.LanguageName "Svenska" }}Teamet som arbetar med covid-19 dataportalen hjälper dig gärna dela dina forskningsdata i öppna databaser och svarar på frågor om datadelning, datahantering eller andra datarelaterade frågor.{{ else }}The portal team is happy to assist you with submitting your data to open repositories or answer any questions about data management.{{ end }}</div>
-        <div class="row share-new-data text-white pb-3 px-3"><h6><a style="color:white" href="{{ if eq $.Site.Language.LanguageName "Svenska" }}/sv{{ end }}/contact/">{{ if eq $.Site.Language.LanguageName "Svenska" }}Support{{ else }}Support request{{ end }} <i class="fas fa-arrow-circle-right"></i></a></h6></div>
+        <div class="row share-new-data text-white pt-2 px-3"><h4>{{ if eq $.Site.Language.LanguageName "Eesti" }}Jaga uut COVID-19 andmestikku{{ else }}Share new COVID-19 data{{ end }}</h4></div>
+        <div class="row share-new-data text-white pb-3 px-3">{{ if eq $.Site.Language.LanguageName "Eesti" }}Covid19dataportal.ee meeskond abistab teid meeleldi andmete edastamisel avalikesse andmehoidlatesse ning vastame kõikidele küsimustele andmete haldamise kohta.{{ else }}The portal team is happy to assist you with submitting your data to open repositories or answer any questions about data management.{{ end }}</div>
+        <div class="row share-new-data text-white pb-3 px-3"><h6><a style="color:white" href="{{ if eq $.Site.Language.LanguageName "Eesti" }}/ee{{ end }}/contact/">{{ if eq $.Site.Language.LanguageName "Eesti" }}Toetuspäring{{ else }}Support request{{ end }} <i class="fas fa-arrow-circle-right"></i></a></h6></div>
       </div>
 
       <!-- External support services -->
       <div class="container mt-3">
-        <div class="row"><h4>{{ if eq $.Site.Language.LanguageName "Svenska" }}Externa stödtjänster{{ else }}External support services{{ end }}</h4></div>
+        <div class="row"><h4>{{ if eq $.Site.Language.LanguageName "Eesti" }}Välised toetusteenused{ else }}External support services{{ end }}</h4></div>
         <div class="row">
            {{ range .Site.Menus.main }}
                 {{ if eq .Identifier "support_services" }}
@@ -263,11 +263,11 @@
 
         <!-- Partner projects -->
         <div class="container mt-3">
-          <div class="row"><h4>{{ if eq $.Site.Language.LanguageName "Svenska" }}Samarbetsprojekt{{ else }}Partner projects{{ end }}</h4></div>
+          <div class="row"><h4>{{ if eq $.Site.Language.LanguageName "Eesti" }}Koostööprojektid{{ else }}Partner projects{{ end }}</h4></div>
           <div class="row border">
             <div class="col mx-3">
-              <div class="row mt-3"><a target="_blank" href="{{ if eq $.Site.Language.LanguageName "Svenska" }}/sv{{ end }}/data_types/health_data/crush_covid/"><img src="/img/logos/crush_covid_logo.png" alt="CRUSH Covid" height="25"></a></div>
-              <div class="row mt-3"><p><a href="{{ if eq $.Site.Language.LanguageName "Svenska" }}/sv{{ end }}/data_types/health_data/crush_covid/">CRUSH Covid</a> maps outbreaks in Uppsala County by visualizing the number of cases, test positivity, geographic distribution, age distribution, etc. Data on positivity per postal code is available for download and further re-use.</p></div>
+              <div class="row mt-3"><a target="_blank" href="{{ if eq $.Site.Language.LanguageName "Eesti" }}/ee{{ end }}/data_types/health_data/crush_covid/"><img src="/img/logos/crush_covid_logo.png" alt="CRUSH Covid" height="25"></a></div>
+              <div class="row mt-3"><p><a href="{{ if eq $.Site.Language.LanguageName "Eesti" }}/ee{{ end }}/data_types/health_data/crush_covid/">CRUSH Covid</a> maps outbreaks in Uppsala County by visualizing the number of cases, test positivity, geographic distribution, age distribution, etc. Data on positivity per postal code is available for download and further re-use.</p></div>
             </div>
           </div>
           </div>
