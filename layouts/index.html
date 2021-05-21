@@ -228,7 +228,7 @@
 
       <!-- About the portal -->
       <div class="container">
-        <div class="row"><h4>{{ if eq $.Site.Language.LanguageName "Eesti" }}Andmeportaalist lähemalt{ else }}About this portal{{ end }}</h4></div>
+        <div class="row"><h4>{{ if eq $.Site.Language.LanguageName "Eesti" }}Andmeportaalist lähemalt{{ else }}About this portal{{ end }}</h4></div>
         <div class="row">
           {{ .Content }}
         </div>
@@ -243,7 +243,7 @@
 
       <!-- External support services -->
       <div class="container mt-3">
-        <div class="row"><h4>{{ if eq $.Site.Language.LanguageName "Eesti" }}Välised toetusteenused{ else }}External support services{{ end }}</h4></div>
+        <div class="row"><h4>{{ if eq $.Site.Language.LanguageName "Eesti" }}Välised toetusteenused{{ else }}External support services{{ end }}</h4></div>
         <div class="row">
            {{ range .Site.Menus.main }}
                 {{ if eq .Identifier "support_services" }}
