@@ -1,5 +1,5 @@
 ---
-title: Data on COVID-19 testing in Uppsala County and dashboard with maps, trends and more now available # short
+title: Data on COVID-19 testing in ESTONIA County and dashboard with maps, trends and more now available # short
 title_full: Data on COVID-19 testing in Region Uppsala and dashboard with test positivity rate, maps, trends and more now available on the COVID-19 Data Portal
 date: 2021-02-11
 summary: The data portal is now launching [a page with the CRUSH Covid dashboard](/data_types/health_data/crush_covid/) with an option to download data on COVID-19 testing in each postal code of Uppsala County.
