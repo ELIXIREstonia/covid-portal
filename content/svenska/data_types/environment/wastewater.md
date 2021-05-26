@@ -5,7 +5,7 @@ toc: false
 Vi presenterar epidemiologiska data av mätningar av SARS-CoV-2 virus i avloppsvatten från fyra svenska städer: Uppsala, Stockholm, Umeå och Örebro, med totalt 1.5 miljoner invånare.  Att mäta virusmängder i avloppsvatten kan var en del av ett system för att detektera och övervaka förekomsten av SARS-CoV-2 i samhället. Notera att direkt jämförelse av virusmängden mellan olika städer inte är möjlig pga olika hantering av insamlade avloppsprov och analys av data.  Jämförelser bör endast göras inom data som samlats in och visualiseras från en och samma stad. [För mer information om epidemiologiska data från mätningar av SARS-CoV-2 i avloppsvatten se nedan.](#background).
 
 <div class="row"><div class="col-lg-7"><p>För grafer som visar mängd av SARS-CoV-2-virus i avloppsvatten och delade tillhörande data se nedan.</p>
-<ul><li><a href="#uppsala">Mätningar av SARS-CoV-2 virus i avloppsvatten Uppsala</a></li>
+<ul><li><a href="#uppsala">Mätningar av SARS-CoV-2 virus i avloppsvatten i Uppsala och närliggande orter</a></li>
 <li><a href="#stockholm">Mätningar av SARS-CoV-2 virus i avloppsvatten Stockholm</a></li>
 <li><a href="#umea">Mätningar av SARS-CoV-2 virus i avloppsvatten Umeå</a></li>
 <li><a href="#orebro">Mätningar av SARS-CoV-2 virus i avloppsvatten Örebro</a></li>
@@ -13,61 +13,71 @@ Vi presenterar epidemiologiska data av mätningar av SARS-CoV-2 virus i avloppsv
 {{< wastewater_map >}}
 </div></div>
 
-<a id="uppsala"><h2>Mängd SARS-CoV-2 virus i Uppsalas avloppsvatten</h2></a>
+<a id="uppsala"><h2>Mängd SARS-CoV-2 virus i avloppsvatten i Uppsala och närliggande orter</h2></a>
 
-Projektet leds av prof.Anna J. Székely (SLU, Sveriges Lantbruksuniversitet) i samarbete med Uppsala Vatten. Mängden SARS-CoV-2 virus i Uppsala stads avloppsvatten bestäms genom analys av avloppsvatten insamlat vid Kungsängsverket som är Uppsala Vattens största avloppsreningsverk. Avloppsvattnet från avloppsreningsverket samlas in från de två största upptagningsområdena för Uppsalas avloppsvatten: de södra delarna av Uppsala som har ca 100 000 invånare (‘AB’), and den nordöstra delarna v Uppsala som har ca. 80 000 invånare. (‘C’). [För kartor som visar respektive upptagningsområde för avloppsvattnet](/wastewater/avrinningskarta_inlopp_kungsangsverket.pdf). Kombinerade mätningar baserade på båda upptagningsområdena har beräknats. Mängd SARS-CoV-2 virus i Uppsalas avloppsvatten ett specifik datum har normaliserats jämfört med mängden mänsklig avföring för att undvika variation pga vattenflöde och populationsstorlek. Även kombinerad mängd SARS CoV-2 virus i avloppsvatten från båda upptagningsområdena beräknas och visualiseras veckovis.
+<div class="alert alert-info"><i class="fas fa-exclamation-triangle"></i> Uppdatering, 14 April 2021: Vi har lagt till data från Uppsalas närliggande kommuner. Mer information om denna data kommer inom kort. </span></div>
+
+Projektet leds av prof.Anna J. Székely (SLU, Sveriges Lantbruksuniversitet) i samarbete med Uppsala Vatten. Mängden SARS-CoV-2 virus i Uppsala stads avloppsvatten bestäms genom analys av avloppsvatten insamlat vid Kungsängsverket som är Uppsala Vattens största avloppsreningsverk. Avloppsvattnet från avloppsreningsverket samlas in från de två största upptagningsområdena för Uppsalas avloppsvatten med ca. 180.000 invånare. [För kartor som visar respektive upptagningsområde för avloppsvattnet](/wastewater/avrinningskarta_inlopp_kungsangsverket.pdf). Mängd SARS-CoV-2 virus i Uppsalas avloppsvatten ett specifik datum har normaliserats jämfört med mängden mänsklig avföring för att undvika variation pga vattenflöde och populationsstorlek.
 
 Proverna bearbetas enligt standardmetoder. I korthet koncentreras virusinnehållet i proverna med hjälp av en modifierad elektronegativ filtreringsmetod ([metod C, Ahmed och kollegor, 2020](https://doi.org/10.1016/j.scitotenv.2020.139960)), virus RNA extraheras med hjälp av RNeasy PowerMicrobiome-kit (Qiagen) och mängden SARS-CoV-2 RNA kvantifieras genom RT-qPCR och användning av CDC RUO nCOV N1-analys (IDT DNA). För att studera metodens effektivitet och detektera eventuell närvaro av potentiella virushämmare tillsätts bovint koronavirus (BCoV) ett sk. process-surrogatvirus. För att korrigera för variation i populationen kvantifierar vi också pepper mild mottle virus (PMMoV), som är det vanligaste RNA-viruset i mänsklig avföring ([Symonds et al, 2019](https://doi.org/10.1371/journal.ppat.1007639)).
 
 Notera att resultaten i  dataseten och som visas i diagrammen är preliminära data. Forskargruppen genomför fortfarande kontroller av metodens effektivitet vilket kan förändra de slutliga resultaten något.
 
-**Ladda ner data:** [Relativt ratio av viruskopior SARS CoV-2  jämfört med mängd PPMoV från varje avloppsvattensupptagningsområde och mätt över en mätningsdag, Excel-fil.](https://blobserver.dckube.scilifelab.se/blob/wastewater_data_Uppsala.xlsx) Data finns tillgängligt från och med vecka 38 2020; uppdateras varje vecka.
+**Ladda ner data:** [Relativt ratio av viruskopior SARS CoV-2  jämfört med mängd PPMoV, Excel-fil.](https://blobserver.dckube.scilifelab.se/blob/wastewater_data_Uppsala.xlsx) Data finns tillgängligt från och med vecka 38 2020; uppdateras varje vecka.
 
 **Forskargrupppledare:** Anna J. Székely, SLU, Sveriges Lantbruksuniversitet.  
 **Kontakt:** anna.szekely@slu.se
 
-##### Kombinerade mätningar av SARS-CoV-2 virus i avloppsvatten Uppsala
+<div class="alert alert-info">Senast uppdaterad: <span id="last_modified_uppsala"></span></div>
+
+#### Uppsala
 
 <div class="d-md-none alert alert-info">
-  Skrolla grafen horisontellt för att se alla data..
+  Skrolla grafen horisontellt för att se alla data.
 </div>
 
 <div class="plot_wrapper">
   <div class="table-responsive" id="uppsala_combined"></div>
 </div>
 
-<div class="row ml-1"><a class="btn" data-toggle="collapse" href="#uppsala_ab_plot" role="button" aria-expanded="false" aria-controls="uppsala_ab_plot" style="font-weight: 500">
-  Mätningar av SARS-CoV-2 virus i avloppsvatten Uppsala AB, sydvästra delen av Uppsala
-  <i class="fas fa-caret-down"></i>
-</a></div>
-<div class="collapse" id="uppsala_ab_plot">
-  <div class="card card-body">
-    <div class="row"><div class="col">
-    <div class="d-md-none alert alert-info">
-      Skrolla grafen horisontellt för att se alla data..
-    </div>
-    <div class="plot_wrapper">
-      <div class="table-responsive" id="uppsala_ab"></div>
-    </div>
-    </div></div>
-  </div>
+#### Knivsta
+
+<div class="d-md-none alert alert-info">
+  Scroll the plot sideways to view all data.
 </div>
 
-<div class="row ml-1"><a class="btn" data-toggle="collapse" href="#uppsala_c_plot" role="button" aria-expanded="false" aria-controls="uppsala_c_plot" style="font-weight: 500">
-  Mätningar av SARS-CoV-2 virus i avloppsvatten Uppsala C, nordöstra delen av Uppsala
-  <i class="fas fa-caret-down"></i>
-</a></div>
-<div class="collapse" id="uppsala_c_plot">
-  <div class="card card-body">
-    <div class="row"><div class="col">
-    <div class="d-md-none alert alert-info">
-      Skrolla grafen horisontellt för att se alla data..
-    </div>
-    <div class="plot_wrapper">
-      <div class="table-responsive" id="uppsala_c"></div>
-    </div>
-    </div></div>
-  </div>
+<div class="plot_wrapper">
+  <div class="table-responsive" id="knivsta_plot"></div>
+</div>
+
+#### Enköping
+
+<div class="d-md-none alert alert-info">
+  Scroll the plot sideways to view all data.
+</div>
+
+<div class="plot_wrapper">
+  <div class="table-responsive" id="enkoping_plot"></div>
+</div>
+
+#### Älvkarleby
+
+<div class="d-md-none alert alert-info">
+  Scroll the plot sideways to view all data.
+</div>
+
+<div class="plot_wrapper">
+  <div class="table-responsive" id="alkarleby_plot"></div>
+</div>
+
+#### Östhammar
+
+<div class="d-md-none alert alert-info">
+  Scroll the plot sideways to view all data.
+</div>
+
+<div class="plot_wrapper">
+  <div class="table-responsive" id="osthammar_plot"></div>
 </div>
 
 <a id="stockholm"><h2>Mängden SARS-CoV-2 i avloppsvatten från  avloppsreningsanläggningar i Stockholm</h2></a>
@@ -78,20 +88,22 @@ Efter koncentrering, filtrering och beredning analyseras proverna med RT-qPCR-te
 
 Se även [forskargruppens webbsida där sammanfattningar av data och preliminära slutsatser presenteras](https://www.kth.se/water/research/covid-1.979048).
 
-**Ladda ner data:** [Mängd SARS CoV-2 RNA per vecka i råavloppsvatten, med bovin faktor, Excel-fil.](https://blobserver.dckube.scilifelab.se/blob/wastewater_data_Stockholm.xlsx). Uppgifterna delas av Inlet Henriksdal, Sickla, Hässelby, Järva, Riksby och Käppala. Data tillgänglig (delvis) från och med vecka 16 2020; uppdateras varje vecka.
+**Ladda ner data:** [Mängd SARS CoV-2 RNA per vecka i råavloppsvatten, med bovin faktor och PPMoV faktor, Excel-fil](https://blobserver.dckube.scilifelab.se/blob/wastewater_data_Stockholm.xlsx). Uppgifterna delas av Inlet Henriksdal, Sickla, Hässelby, Järva, Riksby och Käppala. Data tillgänglig (delvis) från och med vecka 16 2020; uppdateras varje vecka.
 
 **Forskargruppledare:** Zeynep Cetecioglu Gurol (Kungliga Tekniska högskolan)  
 **Kontakt:** zeynepcg@kth.se
 
+<div class="alert alert-info">Senast uppdaterad: <span id="last_modified_stockholm"></span></div>
+
 <div class="d-lg-none alert alert-info">
-  Skrolla grafen horisontellt för att se alla data..
+  Skrolla grafen horisontellt för att se alla data.
 </div>
 
 <div class="plot_wrapper">
   <div class="table-responsive" id="stockholm_combined"></div>
 </div>
 
-<div class="small text-muted">*NB: Alla prover innan vecka 21 har kommit till labbet vecka 21. Mellan vecka 21 ochh 33 hr prover analyserats varanann vecka. Mellan vecka 21 och 33 har Efter vecka 33 har proverna analyserats verje vecka.</div>
+<div class="small text-muted">*NB: Alla prover innan vecka 21 har kommit till labbet vecka 21. Mellan vecka 21 och 33 har prover analyserats varannan vecka. Efter vecka 33 har proverna analyserats varje vecka.</div>
 
 <div class="row ml-0 mt-3"><b>Publikationer:</b></div><div class="row"><div class="col">
 <b><a target="_blank" href="https://doi.org/10.1016/j.scitotenv.2020.142939">Benchmarking virus concentration methods for quantification of SARS-CoV-2 in raw wastewater.</a></b><br>
@@ -112,13 +124,22 @@ Mängden SARS-CoV-2 RNA per vecka mäts/visauliseras jämfört med mängden SARS
 **Forskargruppledare:** Maja Malmberg (SLU, Sveriges Lantbruksuniversitet)  
 **Kontakt:** maja.malmberg@slu.se
 
+**Referera till detta dataset:**  
+Malmberg, M., Myrmel, M. & Khatri, M.. Dataset of SARS-CoV-2 in wastewater in Umeå, Sweden. [https://doi.org/10.17044/scilifelab.14376881.v1](https://doi.org/10.17044/scilifelab.14376881.v1) (2021).
+
+<div class="alert alert-info">Senast uppdaterad: <span id="last_modified_umeaa"></span></div>
+
 <div class="d-md-none alert alert-info">
-  Skrolla grafen horisontellt för att se alla data..
+  Skrolla grafen horisontellt för att se alla data.
 </div>
 
 <div class="plot_wrapper">
   <div class="table-responsive" id="umea_combined"></div>
 </div>
+
+<div class="small text-muted">*Data från dessa veckor är inte tillgängliga.</div>
+
+<div class="small text-muted">**Proverna från vecka 11 och 12 har förvarats i +4 °C under 2-3 veckor innan analys vilket skiljer sig från övriga insamlade prover.</div>
 
 <a id="orebro"><h2>Mängden SARS-CoV-2 i avloppsvatten från  avloppsreningsanläggningar i Örebro</h2></a>
 
@@ -133,13 +154,22 @@ Mängden SARS-CoV-2 RNA per vecka mäts / visaualiseras jämfört med mängden S
 **Forskargruppledare:** Maja Malmberg (SLU, Sveriges Lantbruksuniversitet)  
 **Kontakt:** maja.malmberg@slu.se
 
+**Referera till detta dataset:**  
+Malmberg, M., Myrmel, M. & Khatri, M.. Dataset of SARS CoV-2 in wastewater in Örebro, Sweden. [https://doi.org/10.17044/scilifelab.14377097.v1](https://doi.org/10.17044/scilifelab.14377097.v1) (2021).
+
+<div class="alert alert-info">Senast uppdaterad: <span id="last_modified_orebro"></span></div>
+
 <div class="d-md-none alert alert-info">
-  Skrolla grafen horisontellt för att se alla data..
+  Skrolla grafen horisontellt för att se alla data.
 </div>
 
 <div class="plot_wrapper">
   <div class="table-responsive" id="orebro_combined"></div>
 </div>
+
+<div class="small text-muted">*Data från dessa veckor är inte tillgängliga.</div>
+
+<div class="small text-muted">**Proverna från vecka 11 och 12 har förvarats i +4 °C under 2-3 veckor innan analys vilket skiljer sig från övriga insamlade prover.</div>
 
 <a id="background"><h2>Bakgrund</h2></a>
 
@@ -149,13 +179,17 @@ Avloppsvattenbaserad epidemiologi studerar mängden virusgenom i avloppsvattnet,
 
 Observera att graferna som presenteras inom sektionen baseras på preliminära och ännu inte fullständigt utvärderade data. Data som delas ska därför användas med försiktighet. Observera att eftersom olika metoder för insamling av avloppsprover och dataanalys används av olika forskningsprojekten som redovisas nedan(dvs för olika städer) är det inte möjligt jämföra virusmängen mellan projekten (dvs mellan städer). Jämförelser bör göras inom varje projekt (dvs. stad) eftersom metoden är densamma för alla mätningar. Mätningar av SARS CoV-2 i avloppsvatten bör främst ses en indikation på ökande smittspridning, tillsammans med andra datatyper som exempelvis antal positiva SARS CoV-2 test, antal patienter som behöver intensivvård etc och  bidra till kunskap om den regionala dynamiken i COVID-19-pandemi.
 
+{{< ww_dates_modified >}}
+
 <script src="https://cdn.jsdelivr.net/npm/vega@5.12.1"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.12.2"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.8.0"></script>
 
 <script src="https://datagraphics.dckube.scilifelab.se/graphic/6d16b18be0d74425b313040c502f29c8.js?id=uppsala_combined"></script>
-<script src="https://datagraphics.dckube.scilifelab.se/graphic/20aa7fa76b29428fadc1884c59bc5d0b.js?id=uppsala_ab"></script>
-<script src="https://datagraphics.dckube.scilifelab.se/graphic/a6de6f328d3d49bf97c2cd9784f012cc.js?id=uppsala_c"></script>
-<script src="https://datagraphics.dckube.scilifelab.se/graphic/7db40a88e0f34ea69cebed7a4be51e55.js?id=stockholm_combined"></script>
+<script src="https://datagraphics.dckube.scilifelab.se/graphic/956f9390690043b8ae5f62b90d22f84f.js?id=stockholm_combined"></script>
 <script src="https://datagraphics.dckube.scilifelab.se/graphic/030ac237d44248dda87e2c9277a49cc7.js?id=umea_combined"></script>
 <script src="https://datagraphics.dckube.scilifelab.se/graphic/fe03ef2220814eeeb3e99eb26a7c46e2.js?id=orebro_combined"></script>
+<script src="https://datagraphics.dckube.scilifelab.se/graphic/794083b8fb74479cb99d250a98937396.js?id=knivsta_plot"></script>
+<script src="https://datagraphics.dckube.scilifelab.se/graphic/7fc947af5027480681c14a791d5d70cd.js?id=enkoping_plot"></script>
+<script src="https://datagraphics.dckube.scilifelab.se/graphic/175e19c00f694811aa8b7a8eb1cad8b0.js?id=alkarleby_plot"></script>
+<script src="https://datagraphics.dckube.scilifelab.se/graphic/d1653a8e085b4fd0ad7327676a006489.js?id=osthammar_plot"></script>

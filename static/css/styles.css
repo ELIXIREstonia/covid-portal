@@ -327,7 +327,63 @@ div.dataTables_wrapper div.dataTables_info {
     background-color: #de2c6c!important;
 }
 
+<<<<<<< HEAD
 .alert {
     background-color: #EED202;
     text-align: center;
+=======
+/*
+ * The following styles are adapted from:
+ * https://github.com/Wruczek/Bootstrap-Cookie-Alert
+ * Released under MIT license
+ */
+
+.cookiealert {
+    color: white;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 !important;
+    z-index: 999;
+    visibility: hidden;
+    transform: translateY(100%);
+    transition: all 500ms ease-out;
+    background: rgba(46, 104, 165, 0.9);
+}
+
+.cookiealert.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+}
+
+.cookiealert a {
+    text-decoration: underline;
+    color: white;
+}
+
+.cookiealert .acceptcookies {
+    margin-left: 10px;
+    vertical-align: baseline;
+    border-color: rgba(77, 77, 77, 1);
+    background: rgba(77, 77, 77, 1);
+}
+
+/*
+ * Styling for the banner of Data and Code reuse competition
+ */
+
+.data_code_reuse_block {
+     background-image: url('../img/csm_coronavirus_mc.jpg');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.data_code_reuse_block .title {
+    color: #cc3366;
+>>>>>>> bf8e8cd5c0124b58e8e26d3ec08ed3cfd22cc6c8
 }
