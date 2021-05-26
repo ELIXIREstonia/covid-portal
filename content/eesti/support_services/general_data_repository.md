@@ -1,5 +1,5 @@
 ---
-title: General data repository
+title: Üldised andmerepositooriumid
 menu:
     main:
         identifier: general_data_repository
@@ -8,16 +8,14 @@ menu:
         pre: <i class="fas fa-database"></i>
 ---
 
-## General data repositories
+## Üldised andmerepositooriumid
 
-Most life science data types can be published as raw or processed data in repositories at the [EMBL-EBI](https://www.ebi.ac.uk) as described under [Data types](https://covid19dataportal.se/data_types/). When no archive is suitable, use a general purpose repository such as [Figshare](https://figshare.com) or [Zenodo](https://zenodo.org). This includes documents, presentations, figures, protocols, or other information that you want to make public at any stage in the research process. A publication here is permanent, and provides a Digital Object Identifier, DOI.
+Enamikku loodusteaduste andmetüüpe saab avaldada kui toorandmetena või töödeldul andmetena andmerepositiooriumites, näiteks [EMBL-EBI](https://www.ebi.ac.uk), nagu on kirjeldatud allpool [andmetüüpide peatükis](https://covid19dataportal.ee/ee/data_types/). Kui erialane repositoorium/arhiiv ei ole sobiv, soovitame kasutada üldotstarbelist repositooriumit, nagu [Figshare](https://figshare.com) või [Zenodo](https://zenodo.org). See hõlmab dokumente, esitlusi, jooniseid, protokolle või muud teavet, mida soovite avalikustada igas teadustöö etapis. Andmete avaldamine nendel platvormidel on püsiv ja pakub psüidentifikaatorit (DOI).
 
-SciLifeLab supports COVID-19 related data to be published in the [SciLifeLab Data Repository](https://scilifelab.figshare.com).
+Kui teil on COVID-19 uurimistööga seotud andmekogud, mis sobivad kõige paremini sedalaadi hoidlate jaoks või on vaja andmete üleslaadimisega, palun võtke ühendust [ELIXIR Eestiga](https://elixir.ut.ee/) (elixir@ut.ee). 
 
-If you have datasets related to COVID-19 research that are best suited for this type of repository, please contact the SciLifeLab Data Centre at [datacentre@scilifelab.se](mailto:datacentre@scilifelab.se) or visit our [repository support page](https://www.scilifelab.se/data/repository).
+## Avalikes andmebaasides avaldatud andmed
 
-## Published data at General Data Repositories
+[Figshare COVID-19 avatud teaduse andmed](https://covid19.figshare.com)
 
-[Figshare COVID-19 open research data](https://covid19.figshare.com)
-
-[Zenodo Coronavirus Disease Research Community](https://zenodo.org/communities/covid-19/)
+[Zenodo Koroonaviiruse haiguse uurimise teadusringkond](https://zenodo.org/communities/covid-19/)
