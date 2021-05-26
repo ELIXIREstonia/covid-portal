@@ -12,7 +12,7 @@ menu:
 
 ### Introduction
 
-<figure class="figure float-right"><img width="500" src="/img/logos/scilifelab-logo.svg"></figure>
+<figure class="figure float-right"><img width="500" src="/img/logos/ELIXIR_Estonia_white_background.png"></figure>
 
 Eesti COVID-19 andmeportaal pakub teavet, juhiseid, tööriistu ja teenuseid, et toetada teadlasi Eesti ja Euroopa teadustaristute kasutamiseks andmete jagamisel, eriti [Euroopa COVID-19 andmeportaalis](https://covid19dataportal.org). Veebilehte ajakohastatakse regulaarselt uute teenuste, tööriistade ja andmetega. Soovitused, parandused või muud kommentaarid on teretulnud.
 

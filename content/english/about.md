@@ -13,7 +13,7 @@ menu:
 
 ### Introduction
 
-<figure class="figure float-right"><img width="500" src="/img/logos/scilifelab-logo.svg"></figure>
+<figure class="figure float-right"><img width="500" src="/blob/develop/static/img/logos/ELIXIR_ESTONIA_white_background.png"></figure>
 
 The Swedish COVID-19 Data Portal provides information, guidelines, tools and services to support researchers to utilise Swedish and European infrastructures for data sharing, in particular the [European COVID-19 Data Portal](https://covid19dataportal.org). It is regularly updated with new services, tools and data. Suggestions, corrections or other comments are most welcome.
 

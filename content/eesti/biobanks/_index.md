@@ -35,8 +35,8 @@ The Swedish COVID-19 Sample Collection Database is operated in collaboration wit
 
 <div class="row">
   <div class="col">
-    <img class="mr-4" src="https://covid19dataportal.se/img/logos/scilifelab-logo.svg" alt="SciLifeLab" height="40">
-    <img class="mr-4" src="https://covid19dataportal.se/img/logos/biobanksverige_logo.jpg" alt="Biobank Sverige" height="40">
+    <img class="mr-4" src="https://github.com/ELIXIREstonia/covid-portal/blob/develop/static/img/logos/ELIXIR_ESTONIA_white_background.png" alt="ELIXIR Estonia" height="40">
+    
   </div>
 </div>
 
