@@ -1,27 +1,27 @@
 ---
-title: Genomics & transcriptomics data
+title: Genoomika ja transkriptoomika andmed
 menu:
     main:
-        name: Published data
+        name: Avalikud andmed
         identifier: genomics_transcriptomics_data
         parent: genomics_transcriptomics
         weight: 10
     horizontal:
-        name: Genomics
+        name: Genoomika
         identifier: genomics_transcriptomics_data
         weight: 10
 type: data_table
 datatypes_to_display:
-- "Category: Genomics & transcriptomics"
+- "Category: Genoomika ja transkriptoomika"
 ---
 
-###### See also: [Guidelines for submitting genomics & transcriptomics data](../guidelines) | [Services: genomics & transcriptomics](../services)
+###### Vaata ka: [Juhendid kuidas genoomika ja transkriptoomika andmeid jagada](../guidelines) | [Teenused: genoomika ja transkriptoomika](../services)
 
-## Published Data
+## Avalikud andmed
 
-#### Data available on the European COVID-19 Data Portal
+#### Andmed Euroopa COVID-19 Andmeportaalis
 
 Published raw and assembled sequences related to the COVID-19 outbreak, including outbreak isolates and records relating to coronavirus biology:
 
-* [Raw and assembled sequence and analysis of SARS-CoV-2 and other coronaviruses](https://www.covid19dataportal.org/sequences?db=embl-covid19) (>25,000 deposited items as of Oct 2020)
-* [Raw and assembled sequence and analysis of human and other hosts](https://www.covid19dataportal.org/host-sequences?db=hostSequences) (>900 deposited items as of Oct 2020)
+* [SARS-COV-2 viiruse toor- ja assambleeritud järjestused](https://www.covid19dataportal.org/sequences?db=embl-covid19) (>650 000 järjestust seisuga Mai 2021)
+* [SARS-COV-2 peremeesorganismide (s..h inimese) toor- ja assambleeritud järjestused](https://www.covid19dataportal.org/host-sequences?db=hostSequences) (> 16 000 järjestust seisuga Mai 2021)
