@@ -1,5 +1,5 @@
 ---
-title: All data types
+title: Kõik andmetüübid
 type: data_table
 ---
-## Published Data
+## Avalikud andmed

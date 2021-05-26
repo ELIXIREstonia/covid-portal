@@ -1,5 +1,5 @@
 ---
-title: Imaging data
+title: Pildiandmed
 menu:
     main:
         identifier: imaging_data

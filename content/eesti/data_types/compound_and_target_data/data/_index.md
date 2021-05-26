@@ -1,29 +1,29 @@
 ---
-title: Biochemistry data
+title: Biokeemia andmed
 menu:
     main:
-        name: Published data
+        name: Avalikud andmed
         identifier: compound_and_target_data_data
         parent: compound_and_target_data
-        weight: 10
+        weight: 70
     horizontal:
-        name: Biochemistry
+        name: Biokeemia
         identifier: compound_and_target_data_data
-        weight: 40
+        weight: 70
 type: data_table
 datatypes_to_display:
-- "Category: Biochemistry"
+- "Category: Biokeemia"
 ---
-###### See also: [Guidelines for submitting biochemistry data](../guidelines) | [Services: biochemistry data](../services)
+###### See also: [Juhendid biokeemia andmete avaldamiseks](../guidelines) | [Teenused: biokeemia andmed](../services)
 
-## Published Data
+## Avalikud andmed
 
-On our portal, “Biochemistry” has a broad meaning, including cell- and plasma profiling with, for example, biomarker concentrations in plasma.
+Meie andmeportaalis on "Biokeemial" väga lai tähendus, kattes endas nii raku- kui plasma profileerimisel, näiteks biomarkerite kontsentratsiooni mõõtmise teel.
 
-#### General useful data sources
+#### Kasulikud teenused
 
-* Small molecule related data can be found in [ChEMBL](https://www.ebi.ac.uk/chembl/). ChEMBL is a manually curated database of bioactive molecules with drug-like properties. It brings together chemical, bioactivity and genomic data to aid the translation of genomic information into effective new drugs.
+* Väikeste molekulide kohta leiab infot [ChEMBList](https://www.ebi.ac.uk/chembl/). ChEMBL on käsitsi kureeritud bioaktiivsete molekulide, millel on ravimilaadsed omadused, andmebaas. ChEMBL seob kokku keemilise, bioaktiivsuse ja genoomika andmed, et aidata genoomikalist informatsiooni siirdada uutesse effektiivsetesse ravimitesse. 
 
-#### Data available on the European COVID-19 Data Portal
+#### Euroopa COVID-19 Andmeportaalis olevad biokeemia andmed
 
-* [COVID-19 pathways, interactions, complexes, targets and compounds](https://www.covid19dataportal.org/biochemistry?db=biochemistry)
+* [COVID-19 bioloogilised rajad, interaktsioonid, kompleksid, sihtmärgid ja ühendid](https://www.covid19dataportal.org/biochemistry?db=biochemistry)

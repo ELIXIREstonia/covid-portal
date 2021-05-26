@@ -1,14 +1,14 @@
 ---
-title: Data Types
+title: Andmetüübid
 menu:
     main:
         identifier: data_types
-        post: Click to expand a data type and see available resources.
+        post: Kliki, et näha andmetüüpi ja kättesaadavaid andmestikke. 
         weight: 10
     homepage_available_data:
-        name: Available data
+        name: Avalikud andmed
         identifier: available_data
-        post: Data available from research groups in Sweden. <a href="/data_types/all/data/">See available data for all data types <i class="fas fa-arrow-circle-right"></i></a>
+        post: Eesti teadlaste avalikud andmed. <a href="/data_types/all/data/">Vaata kõiki avalikke andmeid <i class="fas fa-arrow-circle-right"></i></a>
 
 ---
 

@@ -1,13 +1,13 @@
 ---
-title: Imaging data
+title: Pildiandmed
 menu:
     main:
-        name: Published data
+        name: Avalikud andmed
         identifier: imaging_data_data
         parent: imaging_data
         weight: 10
     horizontal:
-        name: Imaging
+        name: Pildiandmed
         identifier: imaging_data
         weight: 30
 type: data_table
@@ -15,12 +15,12 @@ datatypes_to_display:
 - "Category: Imaging"
 ---
 
-###### See also: [Guidelines for submitting imaging data](../guidelines) | [Services: imaging data](../services)
+###### Vaata ka: [Juhendid kuidas pildiandmeid jagada](../guidelines) | [Services: imaging data](../services)
 
-## Published Data
+## Avalikud andmed
 
-#### General useful data sources
+#### Kasulikud andmeallikad
 
-Imaging data at the EMBL-EBI:
+EMBL-EBI pildiandmed:
 
 * [BioImage Archive](https://www.ebi.ac.uk/bioimage-archive/)
