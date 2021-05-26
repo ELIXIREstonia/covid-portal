@@ -10,7 +10,7 @@ menu:
         name: Meist
 ---
 
-### Introduction
+### Ülevaade
 
 <figure class="figure float-right"><img width="500" src="/img/logos/ELIXIR_Estonia_white_background.png"></figure>
 
@@ -18,7 +18,7 @@ Eesti COVID-19 andmeportaal pakub teavet, juhiseid, tööriistu ja teenuseid, et
 
 Eesti COVID-19 andmeportaali haldab [ELIXIR Eesti](https://elixir.ut.ee/).
 
-See veebileht on loodud kasutades [Hugot](https://gohugo.io/), [Bootstrap](https://getbootstrap.com/) raamistikku. Lisaks kasutame [Vega/Vega-Lite](https://vega.github.io/vega-lite/) ja [Plotlyt](https://plotly.com/) interaktiivsete graadikute jaoks,  [DataTables](https://datatables.net/) ja [Select2](https://select2.org/) jQuery jaoks. Veebilehe kood on vabalt kättesaadaval vastavalt ([MIT litsentsile](https://choosealicense.com/licenses/mit/)) [GitHubis: github.com/ElixirEstonia/covid-portal](https://github.com/ELIXIREstonia/covid-portal)
+See veebileht on loodud kasutades [Hugot](https://gohugo.io/), [Bootstrap](https://getbootstrap.com/) raamistikku. Lisaks kasutame [Vega/Vega-Lite](https://vega.github.io/vega-lite/) ja [Plotlyt](https://plotly.com/) interaktiivsete graafikute jaoks,  [DataTables](https://datatables.net/) ja [Select2](https://select2.org/) jQuery jaoks. Veebilehe kood on vabalt kättesaadaval vastavalt ([MIT litsentsile](https://choosealicense.com/licenses/mit/)) [GitHubis: github.com/ElixirEstonia/covid-portal](https://github.com/ELIXIREstonia/covid-portal)
 
 Kui soovid panustada, siis võta meiega ühendust [elixir@ut.ee](mailto:elixir@ut.ee).
 
