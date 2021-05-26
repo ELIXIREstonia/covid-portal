@@ -1,15 +1,15 @@
 <footer class="container border-top mt-5 mb-5">
   <div class="row border-bottom small text-muted">
     <div class="col-md">
-      <p class="mb-0">{{ (index $.Site.Params.lang_strings .Site.Language.Lang).enquire_email_footer_dc }}: <a href="mailto:datacentre@scilifelab.se">datacentre@scilifelab.se</a></p>
+      <p class="mb-0">{{ (index $.Site.Params.lang_strings .Site.Language.Lang).enquire_email_footer_dc }}: <a href="mailto:elixir@ut.ee">elixir@ut.ee</a></p>
     </div>
     <div class="col-md">
-      <p class="mb-0">{{ (index $.Site.Params.lang_strings .Site.Language.Lang).enquire_email_footer_bioinformatics }}: <a href="https://nbis.se/support/">https://nbis.se/support/</a></p>
+      <p class="mb-0">{{ (index $.Site.Params.lang_strings .Site.Language.Lang).enquire_email_footer_bioinformatics }}: <a href="https://elixir.ut.ee/">https://elixir.ut.ee</a></p>
     </div>
   </div>
   <div class="row border-bottom">
     <div class="col-md">
-      <h2 class="small text-uppercase text-black-50">{{ if eq $.Site.Language.LanguageName "Svenska" }}Publicerad data{{ else }}Available data{{ end }}</h2>
+      <h2 class="small text-uppercase text-black-50">{{ if eq $.Site.Language.LanguageName "Eesti" }}Avalikud andmed{{ else }}Available data{{ end }}</h2>
       <ul class="list-unstyled">
       {{ range .Site.Menus.horizontal }}
               <li><a href="{{ .Page.RelPermalink }}">{{ .Name }}</a></li>
@@ -20,7 +20,7 @@
       </ul>
     </div>
     <div class="col-md">
-      <h2 class="small text-uppercase text-black-50">{{ if eq $.Site.Language.LanguageName "Svenska" }}Tjänster på dataportalen{{ else }}Portal services{{ end }}</h2>
+      <h2 class="small text-uppercase text-black-50">{{ if eq $.Site.Language.LanguageName "Eesti" }}Andmeportaali teenused{{ else }}Portal services{{ end }}</h2>
       <ul class="list-unstyled">
       {{ range .Site.Menus.footer_sections }}
               <li><a href="{{ .Page.RelPermalink }}">{{ if eq .Page.Section "biobanks" }}<i class="fas fa-vials mr-1"></i>{{ end }}{{ .Name }}</a></li>
@@ -28,24 +28,24 @@
       </ul>
     </div>
     <div class="col-md">
-      <h2 class="small text-uppercase text-black-50">{{ if eq $.Site.Language.LanguageName "Svenska" }}Externa tjänster{{ else }}External services{{ end }}</h2>
+      <h2 class="small text-uppercase text-black-50">{{ if eq $.Site.Language.LanguageName "Eesti" }}Välised teenused{{ else }}External services{{ end }}</h2>
       {{ range .Site.Menus.main }}
         {{ if eq .Identifier "support_services" }}
           <ul class="list-unstyled">
             {{ range .Children }}
-              <li><a href="{{ .Page.RelPermalink }}">{{ if or (eq .Name "Submit data") (eq .Name "Publicera data") }}<i class="fas fa-paper-plane mr-1"></i>{{ end }}{{ .Name }}</a></li>
+              <li><a href="{{ .Page.RelPermalink }}">{{ if or (eq .Name "Submit data") (eq .Name "Avalikusta andmed") }}<i class="fas fa-paper-plane mr-1"></i>{{ end }}{{ .Name }}</a></li>
             {{ end }}
           </ul>
         {{ end }}
       {{ end }}
     </div>
     <div class="col-md">
-      <h2 class="small text-uppercase text-black-50">{{ if eq $.Site.Language.LanguageName "Svenska" }}Om dataportalen{{ else }}About{{ end }}</h2>
+      <h2 class="small text-uppercase text-black-50">{{ if eq $.Site.Language.LanguageName "Eesti" }}Andmeportaalist{{ else }}About{{ end }}</h2>
       <ul class="list-unstyled mb-1">
         {{ range .Site.Menus.footer_about }}
           <li><a href="{{ .Page.RelPermalink }}">{{ .Name }}</a></li>
         {{ end }}
-          <li><a href="https://covid19dataportal.org/">{{ if eq $.Site.Language.LanguageName "Svenska" }}Europeiska portalen{{ else }}European Portal{{ end }}</a></li>
+          <li><a href="https://covid19dataportal.org/">{{ if eq $.Site.Language.LanguageName "Eesti" }}Euroopa Andmeportaal{{ else }}European Portal{{ end }}</a></li>
       </ul>
       <ul class="list-unstyled border-top pt-1 nav-languages">
       {{ if .IsTranslated }}
@@ -60,13 +60,13 @@
       </ul>
     </div>
     <div class="col-md text-center">
-      <a class="d-block my-4" href="https://www.scilifelab.se"><img src="/img/logos/scilifelab-logo.svg" alt="SciLifeLab"></a>
-      <span class="d-block my-4"><img src="/img/logos/elixir-se-logo.png" alt="Elixir Sweden"></span>
+      
+      <span class="d-block my-4"><img src="/img/logos/ELIXIR_ESTONIA_white_background.png" alt="Elixir Estonia"></span>
     </div>
   </div>
   <div class="row footer-lower-row">
     <div class="col-md-3 p-2">
-      <a href="{{ if eq $.Site.Language.LanguageName "Svenska" }}/sv{{ end }}/contact/">{{ (index $.Site.Params.lang_strings .Site.Language.Lang).support_feedback }}</a>
+      <a href="{{ if eq $.Site.Language.LanguageName "Eesti" }}/ee{{ end }}/contact/">{{ (index $.Site.Params.lang_strings .Site.Language.Lang).support_feedback }}</a>
     </div>
     <div class="col-md-3 p-2">
       <a href='{{ "/privacy" | relLangURL }}'>{{ (index $.Site.Params.lang_strings .Site.Language.Lang).privacy }}</a>
@@ -78,9 +78,9 @@
 </footer>
 
 <div class="alert text-center cookiealert" role="alert">
-{{ if eq $.Site.Language.LanguageName "Svenska" }}Vi använder cookies för att ge dig en bättre upplevelse av vår webbplats. Här finns mer <a href="/sv/privacy/#cookies">information om cookies</a>.{{ else }}We use cookies to improve your experience of the website. By continuing you accept that we use cookies. More information: <a href="/privacy/#cookies">About cookies</a>.{{ end }}
+{{ if eq $.Site.Language.LanguageName "Eesti" }}Vi använder cookies för att ge dig en bättre upplevelse av vår webbplats. Här finns mer <a href="/sv/privacy/#cookies">information om cookies</a>.{{ else }}We use cookies to improve your experience of the website. By continuing you accept that we use cookies. More information: <a href="/privacy/#cookies">About cookies</a>.{{ end }}
     <button type="button" class="btn btn-primary acceptcookies">
-        {{ if eq $.Site.Language.LanguageName "Svenska" }}Jag förstår{{ else }}I understand{{ end }}
+        {{ if eq $.Site.Language.LanguageName "Eesti" }}Jag förstår{{ else }}I understand{{ end }}
     </button>
 </div>
 

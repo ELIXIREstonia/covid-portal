@@ -1,5 +1,5 @@
 ---
-title: Resources
+title: Teenused
 menu:
     main:
         identifier: resource_services
@@ -8,28 +8,25 @@ menu:
         pre: <i class="fas fa-project-diagram"></i>
 ---
 
-## Infrastructures
+## Rahvusvahelised taristud
 
 ##### [COVID-19 HPC Consortium](https://www.xsede.org/covid19-hpc-consortium)
-The consortium encompasses computing capabilities from some of the most powerful and advanced computers in the world.
-It is possible to request allocations of up to 6 months.
+Konsortsiumisse on kaasatud arvutusvõimsust maailma kõige võimsamatest arvutiparkidest.
+Arvutusressurssi on võimalik taotleda kuni kuueks kuuks.
 
-##### [ELIXIR Computing Resources](https://elixir-europe.org/services/tag/compute)
-ELIXIR nodes have made available a broad variety of computing resources.
+##### [ELIXIR Arvutusresurssid](https://elixir-europe.org/services/tag/compute)
+Erinevad ELIXIRi liikmesriigid on teinud kättesaadavaks laialdase arvutusressursi.
 
-##### [European Galaxy COVID-19 Project](https://covid19.galaxyproject.org/)
-Publicly accessible infrastructure and workflows for SARS-CoV-2 data analyses from different scientific domains (genomics, proteomics, metabolomics, cheminformatics...).
+##### [Euroopa Galaxy COVID-19 Projekt](https://covid19.galaxyproject.org/)
+Avalikult juurdepääsetav arvutustaristu ja töövood SARS-CoV-2 andmete analüüsimiseks erinevatest teadusvaldkondadest (genoomika, proteoomika, metaboloomika, keminformaatika ...).
 
 ##### [Partnership for Advanced Computing in Europe (PRACE)](https://prace-ri.eu/prace-support-to-mitigate-impact-of-covid-19-pandemic/)
-PRACE provides access to world-class high performance computing resources for researchers from academia and industry.
-PRACE has a fast review track for project proposals requesting computing resources to contribute to the mitigation of the impact of the COVID-19 pandemic.
+PRACE pakub akadeemilistele ringkondadele ja erasektori teadlastele juurdepääsu maailmatasemel kõrgjõudlusega arvutusresurssile. PRACE-l on *fast-track* hindamisprotsess projektitaotlustele, mis nõuavad arvutusressursse, et aidata kaasa COVID-19 pandeemia mõju leevendamisele.
 
-##### [Swe-Clarin](https://sweclarin.se/)
-Swe-Clarin makes text-based materials and text analysis tools available.
-It is a national node in the European CLARIN (Common Language Resources and Technology Infrastructure).
 
-##### [Swedish National Infrastructure for Computing (SNIC)](https://www.snic.se/)
-SNIC is a national research infrastructure that makes available large-scale high performance computing resources, storage capacity, and advanced user support, for Swedish researchers.
+
+##### [Eesti Teadusarvutuste Infrastruktuur (ETAIS)](https://www.etais.eee/)
+ETAIS on riiklik teadustaristu, mis teeb Eesti teadlastele kättesaadavaks suuremahulised suure jõudlusega arvutiressursid, salvestusmahu ja mitmekülgse kasutajatoe. 
 
 ## Data
 
