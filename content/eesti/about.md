@@ -14,7 +14,7 @@ menu:
 
 <figure class="figure float-right"><img width="500" src="/img/logos/scilifelab-logo.svg"></figure>
 
-Eesti COVID-19 andmeportaal pakub teavet, juhiseid, tööriistu ja teenuseid, et toetada teadlasi Eesti ja Euroopa teadustaristute kasutamiseks andmete jagamisel, eriti [Euroopa COVID-19 andmeportaalis] (https://covid19dataportal.org). Veebilehte ajakohastatakse regulaarselt uute teenuste, tööriistade ja andmetega. Soovitused, parandused või muud kommentaarid on teretulnud.
+Eesti COVID-19 andmeportaal pakub teavet, juhiseid, tööriistu ja teenuseid, et toetada teadlasi Eesti ja Euroopa teadustaristute kasutamiseks andmete jagamisel, eriti [Euroopa COVID-19 andmeportaalis](https://covid19dataportal.org). Veebilehte ajakohastatakse regulaarselt uute teenuste, tööriistade ja andmetega. Soovitused, parandused või muud kommentaarid on teretulnud.
 
 Eesti COVID-19 andmeportaali haldab [ELIXIR Eesti](https://elixir.ut.ee/).
 
@@ -22,64 +22,41 @@ See veebileht on loodud kasutades [Hugot](https://gohugo.io/), [Bootstrap](https
 
 Kui soovid panustada, siis võta meiega ühendust [elixir@ut.ee](mailto:elixir@ut.ee).
 
-### People behind the portal
+### Portaaliga seotud inimesed
 
 Antud veebileht baseerub Rootsi kolleegide tööl. Nende kohta saad lähemalt lugeda [GitHubis](https://github.com/ScilifelabDataCentre/covid-portal/graphs/contributors). 
 
-Eesti COVID-19 andmeportaali haldavad ELIXIR Eesti liikmed. Oleme valmis vastama andmete k'ttesaadavuse, jagamise, halduse jms teemadele kui saadate meile emaili. 
+Eesti COVID-19 andmeportaali haldavad ELIXIR Eesti liikmed. Oleme valmis vastama andmete kättesaadavuse, jagamise, halduse jms teemadele kui saadate meile emaili. 
 
 <div class="container mb-3">
   <div class="row">
     <div class="col-md-2 pt-2">
-      <div class="row-cor"><img src="/img/people/ak.jpg" width="150" class="img-thumbnail"/></div>
-      <div class="row-cor"><b>Arnold Kochari</b></div>
-      <div class="row-cor"><span class="text-muted">Webmaster for the COVID-19 Data Portal, SciLifeLab</span></div>
+      <div class="row-cor"><img src="/img/people/ik.jpg" width="150" class="img-thumbnail"/></div>
+      <div class="row-cor"><b>Ivan Kuzmin</b></div>
+      <div class="row-cor"><span class="text-muted">Eesti COVID-19 Andmeportaali veebimeister</span></div>
     </div>
   </div>
 </div>
 
-Through the portal, researchers can reach many different services for their COVID-19 projects. The data management questions are handled by the data management team at [NBIS](https://nbis.se/), the National BIoinformatics Infrastructure which is also the SciLifeLab Bioinformatics Platform.
+Portaali aitab teadlastel jõuda paljude erinevate COVID-19 projektidega seotud teenusteni. Andmehalduse küsimustega tegeleb ELIXIR Eesti andmehaldur [ELIXIR Eesti](https://elixir.ut.ee/). 
 
 <div class="container">
    <div class="row">
      <div class="col-md-2 pt-2">
-       <div class="row-cor"><img src="/img/people/nj.jpg" width="150" class="img-thumbnail"/></div>
-       <div class="row"><b>Niclas Jareborg</b></div>
-       <div class="row"><span class="text-muted">Data manager, NBIS</span></div>
+       <div class="row-cor"><img src="/img/people/hi.jpg" width="150" class="img-thumbnail"/></div>
+       <div class="row"><b>Heleri Inno</b></div>
+       <div class="row"><span class="text-muted">Andmehaldur, ELIXIR Eesti</span></div>
      </div>
     </div>
 </div>
 
-### Organisations behind the portal
+##### ELIXIR Eesti
 
-The Swedish COVID-19 Data Portal is operated by the [SciLifeLab Data Centre](https://www.scilifelab.se/data) and partners. The [Swedish Research Council](https://vr.se) is responsible for coordination with the European initiative.
+[https://elixir.ut.ee](https://elixir.ut.ee)
 
-SciLifeLab and the Swedish Research Council are committed to the open sharing of data and results, and have both signed the Wellcome Trust statement on [Sharing research data and findings relevant to the novel coronavirus (COVID-19) outbreak](https://wellcome.ac.uk/coronavirus-covid-19/open-data).
+ELIXIR Eesti, Eesti eluteaduste teadustaristu, on Euroopa eluteaduste teadustaristu liige aastast 2013. ELIXIR on 23 riiki ühendav Euroopa eluteaduste teadustaristu, mille kasutajad on sajad tuhanded molekulaarbioloogia, keskkonnateaduste, põllumajanduse ja arstiteaduse teadlased. Kõik need teadlased loovad väga eriilmelisi andmeid, mille analüüsiks on vaja tipptasemel tarkvarateenuseid ja halduseks kestlikke andmebaase. ELIXIRi teadustaristu eesmärk on ühendada eluteaduse andmete, tööriistade, arvutiressursi, standardite ja koolituse teenusepakkujad ühtseks taristuks, mille liikmetel on bioloogiliste andmete esitamise ja juhtimise kaasvastutus.Selle asemel, et koondada teadmisi ja vahendeid ühte kohta, on ELIXIRi hajusa ülesehituse eesmärk liikmete tugevustele toetumine. ELIXIR Eestit rahastatakse Euroopa Struktuurivahenditest, Eesti Teadusagentuuri tuumiktaristu toetusest ja Euroopa Komisjoni teadusprojektidest. is an institution for the advancement of molecular biosciences in Sweden. ELIXIR Eesti keskendub peamiselt tipptasemel teenuste ja tööriistade arendamisele ja käigushoidmisele, eluteadlaste andmeanalüüsi suutlikkuse parandamisele koolituste pakkumise teel ning metagenoomika- ja populatsiooniandmete haldamisele. Koostöös Eesti Teadusarvutuste Infrastruktuuriga (ETAIS) tagatakse veebiteenuste pidev kättesaadavus nii Eesti teadlastele kui väga suurele rahvusvahelisele kasutajaskonnale. 
 
-##### SciLifeLab
+COVID-19 pandeemia algusest alates on ELIXIR Eesti panustanud avalike andmeanalüüsi vahendite loomisele, seireuuringu andmete töötlemisele ja visualiseerimisele ja 2021. aasta kevadest ka SARS-COV-2 viirusjärjestuste analüüsile, tulemuste visualiseerimisele.
 
-[https://www.scilifelab.se](https://www.scilifelab.se)
+ELIXIR Eesti loodi 2013 nelja teadusasutuse koostöös: [Tartu Ülikool](https://www.ut.ee/), [Tallinna Tehnikaülikool](https://www.ttu.ee/), [Keemilise ja bioloogilise füüsika instituut](https://www.kbfi.ee/) ja [Eesti Biokeskus (nüüdseks Tartu Ülikooli osa)](https://www.ut.ee/). ELIXIR Eesti teenuste sihtgrupiks on kõik Eesti teadlased.
 
-SciLifeLab, Science for Life Laboratory, is an institution for the advancement of molecular biosciences in Sweden. We are funded as a national research infrastructure by the Swedish government. Our organization leverages the unique strengths of individual researchers across Sweden into a focused resource for the life science community. We provide access for thousands of researchers to the cutting-edge instrumentation and deep scientific expertise necessary to be internationally competitive in bioscience research. This infrastructure is supported and developed by our research community, including internationally recognized experts in life science and technology. Our facilities and expertise create a unique environment for carrying out health and environmental research at the highest level.
-
-SciLifeLab started out in 2010 as a joint effort between four universities: [Karolinska Institutet](https://www.ki.se/), [KTH Royal Institute of Technology](https://www.kth.se/), [Stockholm University](https://www.su.se/) and [Uppsala University](https://www.uu.se/). Today, we support research activities at all major Swedish universities.
-
-##### SciLifeLab Data Centre
-
-[https://www.scilifelab.se/data/](https://www.scilifelab.se/data/)
-
-Life science research is increasingly becoming not only technology-driven, but also data-driven. SciLifeLab coordinates and supports activities throughout the life cycle of data, from project planning, data production, data analysis, data sharing, to publishing and reuse of data, where researchers are dependent on advanced data analysis and e-infrastructures.
-
-Our focus is on data arising from the use of SciLifeLab infrastructure platforms, both to promote research on adding value to data, research deriving biological knowledge from data, and infrastructure making data findable and available. At SciLifeLab, we see data as one of the most valuable and long-lasting products of our operations and strive to make our data [FAIR](https://www.force11.org/group/fairgroup/fairprinciples), handled according to open science standards and that its long- term value to the scientific community is maximized.
-
-##### National Bioinformatics Infrastructure
-
-[https://nbis.se](https://nbis.se)
-
-NBIS (National Bioinformatics Infrastructure Sweden) is a distributed national research infrastructure supported by the Swedish Research Council (Vetenskapsrådet), Science for Life Laboratory, all major Swedish universities and the Knut and Alice Wallenberg Foundation, providing state-of-the-art bioinformatics to the Swedish life science researchers community. NBIS is also the Swedish contact point to the European infrastructure for biological information [ELIXIR](https://www.elixir-europe.org/).
-
-##### Swedish National Data Service
-
-[https://snd.gu.se](https://snd.gu.se)
-
-The Swedish National Data Service has a primary function to support the accessibility, preservation, and re-use of research data and related materials. As a national infrastructure, SND coordinates a network of more than 30 universities and public research institutes in Sweden. SND is certified data repository and provides services for researchers to share and access research data from all research areas.
