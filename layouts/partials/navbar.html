@@ -37,30 +37,30 @@
         {{ range .Site.Menus.horizontal }}
               <li class="nav-item"><a class="nav-link" href="{{ .Page.RelPermalink }}">{{ .Name }}</a></li>
         {{ end }}
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            {{ (index $.Site.Params.lang_strings .Site.Language.Lang).menu_moretypes }}
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            {{ range .Site.Menus.other_data }}
-            <a class="dropdown-item" href="{{ .Page.RelPermalink }}">{{ .Name }}</a>
-            {{ end }}
-          </div>
-        </li>
+<!--        <li class="nav-item dropdown">-->
+<!--          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--            {{ (index $.Site.Params.lang_strings .Site.Language.Lang).menu_moretypes }}-->
+<!--          </a>-->
+<!--          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">-->
+<!--            {{ range .Site.Menus.other_data }}-->
+<!--            <a class="dropdown-item" href="{{ .Page.RelPermalink }}">{{ .Name }}</a>-->
+<!--            {{ end }}-->
+<!--          </div>-->
+<!--        </li>-->
       </ul>
       <span class="nav-item nav-menu-other text-vert">&vert;</span>
       <ul class="navbar-nav mr-auto navbar-secondary-links">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            {{ (index $.Site.Params.lang_strings .Site.Language.Lang).menu_biobanks }}
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            {{ range .Site.Menus.biobanks }}
-            <a class="dropdown-item" href="{{ .Page.RelPermalink }}">{{ .Name }}</a>
-            {{ end }}
-            <a class="dropdown-item" href="https://biobanks.covid19dataportal.se/">{{ if eq $.Site.Language.LanguageName "Svenska" }}Sök i Covid-19 Provsamlingsregistret{{ else }}Search in the Sample Collection Database{{ end }}</a>
-          </div>
-        </li>
+<!--        <li class="nav-item dropdown">-->
+<!--          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--            {{ (index $.Site.Params.lang_strings .Site.Language.Lang).menu_biobanks }}-->
+<!--          </a>-->
+<!--          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">-->
+<!--            {{ range .Site.Menus.biobanks }}-->
+<!--            <a class="dropdown-item" href="{{ .Page.RelPermalink }}">{{ .Name }}</a>-->
+<!--            {{ end }}-->
+<!--            <a class="dropdown-item" href="https://biobanks.covid19dataportal.se/">{{ if eq $.Site.Language.LanguageName "Svenska" }}Sök i Covid-19 Provsamlingsregistret{{ else }}Search in the Sample Collection Database{{ end }}</a>-->
+<!--          </div>-->
+<!--        </li>-->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {{ (index $.Site.Params.lang_strings .Site.Language.Lang).menu_projects }}

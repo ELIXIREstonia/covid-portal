@@ -42,7 +42,7 @@ params:
       pubs_type: Publication type
       pubs_year: Year
       pubs_funder: Funder
-    sv:
+    ee:
       home_title: Teadusele hoogu juurde läbi andmete jagamise
       enquire_email_footer_dc: "Võta Eesti Covid-19 andmeportaaliga ühendust"
       enquire_email_footer_bioinformatics: "Bioinformaatika alase abi saamiseks, kontakteeru"
@@ -52,7 +52,7 @@ params:
       skip_to_content: Tagasi põhilehele
       readmore_text: Loe rohkem
       published_text: Avaldatud
-      all_highlights: Vaata esile tõstetud andmeid 
+      all_highlights: Vaata esile tõstetud andmeid
       next_highlight: Järgmine
       previous_highlight: Eelmine
       dt_project: Projekt

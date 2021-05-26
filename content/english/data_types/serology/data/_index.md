@@ -1,7 +1,12 @@
 ---
 title: Serology data
 menu:
-    other_data:
+    main:
+        name: Serology data
+        identifier: serology_data
+        parent: serology
+        weight: 20
+    horizontal:
         name: Serology
         identifier: serology_data
         weight: 20
