@@ -1,5 +1,5 @@
 ---
-title: Genomics & transcriptomics
+title: Genoomika
 menu:
     main:
         identifier: genomics_transcriptomics

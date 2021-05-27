@@ -386,3 +386,81 @@ div.dataTables_wrapper div.dataTables_info {
 .data_code_reuse_block .title {
     color: #cc3366;
 }
+
+.highlight-header {
+    font-size: x-small;
+    color: darkorange;
+    font-weight: bold;
+    text-align: center;
+    padding: 3px;
+}
+
+.highlight-p {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    padding-right: 15px;
+    padding-left: 10px;
+
+}
+.highlight-s {
+    width: 7px;
+}
+
+td.highlight-c {
+    text-align: center;
+}
+div.highlight-c {
+    display: inline-block;
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+
+}
+
+.highlight-q {
+    clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+    padding-left: 15px;
+}
+
+.highlight-l1 {
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+    position: relative;
+    left: 8px;
+}
+
+.highlight-j1 {
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+    position: relative;
+    left: -8px;
+}
+
+.highlight-l2 {
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+    position: relative;
+    left: 8px;
+    padding-right: 8px;
+}
+
+table.highlight {
+    position: relative;
+    left: -70px;
+}
+
+.highlight-j2 {
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+    position: relative;
+    left: -8px;
+    padding-left: 8px;
+}
+
+.highlight-bg-light {
+    text-align: center;
+    background-color: #3E75C1;
+    color: white;
+}
+
+.highlight-bg-dark {
+    text-align: center;
+    background-color: #15478c;
+    color: white;
+}
