@@ -20,7 +20,11 @@ Reoveeproove võetakse kõigis maakonnakeskustes, üle 10 000 elanikuga linnades
 
 Uuring algas 2020. aasta augustis.
 
-<iframe src="https://kodu.ut.ee/~kisand/kaart_avalik/" width="100%" height="600" scrolling="no" frameborder="0" id="iframe1" name="iframe1"></iframe>
+
+
+<img src="/img/map.png" width="800"/>
+
+[comment]: <> (<iframe src="https://kodu.ut.ee/~kisand/kaart_avalik/" width="100%" height="600" scrolling="no" frameborder="0" id="iframe1" name="iframe1"></iframe>)
 
 Source: [Reoveekaart](https://sisu.ut.ee/reoveeseire/avalik-kaart)
 
