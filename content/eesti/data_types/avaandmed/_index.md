@@ -5,11 +5,11 @@ menu:
         name: Avaandmed
         identifier: avaandmed_data
         parent: avaandmed
-        weight: 20
+        weight: 40
     horizontal:
         name: Avaandmed
         identifier: avaandmed_data
-        weight: 20
+        weight: 40
 type: data_table
 datatypes_to_display:
 - "Category: Avaandmed"

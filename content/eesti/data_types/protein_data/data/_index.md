@@ -5,11 +5,11 @@ menu:
         name: Avalikud andmed
         identifier: protein_data_data
         parent: protein_data
-        weight: 10
+        weight: 70
     horizontal:
         name: Proteoomika
         identifier: protein_data_data
-        weight: 20
+        weight: 70
 type: data_table
 datatypes_to_display:
 - "Category: Proteins"

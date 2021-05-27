@@ -4,11 +4,11 @@ menu:
     main:
         name: Reoveeuuring
         identifier: reoveeuuring
-        weight: 20
+        weight: 30
     horizontal:
         name: Reoveeuuring
         identifier: reoveeuuring
-        weight: 20
+        weight: 30
 type: data_table
 datatypes_to_display:
 - "Category: Reoveeuuring"

@@ -5,11 +5,11 @@ menu:
         name: Avalikud andmed
         identifier: compound_and_target_data_data
         parent: compound_and_target_data
-        weight: 70
+        weight: 50
     horizontal:
         name: Biokeemia
         identifier: compound_and_target_data_data
-        weight: 70
+        weight: 50
 type: data_table
 datatypes_to_display:
 - "Category: Biokeemia"
