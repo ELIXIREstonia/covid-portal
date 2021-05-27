@@ -3,16 +3,7 @@
     {{- partial "head.html" . -}}
     <body>
 
-    <div class="container">
-        <div class="row">
-            <div class="alert col-md-12">
-                <img src="/img/construction-cone.png" alt="construction cone" width="100px">
-                <h1>
-                    {{ if eq $.Site.Language.LanguageName "Eesti" }} Veebileht on uuendamisel. Ootame sind peagi tagasi! {{ else }} This Website is Under Construction. Come Back Soon! {{end}}
-                </h1>
-            </div>
-        </div>
-    </div>
+ 
 
         <a class="sr-only sr-only-focusable" href="#content">{{ (index $.Site.Params.lang_strings .Site.Language.Lang).skip_to_content }}</a>
         {{- partial "navbar.html" . -}}
