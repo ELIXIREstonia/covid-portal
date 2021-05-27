@@ -16,17 +16,17 @@
           <li class="nav-item"><a class="nav-link {{ .Post }}" href="{{ .Page.RelPermalink }}">{{ .Pre }}{{ .Name }}</a></li>
         {{ end }}
       </ul>
-      <ul class="navbar-nav navbar-languages">
-        {{ if .IsTranslated }}
-          {{ range .AllTranslations }}
-            <li class="nav-item"><a class="nav-link" href="{{ relURL .Permalink }}"><span lang="{{ .Language.Lang }}">{{ .Language.Lang }} <img src="/img/flag-{{ .Language.Lang }}.svg" alt=""></span></a></li>
-          {{ end }}
-        {{ else }}
-          {{ range $.Site.Home.AllTranslations }}
-            <li class="nav-item"><a class="nav-link" href="{{ relURL .Permalink }}"><span lang="{{ .Language.Lang }}">{{ .Language.Lang }} <img src="/img/flag-{{ .Language.Lang }}.svg" alt=""></span></a></li>
-          {{ end }}
-        {{ end }}
-      </ul>
+<!--      <ul class="navbar-nav navbar-languages">-->
+<!--        {{ if .IsTranslated }}-->
+<!--          {{ range .AllTranslations }}-->
+<!--            <li class="nav-item"><a class="nav-link" href="{{ relURL .Permalink }}"><span lang="{{ .Language.Lang }}">{{ .Language.Lang }} <img src="/img/flag-{{ .Language.Lang }}.svg" alt=""></span></a></li>-->
+<!--          {{ end }}-->
+<!--        {{ else }}-->
+<!--          {{ range $.Site.Home.AllTranslations }}-->
+<!--            <li class="nav-item"><a class="nav-link" href="{{ relURL .Permalink }}"><span lang="{{ .Language.Lang }}">{{ .Language.Lang }} <img src="/img/flag-{{ .Language.Lang }}.svg" alt=""></span></a></li>-->
+<!--          {{ end }}-->
+<!--        {{ end }}-->
+<!--      </ul>-->
     </div>
   </div>
 </nav>
@@ -48,8 +48,8 @@
 <!--          </div>-->
 <!--        </li>-->
       </ul>
-      <span class="nav-item nav-menu-other text-vert">&vert;</span>
-      <ul class="navbar-nav mr-auto navbar-secondary-links">
+<!--      <span class="nav-item nav-menu-other text-vert">&vert;</span>-->
+<!--      <ul class="navbar-nav mr-auto navbar-secondary-links">-->
 <!--        <li class="nav-item dropdown">-->
 <!--          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
 <!--            {{ (index $.Site.Params.lang_strings .Site.Language.Lang).menu_biobanks }}-->
@@ -61,17 +61,17 @@
 <!--            <a class="dropdown-item" href="https://biobanks.covid19dataportal.se/">{{ if eq $.Site.Language.LanguageName "Svenska" }}Sök i Covid-19 Provsamlingsregistret{{ else }}Search in the Sample Collection Database{{ end }}</a>-->
 <!--          </div>-->
 <!--        </li>-->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            {{ (index $.Site.Params.lang_strings .Site.Language.Lang).menu_projects }}
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            {{ range .Site.Menus.projects }}
-            <a class="dropdown-item" href="{{ .Page.RelPermalink }}">{{ .Name }}</a>
-            {{ end }}
-          </div>
-        </li>
-      </ul>
+<!--        <li class="nav-item dropdown">-->
+<!--          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--            {{ (index $.Site.Params.lang_strings .Site.Language.Lang).menu_projects }}-->
+<!--          </a>-->
+<!--          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">-->
+<!--            {{ range .Site.Menus.projects }}-->
+<!--            <a class="dropdown-item" href="{{ .Page.RelPermalink }}">{{ .Name }}</a>-->
+<!--            {{ end }}-->
+<!--          </div>-->
+<!--        </li>-->
+<!--      </ul>-->
       <hr class="d-lg-none">
       <ul class="navbar-nav d-lg-none">
         {{ range first 1 .Site.Menus.top_nav }}

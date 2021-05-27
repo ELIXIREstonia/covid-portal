@@ -10,9 +10,6 @@ menu:
         name: Pildiandmed
         identifier: imaging_data
         weight: 60
-type: data_table
-datatypes_to_display:
-- "Category: Imaging"
 ---
 
 ###### Vaata ka: [Juhendid kuidas pildiandmeid jagada](../guidelines) | [Services: imaging data](../services)

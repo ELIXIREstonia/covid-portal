@@ -10,9 +10,6 @@ menu:
         name: Genoomika
         identifier: genomics_transcriptomics_data
         weight: 10
-type: data_table
-datatypes_to_display:
-- "Category: Genoomika ja transkriptoomika"
 ---
 
 ###### Vaata ka: [Juhendid kuidas genoomika ja transkriptoomika andmeid jagada](../guidelines) | [Teenused: genoomika ja transkriptoomika](../services)
@@ -25,3 +22,7 @@ Published raw and assembled sequences related to the COVID-19 outbreak, includin
 
 * [SARS-COV-2 viiruse toor- ja assambleeritud järjestused](https://www.covid19dataportal.org/sequences?db=embl-covid19) (>650 000 järjestust seisuga Mai 2021)
 * [SARS-COV-2 peremeesorganismide (s..h inimese) toor- ja assambleeritud järjestused](https://www.covid19dataportal.org/host-sequences?db=hostSequences) (> 16 000 järjestust seisuga Mai 2021)
+
+
+<iframe width="100%" height="600" frameborder="0" src="https://observablehq.com/embed/800635af3a9fb963?cell=*&variants=https://data.hyphy.org/web/SARS-CoV-2/COG-UK/estonia.tsv.gz&meta=https://data.hyphy.org/web/SARS-CoV-2/COG-UK/meta-estonia.tsv.gz&title=Estonian&lang=et"></iframe>
+

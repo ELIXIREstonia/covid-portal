@@ -9,9 +9,6 @@ menu:
         name: Reoveeuuring
         identifier: reoveeuuring
         weight: 30
-type: data_table
-datatypes_to_display:
-- "Category: Reoveeuuring"
 ---
 
 ## Reoveeuuring
@@ -23,9 +20,11 @@ Reoveeproove võetakse kõigis maakonnakeskustes, üle 10 000 elanikuga linnades
 
 Uuring algas 2020. aasta augustis.
 
-![Reoveekaart](https://sisu.ut.ee/reoveeseire/avalik-kaart)
+<iframe src="https://kodu.ut.ee/~kisand/kaart_avalik/" width="100%" height="600" scrolling="no" frameborder="0" id="iframe1" name="iframe1"></iframe>
 
-Kaardi legend:
+Source: [Reoveekaart](https://sisu.ut.ee/reoveeseire/avalik-kaart)
+
+##### Kaardi legend:
 
 * Ring tähistab suuremaid asulaid, kust kogutakse 24 h komposiitproove.
 * Ruuduke tähistab väiksemaid asulaid, kust võetakse punktproove.

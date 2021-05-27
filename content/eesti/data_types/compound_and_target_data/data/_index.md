@@ -10,9 +10,6 @@ menu:
         name: Biokeemia
         identifier: compound_and_target_data_data
         weight: 50
-type: data_table
-datatypes_to_display:
-- "Category: Biokeemia"
 ---
 ###### See also: [Juhendid biokeemia andmete avaldamiseks](../guidelines) | [Teenused: biokeemia andmed](../services)
 

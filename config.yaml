@@ -1,5 +1,6 @@
 baseURL: "https://www.covid19dataportal.ee/"
 title: "COVID-19 Data Portal Estonia"
+defaultContentLanguage: ee
 params:
   title: "COVID-19 Data Portal Estonia"
   description: COVID-19 Data Portal for Estonian Research
@@ -81,12 +82,12 @@ languages:
   en:
     languageName: English
     contentDir: content/english
-    weight: 1
+    weight: 2
 
   ee:
     languageName: Eesti
     contentDir: content/eesti
-    weight: 2
+    weight: 1
     description: Covid-19 andmeportaal
 
 markup:

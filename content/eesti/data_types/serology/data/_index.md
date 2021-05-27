@@ -10,9 +10,6 @@ menu:
         name: Seroloogia
         identifier: serology_data
         weight: 20
-type: data_table
-datatypes_to_display:
-- "Category: Serology"
 ---
 ###### Vaata ka: [Juhendid kuidas genoomika ja transkriptoomika andmeid jagada](../guidelines) | [Teenused: genoomika ja transkriptoomika](../services)
 

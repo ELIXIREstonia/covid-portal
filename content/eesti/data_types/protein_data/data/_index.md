@@ -10,9 +10,6 @@ menu:
         name: Proteoomika
         identifier: protein_data_data
         weight: 70
-type: data_table
-datatypes_to_display:
-- "Category: Proteins"
 ---
 ###### Vaata ka: [Juhendid kuidas jagada proteoomika andmeid](../guidelines) | [Teenused: proteooika](../services)
 
