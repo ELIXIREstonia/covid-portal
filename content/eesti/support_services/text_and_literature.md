@@ -1,5 +1,5 @@
 ---
-title: Kirjanduse viited
+title: Kirjandus
 menu:
     main:
         identifier: text_and_literature
