@@ -31,9 +31,23 @@ Eesti COVID-19 andmeportaali haldavad ELIXIR Eesti liikmed. Oleme valmis vastama
 <div class="container mb-3">
   <div class="row">
     <div class="col-md-2 pt-2">
-      <div class="row-cor"><img src="/img/people/ik.jpg" width="150" class="img-thumbnail"/></div>
-      <div class="row-cor"><b>Ivan Kuzmin</b></div>
-      <div class="row-cor"><span class="text-muted">Eesti COVID-19 Andmeportaali veebimeister</span></div>
+      <div class="row-cor"><img src="/img/people/Hedi.png" width="150" /></div>
+      <div style="margin-left: 23px;">
+        <div class="row-cor"><b>Hedi Peterson</b></div>
+        <div class="row-cor"><span class="text-muted">ELIXIR Eesti</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mb-3">
+  <div class="row">
+    <div class="col-md-2 pt-2">
+      <div class="row-cor"><img src="/img/people/Ivan.png" width="150" /></div>
+      <div style="margin-left: 23px;">
+        <div class="row-cor"><b>Ivan Kuzmin</b></div>
+        <div class="row-cor"><span class="text-muted">Eesti COVID-19 Andmeportaali veebimeister</span></div>
+      </div>
     </div>
   </div>
 </div>
@@ -43,12 +57,16 @@ Portaali aitab teadlastel jõuda paljude erinevate COVID-19 projektidega seotud 
 <div class="container">
    <div class="row">
      <div class="col-md-2 pt-2">
-       <div class="row-cor"><img src="/img/people/hi.jpg" width="150" class="img-thumbnail"/></div>
-       <div class="row"><b>Heleri Inno</b></div>
-       <div class="row"><span class="text-muted">Andmehaldur, ELIXIR Eesti</span></div>
+       <div class="row-cor"><img src="/img/people/Heleri.png" width="150" /></div>
+       <div style="margin-left: 23px;">
+         <div class="row"><b>Heleri Inno</b></div>
+         <div class="row"><span class="text-muted">Andmehaldur, ELIXIR Eesti</span></div>
+       </div>
      </div>
     </div>
 </div>
+
+<br>
 
 ##### ELIXIR Eesti
 
