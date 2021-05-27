@@ -9,7 +9,7 @@ menu:
         pre: <i class="fas fa-laptop-code"></i>
 ---
 
-![ELIXIR Estonia Logo](/img/logos/nbislogo-orange-txt.svg#floatright)
+![ELIXIR Estonia Logo](/img/logos/ELIXIR_ESTONIA_white_background.png#floatright)
 [ELIXIR Eesti](https://elixir.ut.ee/) pakub erinevaid võimalusi, et aidata teid COVID-19 seotud uurimisprojektiga.
 Meil töötavad mitmed eksperdid, kes saavad teid toetada bioinformaatika analüüsidega, süsteemide arendamisega ja andmehaldusega.
 Kõigis meie projektides oleme pühendunud õiglasele ja reprodutseeritavale teadustööle, mis vastab kõrgeimatele teaduslikele standarditele.

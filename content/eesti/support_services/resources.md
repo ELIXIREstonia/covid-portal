@@ -23,15 +23,13 @@ Avalikult juurdepääsetav arvutustaristu ja töövood SARS-CoV-2 andmete analü
 ##### [Partnership for Advanced Computing in Europe (PRACE)](https://prace-ri.eu/prace-support-to-mitigate-impact-of-covid-19-pandemic/)
 PRACE pakub akadeemilistele ringkondadele ja erasektori teadlastele juurdepääsu maailmatasemel kõrgjõudlusega arvutusresurssile. PRACE-l on *fast-track* hindamisprotsess projektitaotlustele, mis nõuavad arvutusressursse, et aidata kaasa COVID-19 pandeemia mõju leevendamisele.
 
-
-
-##### [Eesti Teadusarvutuste Infrastruktuur (ETAIS)](https://www.etais.eee/)
+##### [Eesti Teadusarvutuste Infrastruktuur (ETAIS)](https://www.etais.ee/)
 ETAIS on riiklik teadustaristu, mis teeb Eesti teadlastele kättesaadavaks suuremahulised suure jõudlusega arvutiressursid, salvestusmahu ja mitmekülgse kasutajatoe. 
 
 ## Data
 
 ### Text data
-See [Text and Literature](../text_and_literature).
+See [Kirjanduse viited](../text_and_literature).
 
 ### Clinical trials
 
