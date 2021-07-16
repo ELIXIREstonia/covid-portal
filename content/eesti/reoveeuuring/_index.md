@@ -24,9 +24,9 @@ Uuring algas 2020. aasta augustis.
 
 <img src="/img/map.png" width="800"/>
 
-[comment]: <> (<iframe src="https://kodu.ut.ee/~kisand/kaart_avalik/" width="100%" height="600" scrolling="no" frameborder="0" id="iframe1" name="iframe1"></iframe>)
+[comment]: <> (<iframe src="https://reoveekoroona.ut.ee/" width="100%" height="600" scrolling="no" frameborder="0" id="iframe1" name="iframe1"></iframe>)
 
-Source: [Reoveekaart](https://sisu.ut.ee/reoveeseire/avalik-kaart)
+Source: [Reoveekaart](https://reoveekoroona.ut.ee/)
 
 ##### Kaardi legend:
 
