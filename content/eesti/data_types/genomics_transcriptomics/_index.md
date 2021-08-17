@@ -26,5 +26,4 @@ Published raw and assembled sequences related to the COVID-19 outbreak, includin
 
 ---
 
-<iframe width="100%" height="600" frameborder="0" src="https://observablehq.com/embed/800635af3a9fb963?cell=*&variants=https://data.hyphy.org/web/SARS-CoV-2/COG-UK/estonia.tsv.gz&meta=https://data.hyphy.org/web/SARS-CoV-2/COG-UK/meta-estonia.tsv.gz&title=Estonian&lang=et"></iframe>
-
+<iframe width="100%" height="600" frameborder="0" src="https://observablehq.com/embed/@korogenoest/eesti-sars-cov-2-sekveneerimisandmetest-leitud-viirustuv?cell=*&lang=et"></iframe>
