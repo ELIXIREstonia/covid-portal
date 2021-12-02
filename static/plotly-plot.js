@@ -5,6 +5,64 @@ const colors = [
     '#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf',
 ];
 
+const clades = [
+    "20H (Beta, V2)",
+    "20I (Alpha, V1)",
+
+    "20J (Gamma, V3)",
+    "21A (Delta)",
+    "21I (Delta)",
+    "21J (Delta)",
+
+    "21B (Kappa)",
+    "21C (Epsilon)",
+    "21D (Eta)",
+    "21E (Theta)",
+    "21F (Iota)",
+    "21G (Lambda)",
+    "21H (Mu)",
+    "21K (Omicron)",
+
+    "19A",
+    "19B",
+    "20A",
+    "20C",
+    "20G",
+    "20B",
+    "20D",
+    "20F",
+    "20E (EU1)"
+];
+
+const colorscheme = {
+    "20H (Beta, V2)": "#5330cd",
+    "20I (Alpha, V1)": "#4756e7",
+
+    "20J (Gamma, V3)": "#4a80e9",
+    "21A (Delta)": "#55a2da",
+    "21I (Delta)": "#67bbbf",
+    "21J (Delta)": "#7bcb9d",
+
+    "21B (Kappa)": "#97d27e",
+    "21C (Epsilon)": "#b5d864",
+    "21D (Eta)": "#d3d553",
+    "21E (Theta)": "#edcb49",
+    "21F (Iota)": "#ffb442",
+    "21G (Lambda)": "#fe903a",
+    "21H (Mu)": "#ff6132",
+    "21K (Omicron)": "#f82e27",
+
+    "19A": "#d6dde0",
+    "19B": "#ced5d9",
+    "20A": "#c7ced2",
+    "20C": "#bfc6cb",
+    "20G": "#b9bfc5",
+    "20B": "#b2b9be",
+    "20D": "#abb1b8",
+    "20F": "#a4aab1",
+    "20E (EU1)": "#a0a2ac"
+};
+
 let data;
 
 let date_from = "2021-05-01";
@@ -77,13 +135,14 @@ function barPlot(el, variable1, variable2, title, data) {
             y: counts,
             type: 'bar',
             name: row,
+            legendrank: clades.indexOf(row),
             hoverinfo: _.map(counts, datum => datum ? 'name+y' : 'skip'),
             marker: {
                 line: {
                     color: 'white',
                     width: 1
                 },
-                color: colors[i]
+                color: colorscheme[row]
             },
         });
 
@@ -99,7 +158,7 @@ function barPlot(el, variable1, variable2, title, data) {
                     color: 'white',
                     width: 1
                 },
-                color: colors[i]
+                color: colorscheme[row]
             },
         });
 
@@ -182,24 +241,27 @@ function areaPlot(el, variable, data) {
             mode: "lines+markers",
             marker: {
                 size: [],
-                color: colors[i],
+                color: colorscheme[lineage],
                 opacity: 0,
                 line: {
                     width: 0,
                 }
             },
-            color: colors[i],
-            fillcolor: colors[i],
+            color: colorscheme[lineage],
+            fillcolor: colorscheme[lineage],
             line: {
                 color: 'white',
                 width: 1,
                 shape: 'spline',
             },
+            legendrank: clades.indexOf(lineage),
             hoverinfo: [],
             hoverlabel: {
-                bgcolor:  colors[i],
+                bgcolor: colorscheme[lineage],
             }
         };
+
+
         i += 1;
 
         let d = _.filter(data, v => v[variable] === lineage);
