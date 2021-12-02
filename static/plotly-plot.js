@@ -174,6 +174,7 @@ function barPlot(el, variable1, variable2, title, data) {
             ticklen: 5,
             tickcolor: '#ccc'
         },
+        hovermode: "x",
         yaxis: {
             type: "linear",
             ticklen: 5,
@@ -204,6 +205,21 @@ function barPlot(el, variable1, variable2, title, data) {
             traceorder: 'normal',
         }
 
+    }, {
+        'modeBarButtons': [
+            [
+                'toImage',
+                // 'zoom2d',
+                // 'pan2d',
+                // 'zoomIn2d',
+                // 'zoomOut2d',
+                // 'autoScale2d',
+                // 'resetScale2d',
+                // 'toggleSpikelines',
+                'hoverClosestCartesian',
+                'hoverCompareCartesian'
+            ]
+        ]
     });
 }
 
@@ -224,7 +240,14 @@ function areaPlot(el, variable, data) {
         .sortBy()
         .value();
 
-    let weeks_labels = _.map(weeks, w => {
+    let totals = [];
+    let total = 0;
+
+    let weeks_labels = _.map(weeks, (w, i) => {
+
+        total = _.filter(data, v => v["Nädal_nr"] === w).length;
+        totals.push(total);
+
         return w + "<br>" + getDateOfWeek(Number(w), 2021).toISOString().split('T')[0];
     });
 
@@ -261,6 +284,18 @@ function areaPlot(el, variable, data) {
             }
         };
 
+        traces_percentage.push({
+            x: weeks_labels,
+            y: _.map(weeks_labels, ()=>0),
+            mode: "lines",
+            xaxis: 'x2',
+            showlegend: false,
+            hoverinfo: 'none',
+            line: {
+                color: 'transparent',
+            },
+        });
+
 
         i += 1;
 
@@ -295,10 +330,27 @@ function areaPlot(el, variable, data) {
     Plotly.newPlot(el, traces_percentage, {
         title: "Ülevaade",
         height: 600,
+        hovermode: "x",
         xaxis: {
             ticklen: 5,
             tickcolor: '#ccc',
             tickangle: 30,
+        },
+        xaxis2: {
+            tickmode: 'list',
+            titlefont: {color: 'grey'},
+            tickfont: {color: 'grey'},
+
+            tickvals: _.map(weeks, (w,i) => i),
+            ticktext: totals,
+            tickangle: 45,
+
+
+            overlaying: 'x',
+
+            position: 0.95,
+            side: 'top',
+            anchor: 'free',
         },
         yaxis: {
             ticklen: 5,
@@ -315,6 +367,21 @@ function areaPlot(el, variable, data) {
             orientation: 'h',
             y: -0.3,
         }
+    }, {
+        'modeBarButtons': [
+            [
+                'toImage',
+                // 'zoom2d',
+                // 'pan2d',
+                // 'zoomIn2d',
+                // 'zoomOut2d',
+                // 'autoScale2d',
+                // 'resetScale2d',
+                // 'toggleSpikelines',
+                'hoverClosestCartesian',
+                'hoverCompareCartesian'
+            ]
+        ]
     });
 
 
