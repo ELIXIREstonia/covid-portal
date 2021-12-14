@@ -63,7 +63,7 @@ const colorscheme = {
     "20E (EU1)": "#a0a2ac"
 };
 
-let data;
+let data, test_results;
 
 let date_from = "2021-05-01";
 let date_to = new Date().toLocaleDateString('en-CA');
@@ -76,6 +76,107 @@ function getDateOfWeek(w, y) {
     let date = new Date(y, 0, (1 + (w) * 7));
     date.setDate(date.getDate() + (2 - date.getDay()));
     return date
+}
+
+function barPlot2(el, title, test_results, data) {
+
+    let columns = _(data)
+        .map(v => v["Nädal_nr"])
+        .uniq()
+        .sortBy()
+        .value();
+
+    let rows = ['sequenced', 'positive']
+
+    let d = data;
+
+    var bars = [];
+
+    let i = 0;
+
+
+
+    for (let row of rows) {
+        let counts = [];
+
+
+        if (row === 'sequenced') {
+            for (let column of columns) {
+                counts.push(
+                    _.filter(d, v => (v["Nädal_nr"]) === column && (v["Nädal_nr"] + "") !== 'null').length
+                );
+            }
+        } else if (row === 'positive') {
+            for (let column of columns) {
+                counts.push(
+                    _.filter(test_results, v => (v["week"]) === column && (v["ResultValue"] + "") === 'P')[0]['0']
+                );
+            }
+        }
+
+
+        bars.push({
+            x: columns,
+            y: counts,
+            type: 'bar',
+            name: row,
+            marker: {
+                line: {
+                    color: 'white',
+                    width: 1
+                },
+                color: colors[i]
+            },
+        });
+
+
+        i += 1;
+
+    }
+
+    Plotly.newPlot(el, bars, {
+        barmode: 'stack',
+        height: 600,
+        title: title,
+        xaxis: {
+            ticklen: 5,
+            tickcolor: '#ccc'
+        },
+        hovermode: "x",
+        yaxis: {
+            type: "linear",
+            ticklen: 5,
+            tickcolor: '#ccc',
+            // hoverformat: ".2%",
+            // tickformat: ".0%"
+        },
+        margin:{
+            t: 50,
+            b: 150
+        },
+        legend: {
+            traceorder: 'normal',
+        }
+
+    }, {
+        'modeBarButtons': [
+            [
+                'toImage',
+                // 'zoom2d',
+                // 'pan2d',
+                // 'zoomIn2d',
+                // 'zoomOut2d',
+                // 'autoScale2d',
+                // 'resetScale2d',
+                // 'toggleSpikelines',
+                'hoverClosestCartesian',
+                'hoverCompareCartesian'
+            ]
+        ]
+    });
+
+
+
 }
 
 function barPlot(el, variable1, variable2, title, data) {
@@ -413,9 +514,10 @@ function render() {
 
     areaPlot(document.getElementById('plotly-plot-clade'), "Clade_rerun", filtered_data);
 
+    barPlot2(document.getElementById('plotly-plot-pos'), "Positive / Sequenced", test_results, filtered_data);
+
     barPlot(document.getElementById('plotly-plot-county'), "Clade_rerun", "Maakond_standard", "Maakondade kaupa", filtered_data);
     barPlot(document.getElementById('plotly-plot-age'), "Clade_rerun", "Vanus_10", "Vanusegruppide kaupa", filtered_data);
-    // barPlot(document.getElementById('plotly-plot-gender'), "Clade_rerun", "Sugu", "", filtered_data);
 }
 
 
@@ -462,7 +564,20 @@ $(document).ready(function () {
                 return Object.fromEntries(new Map(_.zip(columns, values)));
             });
 
-            render();
+            $.ajax({
+                async: true,
+                url: "/biobanks/test_results.json",
+                dataType: "json",
+                success: function (split) {
+                    let columns = split.columns;
+
+                    test_results = _.map(split.data, values => {
+                        return Object.fromEntries(new Map(_.zip(columns, values)));
+                    });
+
+                    render();
+                }
+            });
         }
     });
 });
