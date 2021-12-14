@@ -18,6 +18,7 @@ lodash: true
   <label for="imported"> Sissetoodud</label><br>
 
 <div id="plotly-plot-clade"></div>
+<hr>
 <div id="plotly-plot-pos"></div>
 <hr>
 <div id="plotly-plot-county"></div>
