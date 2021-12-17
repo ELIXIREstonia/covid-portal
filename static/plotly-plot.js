@@ -94,6 +94,10 @@ function barPlot2(el, title, test_results, data) {
 
     let i = 0;
 
+    let weeks_labels = _.map(columns, (w, i) => {
+        return w + "<br>" + getDateOfWeek(Number(w), 2021).toISOString().split('T')[0];
+    });
+
 
 
     for (let row of rows) {
@@ -115,8 +119,10 @@ function barPlot2(el, title, test_results, data) {
         }
 
 
+
+
         bars.push({
-            x: columns,
+            x: weeks_labels,
             y: counts,
             type: 'bar',
             name: row,
@@ -127,6 +133,7 @@ function barPlot2(el, title, test_results, data) {
                 },
                 color: colors[i]
             },
+
         });
 
 
@@ -140,7 +147,8 @@ function barPlot2(el, title, test_results, data) {
         title: title,
         xaxis: {
             ticklen: 5,
-            tickcolor: '#ccc'
+            tickcolor: '#ccc',
+            tickangle: 30,
         },
         hovermode: "x",
         yaxis: {
@@ -148,7 +156,7 @@ function barPlot2(el, title, test_results, data) {
             ticklen: 5,
             tickcolor: '#ccc',
             // hoverformat: ".2%",
-            // tickformat: ".0%"
+            tickformat: ",d"
         },
         margin:{
             t: 50,
@@ -156,6 +164,8 @@ function barPlot2(el, title, test_results, data) {
         },
         legend: {
             traceorder: 'normal',
+            orientation: 'h',
+            y: -0.3,
         }
 
     }, {
