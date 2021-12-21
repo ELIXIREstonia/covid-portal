@@ -66,7 +66,7 @@ const colorscheme = {
 let data, test_results;
 
 let date_from = "2021-05-01";
-let date_to = new Date().toLocaleDateString('en-CA');
+let date_to = "2021-12-20";
 
 let domestic = true;
 let imported = true;
@@ -86,7 +86,7 @@ function barPlot2(el, title, test_results, data) {
         .sortBy()
         .value();
 
-    let rows = ['sequenced', 'positive']
+    let rows = ['Sekveneeritud', 'Positiivne']
 
     let d = data;
 
@@ -104,13 +104,13 @@ function barPlot2(el, title, test_results, data) {
         let counts = [];
 
 
-        if (row === 'sequenced') {
+        if (row === 'Sekveneeritud') {
             for (let column of columns) {
                 counts.push(
                     _.filter(d, v => (v["Nädal_nr"]) === column && (v["Nädal_nr"] + "") !== 'null').length
                 );
             }
-        } else if (row === 'positive') {
+        } else if (row === 'Positiivne') {
             for (let column of columns) {
                 counts.push(
                     _.filter(test_results, v => (v["week"]) === column && (v["ResultValue"] + "") === 'P')[0]['0']
@@ -165,7 +165,7 @@ function barPlot2(el, title, test_results, data) {
         legend: {
             traceorder: 'normal',
             orientation: 'h',
-            y: -0.3,
+            y: -0.2,
         }
 
     }, {
@@ -314,6 +314,8 @@ function barPlot(el, variable1, variable2, title, data) {
         },
         legend: {
             traceorder: 'normal',
+            orientation: 'h',
+            y: variable2 === 'Maakond_standard' ? -0.3 : -0.1,
         }
 
     }, {
@@ -439,13 +441,14 @@ function areaPlot(el, variable, data) {
     }
 
     Plotly.newPlot(el, traces_percentage, {
-        title: "Ülevaade",
+        title: "SARS-CoV-2 klaadide osakaalud proovide võtmise kuupäeva järgi",
         height: 600,
         hovermode: "x",
         xaxis: {
             ticklen: 5,
             tickcolor: '#ccc',
             tickangle: 30,
+            title: 'Proovivõtu nädal ja kuupäev'
         },
         xaxis2: {
             tickmode: 'list',
@@ -467,13 +470,15 @@ function areaPlot(el, variable, data) {
             ticklen: 5,
             tickcolor: '#ccc',
             hoverformat: ".2%",
-            tickformat: ".0%"
+            tickformat: ".0%",
+            title: 'Osakaal'
         },
         margin: {
             t: 50,
             b: 150
         },
         legend: {
+            title: { text: 'Nextstrain-i klaadid (muret tekitav variant)', side: 'top' },
             traceorder: 'normal',
             orientation: 'h',
             y: -0.3,
@@ -524,10 +529,10 @@ function render() {
 
     areaPlot(document.getElementById('plotly-plot-clade'), "Clade_rerun", filtered_data);
 
-    barPlot2(document.getElementById('plotly-plot-pos'), "Positive / Sequenced", test_results, filtered_data);
+    barPlot2(document.getElementById('plotly-plot-pos'), "Sekveneeritud proovide osakaal kõigist positiivsetest proovidest", test_results, filtered_data);
 
-    barPlot(document.getElementById('plotly-plot-county'), "Clade_rerun", "Maakond_standard", "Maakondade kaupa", filtered_data);
-    barPlot(document.getElementById('plotly-plot-age'), "Clade_rerun", "Vanus_10", "Vanusegruppide kaupa", filtered_data);
+    barPlot(document.getElementById('plotly-plot-county'), "Clade_rerun", "Maakond_standard", "SARS-CoV-2 klaadide osakaalud maakondades", filtered_data);
+    barPlot(document.getElementById('plotly-plot-age'), "Clade_rerun", "Vanus_10", "SARS-CoV-2 klaadide osakaalud vanusegruppides", filtered_data);
 }
 
 
