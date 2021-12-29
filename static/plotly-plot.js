@@ -66,7 +66,7 @@ const colorscheme = {
 let data, test_results;
 
 let date_from = "2021-05-01";
-let date_to = "2021-12-20";
+let date_to = "2021-12-27";
 
 let domestic = true;
 let imported = true;
