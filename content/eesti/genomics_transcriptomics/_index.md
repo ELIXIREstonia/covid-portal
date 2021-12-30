@@ -21,10 +21,10 @@ lodash: true
 
 #### Andmed Euroopa COVID-19 Andmeportaalis
 
-Published raw and assembled sequences related to the COVID-19 outbreak, including outbreak isolates and records relating to coronavirus biology:
+COVID-19 puhanguga seotud toor- ja assambleeritud SARS-CoV-2 järjestused, sealhulgas haiguspuhangu isolaadid ja koronaviiruse bioloogiaga seotud kirjed:
 
-* [SARS-COV-2 viiruse toor- ja assambleeritud järjestused](https://www.covid19dataportal.org/sequences?db=embl-covid19) (>650 000 järjestust seisuga Mai 2021)
-* [SARS-COV-2 peremeesorganismide (s..h inimese) toor- ja assambleeritud järjestused](https://www.covid19dataportal.org/host-sequences?db=hostSequences) (> 16 000 järjestust seisuga Mai 2021)
+* [SARS-COV-2 viiruse toor- ja assambleeritud järjestused](https://www.covid19dataportal.org/sequences?db=embl-covid19) (> 2 830 000 järjestust seisuga Detsember 2021)
+* [SARS-COV-2 peremeesorganismide (s..h inimese) toor- ja assambleeritud järjestused](https://www.covid19dataportal.org/host-sequences?db=hostSequences) (> 19 000 järjestust seisuga Detsember 2021)
 
 ---
 
@@ -33,6 +33,16 @@ Siin on ära toodud uuringu peamised tulemused SARS-CoV-2 klaadide ja muret teki
 Selleks saab:
 * joonistel valida ajavahemikku, mille kohta andmed kuvatakse
 * valida, kas kuvatakse reisimisega seotud juhud või riigisisesed.
+
+---
+KoroGeno-EST uuringus raames teevad koostööd:
+
+<img width="200" src="/img/logos/ut_logo.png">
+<img width="200" style="margin-top: -20px;" src="/img/logos/synlab_logo.png">
+<img width="200" style="margin-left: 30px;" src="/img/logos/terviseamet_logo.png">
+
+<strong>Rahastatakse liidu COVID-19 pandeemiale reageerimise raames</strong>
+<img width="200" src="/img/logos/eu-ee_logo.jpg">
 
 ---
 
