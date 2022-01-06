@@ -84,4 +84,4 @@ value="2021-01-01">
 
 Andmeid uuendatakse kord nädalas.
 
-/2021-12-27/
+/2022-01-04/
