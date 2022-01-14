@@ -28,6 +28,8 @@ COVID-19 puhanguga seotud toor- ja assambleeritud SARS-CoV-2 järjestused, sealh
 
 ---
 
+#### KoroGeno-EST viiruse genoomi sekveneerimine
+
 KoroGeno-EST uuringu eesmärgiks on sekveneerida (määrata genoomi koostis) ja analüüsida Eestis nakkusi põhjustanud ja põhjustavat SARS-CoV-2 täisgenoome ning viia neile läbi molekulaar-epidemioloogiline analüüs. KoroGeno-EST uuring toimub Tartu Ülikooli, Terviseameti ja SYNLAB Eesti OÜ koostöös.
 Siin on ära toodud uuringu peamised tulemused SARS-CoV-2 klaadide ja muret tekitavate variantide osakaalude kohta, mida saab külastaja ajas jälgida.
 Selleks saab:
