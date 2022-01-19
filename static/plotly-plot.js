@@ -580,7 +580,7 @@ $(document).ready(function () {
 
     $.ajax({
         async: true,
-        url: "/biobanks/seqdata_all_public.json",
+        url: "/biobanks/seqdata_all_public.json?updated=2022-01-18",
         dataType: "json",
         success: function (split) {
             let columns = split.columns;
@@ -591,7 +591,7 @@ $(document).ready(function () {
 
             $.ajax({
                 async: true,
-                url: "/biobanks/test_results.json",
+                url: "/biobanks/test_results.json?updated=2022-01-18",
                 dataType: "json",
                 success: function (split) {
                     let columns = split.columns;
