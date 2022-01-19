@@ -22,6 +22,8 @@ const clades = [
     "21G (Lambda)",
     "21H (Mu)",
     "21K (Omicron)",
+    "21L (Omicron)",
+    "21M (Omicron)",
 
     "19A",
     "19B",
@@ -50,7 +52,9 @@ const colorscheme = {
     "21F (Iota)": "#ffb442",
     "21G (Lambda)": "#fe903a",
     "21H (Mu)": "#ff6132",
-    "21K (Omicron)": "#f82e27",
+    "21K (Omicron)": "#ff5c30",
+    "21L (Omicron)": "#ff8939",
+    "21M (Omicron)": "#f82d28",
 
     "19A": "#d6dde0",
     "19B": "#ced5d9",
@@ -66,7 +70,7 @@ const colorscheme = {
 let data, test_results;
 
 let date_from = "2021-05-01";
-let date_to = "2022-01-11";
+let date_to = "2022-01-18";
 
 let domestic = true;
 let imported = true;
@@ -81,7 +85,7 @@ function getDateOfWeek(w, y) {
 function barPlot2(el, title, test_results, data) {
 
     let columns = _(data)
-        .map(v => v["Nädal_nr"])
+        .map(v => v["epiweek"])
         .uniq()
         .sortBy()
         .value();
@@ -94,8 +98,9 @@ function barPlot2(el, title, test_results, data) {
 
     let i = 0;
 
-    let weeks_labels = _.map(columns, (w, i) => {
-        return w + "<br>" + getDateOfWeek(Number(w), 2021).toISOString().split('T')[0];
+    let weeks_labels = _.map(columns, (epiweek, i) => {
+        let [year, w] = epiweek.split('-')
+        return w + "<br>" + getDateOfWeek(Number(w), Number(year)).toISOString().split('T')[0];
     });
 
 
@@ -107,13 +112,13 @@ function barPlot2(el, title, test_results, data) {
         if (row === 'Sekveneeritud') {
             for (let column of columns) {
                 counts.push(
-                    _.filter(d, v => (v["Nädal_nr"]) === column && (v["Nädal_nr"] + "") !== 'null').length
+                    _.filter(d, v => (v["epiweek"]) === column && (v["epiweek"] + "") !== 'null').length
                 );
             }
         } else if (row === 'Positiivne') {
             for (let column of columns) {
                 counts.push(
-                    _.filter(test_results, v => (v["week"]) === column && (v["ResultValue"] + "") === 'P')[0]['0']
+                    _.filter(test_results, v => (v["epiweek"]) === column && (v["ResultValue"] + "") === 'P')[0]['0']
                 );
             }
         }
@@ -348,7 +353,7 @@ function areaPlot(el, variable, data) {
         .value();
 
     let weeks = _(data)
-        .map(v => v["Nädal_nr"])
+        .map(v => v["epiweek"])
         .uniq()
         .sortBy()
         .value();
@@ -356,12 +361,14 @@ function areaPlot(el, variable, data) {
     let totals = [];
     let total = 0;
 
-    let weeks_labels = _.map(weeks, (w, i) => {
+    let weeks_labels = _.map(weeks, (epiweek, i) => {
 
-        total = _.filter(data, v => v["Nädal_nr"] === w).length;
+        let [year, w] = epiweek.split('-');
+
+        total = _.filter(data, v => v["epiweek"] === epiweek).length;
         totals.push(total);
 
-        return w + "<br>" + getDateOfWeek(Number(w), 2021).toISOString().split('T')[0];
+        return w + "<br>" + getDateOfWeek(Number(w), Number(year)).toISOString().split('T')[0];
     });
 
     // let traces = [];
@@ -415,7 +422,7 @@ function areaPlot(el, variable, data) {
         let d = _.filter(data, v => v[variable] === lineage);
 
         for (let week of weeks) {
-            let count = _.filter(d, v => v["Nädal_nr"] === week).length;
+            let count = _.filter(d, v => v["epiweek"] === week).length;
 
             trace.marker.size.push(
                 (count > 0) ? 12 : 1
@@ -521,10 +528,13 @@ function render() {
         }
     }
 
+    // console.log(filtered_data)
+
     filtered_data = _.filter(filtered_data, v => {
-        let w = v["Nädal_nr"];
-        return getDateOfWeek(Number(w), 2021).getTime() >= new Date(date_from).getTime() &&
-            getDateOfWeek(Number(w), 2021).getTime() <= new Date(date_to).getTime();
+        let [year, w] = v["epiweek"].split('-');
+
+        return getDateOfWeek(parseInt(w), parseInt(year)).getTime() >= new Date(date_from).getTime() &&
+            getDateOfWeek(parseInt(w), parseInt(year)).getTime() <= new Date(date_to).getTime();
     });
 
     areaPlot(document.getElementById('plotly-plot-clade'), "Clade_rerun", filtered_data);
