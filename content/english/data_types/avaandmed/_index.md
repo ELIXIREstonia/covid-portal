@@ -1,44 +1,44 @@
 ---
-title: Avaandmed
+title: Open data
 menu:
     main:
-        name: Avaandmed
-        identifier: avaandmed_data
-        parent: avaandmed
+        name: Open data
+        identifier: open_data
+        parent: Open data
         weight: 40
     horizontal:
-        name: Avaandmed
-        identifier: avaandmed_data
+        name: Open data
+        identifier: open_data
         weight: 40
 ---
 
-## Eesti avaandmed
+## Estonian open data
 
-Terviseameti koroonaviiruse avaandmed sisaldavad järgmisi andmestikke:
-* Viimase 14 päeva nakatunute arv 100 tuhande elaniku kohta Eestis 
-* Keskmise vanuse avaandmete andmestruktuuri kirjeldus 
-* Asukohapõhise statistika avaandmete andmestruktuuri kirjeldus 
-* Maakondliku ja kogutestide statistika avaandmete andmestruktuuri kirjeldus 
-* Covid-19 hospitaliseeritud patsientide keskmine vanus 
-* Covid-19 hospitaliseeritud patsientide haiglas viibimise aeg 
-* Covid-19 hospitaliseeritud patsientide vanuseline ja sooline profiil 
-* Covid-19 hospitaliseerimise statistika aegrida 
-* Covid-19 vaktsineerimise üleriigiline andmestik 
-* Covid-19 vaktsineerimise maakondade ülene andmestik 
-* Covid-19 vaktsineerimise maakondade, vanuserühmade ja soolise jaotuse andmestik 
+The Health Board's coronavirus open data contains the following datasets:
+* Number of infected persons per 100 thousand inhabitants in Estonia in the last 14 days
+* Description of the data structure of the open data for the average age
+* Description of the data structure of the open data for location-based statistics
+* Description of the data structure of the open data for the statistics of the county and the tests on the whole
+* The average age of patients hospitalized with Covid-19
+* The time the patients spent in the hospital with Covid-19
+* The age and gender profile of patients hospitalized with Covid-19
+* The time series of Covid-19 hospitalization statistics
+* Nationwide dataset of the Covid-19 vaccinations
+* County wide dataset of the Covid-19 vaccination
+* The dataset of county, age groups and gender distribution of Covid-19 vaccination 
 
-Ning on kättesaadavad [Terviseameti avaandmete](https://www.terviseamet.ee/et/koroonaviirus/avaandmed) kodulehel.
+These are available in the [Republic of Estonia Health Board](https://www.terviseamet.ee/et/koroonaviirus/avaandmed) home page (the page is in Estonian).
 
-## Teenused, mis kasutavad Eesti avaandmeid
+## Services that use Estonian open data
 
-[koroona.ut.ee](https://koroona.ut.ee) lehel on kättesaadavad järgnevad visualiseeringud:
-* [Koroonaviiruse leviku kaart](https://biit.cs.ut.ee/covid/kaart/)
-* [Koroonaviiruse põhjustatud COVID-19 haigusjuhtumid Eestis maakondade kaupa](https://biit.cs.ut.ee/covid/#/trajectories/Estonia?lang=et)
-* [Nädalane PCR-testide, haiglapatientide ja suremuse statistika vanusegruppide kaupa](https://biit.cs.ut.ee/covid/#/agegroups?lang=et)
-* [Testide statistika maakonniti ja kuude lõikes](https://biit.cs.ut.ee/covid/#/rahvastik/maakonniti)
-* [Positiivsete testide trajektoorid vanusegruppide kaupa](https://biit.cs.ut.ee/covid/#/trajectories/agegroups)
+The following visualizations are available on the page [koroona.ut.ee](https://koroona.ut.ee/?lang=en):
+* [Coronavirus transmission map](https://biit.cs.ut.ee/covid/kaart/?lang=en)
+* [The cases of COVID-19 caused by coronavirus in Estonia by counties](https://biit.cs.ut.ee/covid/#/trajectories/Estonia?lang=en)
+* [Weekly statistics on PCR tests, hospital patients and mortality by age group](https://biit.cs.ut.ee/covid/#/agegroups?lang=en)
+* [Test statistics by county and by month](https://biit.cs.ut.ee/covid/#/rahvastik/maakonniti) (the page is in Estonian)
+* [Trajectories of positive tests by age groups](https://biit.cs.ut.ee/covid/#/trajectories/agegroups?lang=en)
 
-[https://koroonakaart.ee/et](https://koroonakaart.ee/et) lehel on mitmed ülevaategraafikud, sh. vaktsineerimise edenemise kohta.
+[https://koroonakaart.ee/en](https://koroonakaart.ee/en) page has several overview charts, including on the progress of vaccination.
 
-[http://koroonavald.ee/](http://koroonavald.ee/) lehel on Eesti valdade ja linnade nakatumispingeread.
+[http://koroonavald.ee/](http://koroonavald.ee/) page contains the infection rankings of Estonian rural municipalities and cities (the page is in Estonian).
 

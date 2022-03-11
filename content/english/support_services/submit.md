@@ -1,5 +1,5 @@
 ---
-title: Andmete sisestamine
+title: Data submission
 toc: false
 menu:
     top_nav:
@@ -13,83 +13,78 @@ menu:
         pre: <i class="fas fa-paper-plane"></i>
 ---
 
-Avaldage oma COVID-19 uurimisandmed, et muuta see kättesaadavaks ülejäänud teadusringkonnale. Andmed tuleb hoiustada avalikus repositooriumis koos kirjeldavate metaandmetega. Paljude bioloogiliste andmetüüpide puhul on olemas rahvusvahelised andmebaasid, mida võib pidada _de facto_ standarditeks.
+Publish your COVID-19 research data to make it available to the rest of the scientific community. The data must be stored in a public repository with descriptive metadata. For many types of biological data, there are international databases that can be considered _de facto_ standards.
 
-### Andmete sisestamine
+### Data submission
 
-[ELIXIR Eesti](https://elixir.ut.ee/) (elixir@ut.ee) konsulteerib kus ja kuidas andmeid avalikus andmebaasis jagada. Ärge kartke meiega ühendust võtta, kui teil on küsimusi. Teie uurimisrühm ei pea olema seotud ühegi konkreetse institutsiooniga, et saada meie abi, oleme kättesaadavad, et aidata kõiki Eesti teadlasi.
+[ELIXIR Estonia](https://elixir.ut.ee/) (elixir@ut.ee) consults where and how to share data in a public database. Do not hesitate to contact us if you have any questions. Your research group does not have to be affiliated with any specific institution to receive our help, we are available to help all the Estonian researchers.
 
-Euroopa Bioinformaatika Instituut (EBI) omab mitmeid erinevaid rahvusvahelisi andmerepositooriumeid, mida võiks vajadusel kasutada. Lisainformatsiooni saab [COVID-19 Andmeportaali andmete esitamise lehekülgelt](https://covid19dataportal.ee/ee/support_services/submit/). Andmetüüpide puhul, mille jaoks sobivat rahvusvahelist repositooriumit ei ole või teie andmed on seotud isikuandmetega, mida tuleks säilitada turvalises keskkonnas, teeme koostööd [Tartu Ülikooli Teadusarvutuste keskusega](https://hpc.ut.ee/) ning leiame sobiva lahenduse vastavalt teie vajadustele. 
+European Bioinformatics Institute (EBI) has a number of different international data repositories that could be used, if necessary. Additional information is available on the [COVID-19 Data Portal Data Submission Page](https://covid19dataportal.ee/ee/support_services/submit/). For data types for which there is no suitable international repository or your data is related to personal data that should be stored in a secure environment, we cooperate with the [University of Tartu High Performance Computing Center](https://hpc.ut.ee/) and we will find a suitable solution according to your needs.
 
-Järgnevalt leiad meie andmete esitamise juhised igale konkreetsele andmetüübile:
+Here are our data submission guidelines for each specific data type:
 
-* ##### Genoomi ja transkriptoomi andmed
+* ##### Genomic and transcriptomic data
 
-    Viiruse toorandmed (järjestused), kuid ka kogutud ja annoteeritud genoomid esitataks [ENA andmebaasi](https://www.ebi.ac.uk/ena). [Dokumentatsioonist](https://ena-browser-docs.readthedocs.io/en/latest/help_and_guides/sars-cov-2-submissions.html) leiate õpetuse, kuidas SARS-CoV-2 andmeid üles laadida. Kindlasti tuleks enne toorandmete esitamist (nt. _Shotgun sequencing_) eemaldada inimesele spetsiifilised lugemid.
+    Raw virus data (sequences) as well as collected and annotated genomes would be submitted to the [ENA database](https://www.ebi.ac.uk/ena). [Documentation](https://ena-browser-docs.readthedocs.io/en/latest/help_and_guides/sars-cov-2-submissions.html) provides instructions on how to upload SARS-CoV-2 data. Be sure to remove human-specific readings before submitting raw data (such as _Shotgun sequencing_).
 
-    Peremeesorganismi (inimese) järjestuste andmed vajavad piiratud juurdepääsu implementeerimist, kuna tegemist on eri liiki isikuandmetega. [ELIXIR Eesti](https://elixir.ut.ee/) (elixir@ut.ee) võimaldab hoiustada neid andmeid turvaliselt koostöös [Tartu Ülikooli Teadusarvutuste keskusega](https://hpc.ut.ee/). Siiski tuleks arvestada, et enne sobivasse repositooriumisse üles laadimist, tuleb andmed nii hoiustada kui ka analüüsida turvalises keskkonnas. Ka sellega saab ELIXIR Eesti aidata. Isikuandmete ja eri liiku isikuandmete puhul on soovituslik laadida metaandmed sobivasse repositooriumisse koos informatsiooniga selle kohta, kes ja kuidas saab andmetele ligipääsu. Lisaks on soovituslik lisada oma andmekogumile püsiva identifikaatori (nt DOI), mida saab kasutada kui on vaja andmekogu viidata (nt artiklis). 
-   
+    The host (human) sequences need to be implemented with limited access, as these are different types of personal data. [ELIXIR Estonia](https://elixir.ut.ee/) (elixir@ut.ee) allows you to store this data securely in cooperation with the [University of Tartu High Performance Computing Conter](https://hpc.ut.ee/). However, it should be considered that the data must be stored and analyzed in a secure environment before being uploaded to a suitable repository. ELIXIR Estonia can also help with this. For personal data and sensitive personal data, it is recommended to upload the metadata to a suitable repository with information on who and how can access the data. In addition, it is recommended to add a permanent identifier (e.g., DOI) to your dataset, which can be used if the database reference is required (e.g., in an article).
 
     * [The European Nucleotide Archive (ENA)](https://www.ebi.ac.uk/ena)
-    * [ENA SARS-CoV-2 andmete sisestamise juhend](https://ena-browser-docs.readthedocs.io/en/latest/help_and_guides/sars-cov-2-submissions.html)
+    * [ENA SARS-CoV-2 data submission documentation](https://ena-browser-docs.readthedocs.io/en/latest/help_and_guides/sars-cov-2-submissions.html)
 
     ***
 
-* ##### Proteoomika andmed
+* ##### Proteomics data
 
-    Leidmaks kureeritud nimekirja sobilikest proteoomika repositooriumitest on soovituslik konsulteerida [FAIRsharing andmebaasi](https://fairsharing.org/) kasutades päringut ’[proteoomics](https://fairsharing.org/search/?q=proteomics&content=biodbcore&name=&taxonomies=&organisations=&shortname=&description=&supportlinks=&licenses=&countries=&maintainers=&expanded_onto_domains=&expanded_onto_disciplines=&user_defined_tags=&record_id=&miriam_id=&search_state=hidden)’.
+    To find a curated list of suitable proteomics repositories, it is recommended to consult the [FAIRsharing database](https://fairsharing.org/) using the query '[proteoomics](https://fairsharing.org/search/?q=proteomics&content=biodbcore&name=&taxonomies=&organisations = & shortname = & description = & supportlinks = & licenses = & countries = & maintainers = & expanded_onto_domains = & expanded_onto_disciplines = & user_defined_tags = & record_id = & miriam_id = & search_state = hidden)'.
 
-    Me soovitame kasutada [PRIDE](https://www.ebi.ac.uk/pride/) repositooriumit, mis on loodud [ProteomeXchange](http://www.proteomexchange.org/) konsrtsiumi poolt. Repositoorium võtab vastu valgu ja peptiidi identifitseerimise-/kvantifikatsiooniandmeid koos kaasnevate massspektromeetria andmetega, lisaks ka muid sellega seotud andmetüüpe. Andmete üleslaadimine toimub [PRIDE andmete üleslaadimise tööriista](https://www.ebi.ac.uk/pride/markdownpage/pridesubmissiontool) vahendusel.
+    We recommend using the [PRIDE](https://www.ebi.ac.uk/pride/) repository, created by the [ProteomeXchange](http://www.proteomexchange.org/) consortium. The repository receives protein and peptide identification/quantification data along with accompanying mass spectrometry data, as well as other related data types. Data is uploaded via the [PRIDE Data Upload Tool](https://www.ebi.ac.uk/pride/markdownpage/pridesubmissiontool).
 
-    Samuti tuleks teha kättesaadavaks muud liiki proteoomika andmeid. Selleks, et andmete oleksid teise kasutatavad ning analüüsiks ja integreerimiseks valmis, tuleks lisada üksikasjalik kirjeldus andmevormingust ning muutujatest. Iga valgu muutuja peaks tulema unikaalse identifikaatoriga, nagu UniProt ID või ENGS ID (samuti tuleks kirjeldada, mis andmete versiooni kasutati andmete sidumiseks/ühildamiseks).
+    Other types of proteomics data should also be made available. In order for the data to be usable and ready for analysis and integration, a detailed description of the data format and variables should be included. Each protein variable should come with a unique identifier, such as UniProt ID or ENGS ID (it should also describe which version of the data was used to link/match the data).
 
-    * [PRIDE andmerepositoorium](https://www.ebi.ac.uk/pride/) ja [PRIDE andmete üleslaadimise tööriist](https://www.ebi.ac.uk/pride/markdownpage/pridesubmissiontool)
-
-    ***
-
-* ##### Pldiandmed
-
-    Sõltuvalt pildiandmete tüübist, on soovituslik kasutada teemakohaseid repositooriumeid. Selleks palun konsulteeriga [BioImage Arhiivi](https://www.ebi.ac.uk/bioimage-archive/) soovituste tabelit.
-
-    * [BioImage Arhiiv](https://www.ebi.ac.uk/bioimage-archive/)
+    * [PRIDE data repository](https://www.ebi.ac.uk/pride/) ja [PRIDE data submission tool](https://www.ebi.ac.uk/pride/markdownpage/pridesubmissiontool)
 
     ***
 
-* ##### Biokeemia andmed
+* ##### Imaging data
 
-    Biokeemia andmete jaoks soovitame, et kasutajad esitaksid andmeid [ChEMBL](https://www.ebi.ac.uk/chembl/) andmebaasi, mis on EMBL-EBI juhitud käsitsi kureeritud andmebaasi bioaktiivsetele molekulidele. See ühendab keemilised andmed bioaktiivsuse ja genoomiliste andmetega, et oleks võimalik tõhusalt töötada välja uued ravimid. 
+    Depending on the type of imaging data, it is recommended to use thematic repositories. To do so, please consult the [BioImage Archive](https://www.ebi.ac.uk/bioimage-archive/) recommendations table.
+
+    * [BioImage Archive](https://www.ebi.ac.uk/bioimage-archive/)
+
+    ***
+
+* ##### Biochemistry data
+
+    For biochemistry data, we recommend that users submit data to the [ChEMBL](https://www.ebi.ac.uk/chembl/) database, which is a manually curated database for bioactive molecules run by EMBL-EBI. It combines chemical data with bioactivity and genomic data to effectively develop new drugs.
 
     * [ChEMBL](https://www.ebi.ac.uk/chembl/)
 
     ***
 
-* ##### Terviseandmed
+* ##### Health data
 
-    Isiklike andmete või eri liiki andmete puhul, ei ole soovituslik andmekaitse seaduse järgi neid avalikes andmerepositooriumites hoidustada. Sel juhul soovitame kontakteeruda [ELIXIR Eestiga](https://elixir.ut.ee/) (elixir@ut.ee) ning leiame teile sobiva lahenduse. 
+    In the case of personal data or sensitive personal data, it is not recommended to keep them in public data repositories according to the data protection law. In this case, we recommend that you contact [ELIXIR Estonia](https://elixir.ut.ee/) (elixir@ut.ee) and we will find a suitable solution for you.
 
-    * [ELIXIR Eesti](https://elixir.ut.ee/) (elixir@ut.ee)
+    * [ELIXIR Estonia](https://elixir.ut.ee/) (elixir@ut.ee)
 
     ***
 
-### Andmehalduse planeerimise toetamine
+### Supporting data management planning
 
-[ELIXIR Eesti](https://elixir.ut.ee/) (elixir@ut.ee) toetab teid andmehalduse planeerimisega projekti alguses, et andmejagamine oleks tõhusam [isiklike konsultatsioonide](elixir@ut.ee) kaudu andmehaldusplaanide loomise valdkonnas.
-Samuti saame aidata teil tuvastada sobivaid repositooriumeid ja rahvusvahelisi standardeid teie andmete kirjeldamiseks ja avaldamiseks. Lisaks pakume abi ka andmete üleslaadimise protsessil.
+[ELIXIR Estonia](https://elixir.ut.ee/) (elixir@ut.ee) supports you with data management planning at the beginning of the project to make data sharing more efficient through [personal consultations](elixir@ut.ee) in the field of creating data management plans.
+We can also help you identify suitable repositories and international standards for describing and publishing your data. In addition, we offer assistance with the data upload process.
 
-* [Esita soov andmehalduse konsultatsiooni jaoks ELIXIR Eestilt](https://elixir.ut.ee/) (elixir@ut.ee)
+* [Submit a request for data management consultation from ELIXIR Estonia](https://elixir.ut.ee/) (elixir@ut.ee)
 
-###### Andmete hoiustamine avalikes repositooriumites
+###### Data storage in public repositories
 
-Hoiustades andmeid avalikes repositooriumites, nõustute, et andmeid avaldatakse ning neid võib kasutada ja jagada vastavalt konkreetsetele tingimustele, mille on määranud andmete üleslaadija või repositoorium. Andmete lisamist avalikesse repositooriumitesse peetakse oluliseks, seega andmete jagamine võib anda tunnustust ja tsiteeringuid. Andmete avaldamisel antakse kaasa unikaalse püsiidentifikaator (nt DOI), mida on sageli vaja ajakirjas artikli avaldamiseks. Andmete jagamine on tihti nõutud ka rahastajate poolt.
+By storing data in a public repositories, you agree that the data will be published and may be used and shared in accordance with specific conditions set by the uploader or repository. The inclusion of data in public repositories is considered important, so data sharing can provide recognition and citations. The publication of the data is accompanied by a unique permanent identifier (e.g., DOI), which is often required for the publication of an article in a journal. Data sharing is also often required by funders.
 
-Vajaduse korral võib andmeid sageli avaldada embargoperioodiga, mis tähendab, et andmed ei avalikustata enne kuupäeva, mille olete seadnud.
+If necessary, the data can often be published with an embargo period, which means that the data will not be published before the date you set.
 
-_Pange tähele, et inimeste andmed vajavad erilisemat käsitlemist, kui on soov neid avalikuks teha._
+_Please note that personal data needs more special treatment than there is a desire to make it public._
 
-###### Andmete hoiustamine ülikoolis
+###### Data storage at the university
 
-Eestis ei ole hetkel sätestatud reegleid ega nõudeid andmete hoisustamise kohta. Üldine soovitus on tagada toodetud andmete pikaajaline säilitamine kas ülikooliga seotud või valdkonna spetsiifilistes andmete repositooriumis. Soovi korral palun kontakteeruge [ELIXIR Eestiga](https://elixir.ut.ee/) (elixir@ut.ee), kes aitab leida teile sobiva lahenduse. 
-
-##### Muud ressursid
-
-* [Eesti COVID-19 Andmeportaali soovitused andmete üles laadimise valdkonnas](https://covid19dataportal.ee/ee/support_services/submit/)
+There are currently no rules or requirements for data storage in Estonia. The general recommendation is to ensure the long-term storage of the data produced, either in a university-related or field-specific data repository. If you wish, please contact [ELIXIR Estonia](https://elixir.ut.ee/) (elixir@ut.ee), who will help you find a suitable solution.
