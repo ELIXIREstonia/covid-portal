@@ -1,33 +1,24 @@
 ---
-title: Protein data
+title: Proteoomika
 menu:
     main:
-        name: Published data
+        name: Avalikud andmed
         identifier: protein_data_data
         parent: protein_data
-        weight: 10
+        weight: 70
     horizontal:
-        name: Proteins
+        name: Proteoomika
         identifier: protein_data_data
-        weight: 20
-type: data_table
-datatypes_to_display:
-- "Category: Proteins"
+        weight: 70
 ---
-###### See also: [Guidelines for submitting protein data](../guidelines) | [Services: protein data](../services)
+###### Vaata ka: [Juhendid kuidas jagada proteoomika andmeid](../guidelines) | [Teenused: proteooika](../services)
 
-## Published Data
+## Avalikud andmed
 
-#### General useful data sources
+#### Kasulikud andmestikud
 
-* The [Human Protein Atlas (HPA)](https://www.proteinatlas.org)
-  provides open access to protein expression data across human organs,
-  tissues and cells. This protein resource is organized into focused
-  sections for tissue expression, subcellular expression, proteins in
-  the brain or in blood, proteins related to pathology and metabolic
-  pathways. A special page of HPA has been dedicated to [human proteins and
-  SARS-CoV-2](https://www.proteinatlas.org/humanproteome/sars-cov-2).
+*  [Human Protein Atlas (HPA)](https://www.proteinatlas.org) pakub avatud juurdepääsu valgu ekspressiooniandmetele inimese organites, kudedes ja rakkudes. HPA-s on eraldi alamjaotused, mis keskenduvad jaotatud koe ekspressioonile, subtsellulaarne ekspressioonile, valkude ekpressioonile ajus või veres, patoloogiate ja metaboolsete radadega seotud valgud. COVID-19-le on pühendatud spetsiaalne HPA leht [inimese valgud ja SARS-CoV-2](https://www.proteinatlas.org/humanproteome/sars-cov-2).
 
-#### Data available on the European COVID-19 Data Portal
+#### Euroopa COVID-19 Andmeportaali proteoomika andmed
 
-* [Sequence, functional and classification data on SARS-CoV-2 and host proteins](https://www.covid19dataportal.org/proteins?db=uniprot-covid19)
+* [SARS-CoV-2 ja peremeesorganismide valkude järjestused, funktsioonide ja klassifikatsiooni andmed](https://www.covid19dataportal.org/proteins?db=uniprot-covid19)

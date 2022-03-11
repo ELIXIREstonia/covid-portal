@@ -1,5 +1,5 @@
 ---
-title: Submit data
+title: Andmete sisestamine
 toc: false
 menu:
     top_nav:
@@ -13,88 +13,83 @@ menu:
         pre: <i class="fas fa-paper-plane"></i>
 ---
 
-Publish your COVID-19 research data to make it available for the rest of the research community. The data should be deposited in a public repository together with descriptive metadata. For many biological datatypes, there are international databases that can be considered _de facto_ standards.
+Avaldage oma COVID-19 uurimisandmed, et muuta see kättesaadavaks ülejäänud teadusringkonnale. Andmed tuleb hoiustada avalikus repositooriumis koos kirjeldavate metaandmetega. Paljude bioloogiliste andmetüüpide puhul on olemas rahvusvahelised andmebaasid, mida võib pidada _de facto_ standarditeks.
 
-### Submitting data
+### Andmete sisestamine
 
-[SciLifeLab](https://www.scilifelab.se/) (datacentre@scilifelab.se) or [NBIS](https://nbis.se/) (support@nbis.se)
-can provide personal consultations for where and how to share data in a public database. Do not hesitate to get in touch with us if you have any questions. Your research group does not have to be affiliated with any particular institution to get our help, we are available to help everyone affiliated with a university in Sweden.
+[ELIXIR Eesti](https://elixir.ut.ee/) (elixir@ut.ee) konsulteerib kus ja kuidas andmeid avalikus andmebaasis jagada. Ärge kartke meiega ühendust võtta, kui teil on küsimusi. Teie uurimisrühm ei pea olema seotud ühegi konkreetse institutsiooniga, et saada meie abi, oleme kättesaadavad, et aidata kõiki Eesti teadlasi.
 
-The European Bioinformatics Institute (EBI) hosts many different international data repositories which should be used if appropriate. For further information, see their [COVID-19 Data Portal data submission page](https://www.covid19dataportal.org/submit-data). For data types where no suitable international repository is available, your data can be deposited to the [SciLifeLab Data Repository](https://scilifelab.se/data/repository) which is run by the SciLifeLab Data Centre. For human data which needs to be stored in a safe environment with controlled access, SciLifeLab [can help with publishing and access control](https://www.scilifelab.se/data/humandata/).
+Euroopa Bioinformaatika Instituut (EBI) omab mitmeid erinevaid rahvusvahelisi andmerepositooriumeid, mida võiks vajadusel kasutada. Lisainformatsiooni saab [COVID-19 Andmeportaali andmete esitamise lehekülgelt](https://covid19dataportal.ee/ee/support_services/submit/). Andmetüüpide puhul, mille jaoks sobivat rahvusvahelist repositooriumit ei ole või teie andmed on seotud isikuandmetega, mida tuleks säilitada turvalises keskkonnas, teeme koostööd [Tartu Ülikooli Teadusarvutuste keskusega](https://hpc.ut.ee/) ning leiame sobiva lahenduse vastavalt teie vajadustele. 
 
-Here are our data submission guidelines for each specific data type:
+Järgnevalt leiad meie andmete esitamise juhised igale konkreetsele andmetüübile:
 
-* ##### Genomics & transcriptomics data
+* ##### Genoomi ja transkriptoomi andmed
 
-    We suggest that raw virus sequence data as well as assembled and annotated genomes are submitted to [ENA](https://www.ebi.ac.uk/ena). See documentation about submission at [SARS-CoV-2 submission](https://ena-browser-docs.readthedocs.io/en/latest/help_and_guides/sars-cov-2-submissions.html). Before submission of raw sequence data (e.g. shotgun sequencing) it is necessary to remove contaminating human reads.
+    Viiruse toorandmed (järjestused), kuid ka kogutud ja annoteeritud genoomid esitataks [ENA andmebaasi](https://www.ebi.ac.uk/ena). [Dokumentatsioonist](https://ena-browser-docs.readthedocs.io/en/latest/help_and_guides/sars-cov-2-submissions.html) leiate õpetuse, kuidas SARS-CoV-2 andmeid üles laadida. Kindlasti tuleks enne toorandmete esitamist (nt. _Shotgun sequencing_) eemaldada inimesele spetsiifilised lugemid.
 
-    Host (human) sequence data requires restricted access, and NBIS is building a local federated version of the European Genome-phenome Archive (EGA) in Sweden (EGA-SE), allowing for the publication of sensitive personal data within a legal framework. Until local EGA is available, the dataset should remain in the secure analysis environment (e.g., at Bianca on [Uppmax](https://www.uppmax.uu.se/)). SciLifeLab [can help with publishing and access control](https://www.scilifelab.se/data/humandata/). In any case, we recommend to make a metadata-only record in the [SciLifeLab Data Repository](/support_services/general_data_repository/) with contact details on how to get access, and for which a DOI (i.e., a persistent identifier) can be issued. The DOI can then be used in the article to refer to the dataset. Once the Swedish EGA is operational, and the dataset is deposited there, the access information can be changed to point to the EGA ID. See [DOI: 10.17044/NBIS/G000014](https://doi.org/10.17044/NBIS/G000014) for an example.
+    Peremeesorganismi (inimese) järjestuste andmed vajavad piiratud juurdepääsu implementeerimist, kuna tegemist on eri liiki isikuandmetega. [ELIXIR Eesti](https://elixir.ut.ee/) (elixir@ut.ee) võimaldab hoiustada neid andmeid turvaliselt koostöös [Tartu Ülikooli Teadusarvutuste keskusega](https://hpc.ut.ee/). Siiski tuleks arvestada, et enne sobivasse repositooriumisse üles laadimist, tuleb andmed nii hoiustada kui ka analüüsida turvalises keskkonnas. Ka sellega saab ELIXIR Eesti aidata. Isikuandmete ja eri liiku isikuandmete puhul on soovituslik laadida metaandmed sobivasse repositooriumisse koos informatsiooniga selle kohta, kes ja kuidas saab andmetele ligipääsu. Lisaks on soovituslik lisada oma andmekogumile püsiva identifikaatori (nt DOI), mida saab kasutada kui on vaja andmekogu viidata (nt artiklis). 
+   
 
     * [The European Nucleotide Archive (ENA)](https://www.ebi.ac.uk/ena)
-    * [ENA SARS-CoV-2 submission guildelines](https://ena-browser-docs.readthedocs.io/en/latest/help_and_guides/sars-cov-2-submissions.html)
-    * [SciLifeLab Data Repository for metadata records of sequence data with restricted access](https://scilifelab.se/data/repository)
+    * [ENA SARS-CoV-2 andmete sisestamise juhend](https://ena-browser-docs.readthedocs.io/en/latest/help_and_guides/sars-cov-2-submissions.html)
 
     ***
 
-* ##### Protein data
+* ##### Proteoomika andmed
 
-    For a curated list of relevant proteomics repositories see [FAIRsharing](https://fairsharing.org/) using the query ’[proteomics](https://fairsharing.org/search/?q=proteomics&content=biodbcore&name=&taxonomies=&organisations=&shortname=&description=&supportlinks=&licenses=&countries=&maintainers=&expanded_onto_domains=&expanded_onto_disciplines=&user_defined_tags=&record_id=&miriam_id=&search_state=hidden)’.
+    Leidmaks kureeritud nimekirja sobilikest proteoomika repositooriumitest on soovituslik konsulteerida [FAIRsharing andmebaasi](https://fairsharing.org/) kasutades päringut ’[proteoomics](https://fairsharing.org/search/?q=proteomics&content=biodbcore&name=&taxonomies=&organisations=&shortname=&description=&supportlinks=&licenses=&countries=&maintainers=&expanded_onto_domains=&expanded_onto_disciplines=&user_defined_tags=&record_id=&miriam_id=&search_state=hidden)’.
 
-    We recommend to use the [PRIDE](https://www.ebi.ac.uk/pride/) repository provided by the [ProteomeXchange](http://www.proteomexchange.org/) Consortium. The repository admits protein and peptide identification/quantification data with the accompanying mass spectra evidence and any other related data types. Submission is done using the [PX Submission Tool](https://www.ebi.ac.uk/pride/markdownpage/pridesubmissiontool).
+    Me soovitame kasutada [PRIDE](https://www.ebi.ac.uk/pride/) repositooriumit, mis on loodud [ProteomeXchange](http://www.proteomexchange.org/) konsrtsiumi poolt. Repositoorium võtab vastu valgu ja peptiidi identifitseerimise-/kvantifikatsiooniandmeid koos kaasnevate massspektromeetria andmetega, lisaks ka muid sellega seotud andmetüüpe. Andmete üleslaadimine toimub [PRIDE andmete üleslaadimise tööriista](https://www.ebi.ac.uk/pride/markdownpage/pridesubmissiontool) vahendusel.
 
-    Other types of proteomics data should also be made available, we recommend [SciLifeLab Data Repository](/support_services/general_data_repository/). In order to make the data useful and ready for analyses and integration, a detailed description of the data format and how the variables are organized should be provided. Each protein variable should come with a unique identifier such as UniProt ID or ENGS ID (and stating the versions used to link the data).
+    Samuti tuleks teha kättesaadavaks muud liiki proteoomika andmeid. Selleks, et andmete oleksid teise kasutatavad ning analüüsiks ja integreerimiseks valmis, tuleks lisada üksikasjalik kirjeldus andmevormingust ning muutujatest. Iga valgu muutuja peaks tulema unikaalse identifikaatoriga, nagu UniProt ID või ENGS ID (samuti tuleks kirjeldada, mis andmete versiooni kasutati andmete sidumiseks/ühildamiseks).
 
-    * [PRIDE repository](https://www.ebi.ac.uk/pride/) and [PX Submission Tool](https://www.ebi.ac.uk/pride/markdownpage/pridesubmissiontool)
-    * [SciLifeLab Data Repository for other types of proteomics data](https://scilifelab.se/data/repository)
-
-    ***
-
-* ##### Imaging data
-
-    Depending on the type of image data you have, different public repositories are available, please see the table at [BioImage Archive](https://www.ebi.ac.uk/bioimage-archive/).
-
-    * [BioImage Archive](https://www.ebi.ac.uk/bioimage-archive/)
+    * [PRIDE andmerepositoorium](https://www.ebi.ac.uk/pride/) ja [PRIDE andmete üleslaadimise tööriist](https://www.ebi.ac.uk/pride/markdownpage/pridesubmissiontool)
 
     ***
 
-* ##### Biochemistry
+* ##### Pldiandmed
 
-    We suggest that users submit data to [ChEMBL](https://www.ebi.ac.uk/chembl/) which is a manually curated database of bioactive molecules with drug-like properties run by EMBL-EBI. It brings together chemical, bioactivity and genomic data to aid the translation of genomic information into effective new drugs.
+    Sõltuvalt pildiandmete tüübist, on soovituslik kasutada teemakohaseid repositooriumeid. Selleks palun konsulteeriga [BioImage Arhiivi](https://www.ebi.ac.uk/bioimage-archive/) soovituste tabelit.
+
+    * [BioImage Arhiiv](https://www.ebi.ac.uk/bioimage-archive/)
+
+    ***
+
+* ##### Biokeemia andmed
+
+    Biokeemia andmete jaoks soovitame, et kasutajad esitaksid andmeid [ChEMBL](https://www.ebi.ac.uk/chembl/) andmebaasi, mis on EMBL-EBI juhitud käsitsi kureeritud andmebaasi bioaktiivsetele molekulidele. See ühendab keemilised andmed bioaktiivsuse ja genoomiliste andmetega, et oleks võimalik tõhusalt töötada välja uued ravimid. 
 
     * [ChEMBL](https://www.ebi.ac.uk/chembl/)
 
     ***
 
-* ##### Health data
+* ##### Terviseandmed
 
-    In cases where data cannot be deposited into a public repository due to privacy restrictions we suggest creating a metadata-only record on the [SciLifeLab Data Repository](https://scilifelab.se/data/repository) with information about what data is available upon request and how such a request can be made. The repository is managed locally by the SciLifeLab Data Centre, and it allows to obtain a DOI which can then be referred to in the publication.
+    Isiklike andmete või eri liiki andmete puhul, ei ole soovituslik andmekaitse seaduse järgi neid avalikes andmerepositooriumites hoidustada. Sel juhul soovitame kontakteeruda [ELIXIR Eestiga](https://elixir.ut.ee/) (elixir@ut.ee) ning leiame teile sobiva lahenduse. 
 
-    * [SciLifeLab Data Repository](https://scilifelab.se/data/repository)
+    * [ELIXIR Eesti](https://elixir.ut.ee/) (elixir@ut.ee)
 
     ***
 
-### Support for data management planning
+### Andmehalduse planeerimise toetamine
 
-[SciLifeLab](https://www.scilifelab.se) and [NBIS](http://www.nbis.se/) can support you with Data Management Planning early on in the project to make data sharing more efficient, both through [personal consultations](https://nbis.se/support/supportform/index.php?form=consultation) and by providing a [customised tool](https://dsw.scilifelab.se/) to create Data Management Plans.
-We can also assist you in identifying relevant repositories and common international standards for describing and publishing your data, as well as guide you through the submission process.
+[ELIXIR Eesti](https://elixir.ut.ee/) (elixir@ut.ee) toetab teid andmehalduse planeerimisega projekti alguses, et andmejagamine oleks tõhusam [isiklike konsultatsioonide](elixir@ut.ee) kaudu andmehaldusplaanide loomise valdkonnas.
+Samuti saame aidata teil tuvastada sobivaid repositooriumeid ja rahvusvahelisi standardeid teie andmete kirjeldamiseks ja avaldamiseks. Lisaks pakume abi ka andmete üleslaadimise protsessil.
 
-* [Request Data Management consultation from NBIS](https://nbis.se/support/supportform/index.php?form=consultation)
+* [Esita soov andmehalduse konsultatsiooni jaoks ELIXIR Eestilt](https://elixir.ut.ee/) (elixir@ut.ee)
 
-###### Depositing data in a public repository
+###### Andmete hoiustamine avalikes repositooriumites
 
-By depositing data in a public repository, you accept that the data will be published and may be used and redistributed according to specific terms set by yourself or the repository in question. Data deposition is considered important and you may get credit and acknowledgement for sharing data. A publication often results in getting a unique identifier for your dataset, which is often required for a journal to accept a manuscript for publication. Data sharing is often required by funders.
+Hoiustades andmeid avalikes repositooriumites, nõustute, et andmeid avaldatakse ning neid võib kasutada ja jagada vastavalt konkreetsetele tingimustele, mille on määranud andmete üleslaadija või repositoorium. Andmete lisamist avalikesse repositooriumitesse peetakse oluliseks, seega andmete jagamine võib anda tunnustust ja tsiteeringuid. Andmete avaldamisel antakse kaasa unikaalse püsiidentifikaator (nt DOI), mida on sageli vaja ajakirjas artikli avaldamiseks. Andmete jagamine on tihti nõutud ka rahastajate poolt.
 
-If required, data can often be published with a set moratorium, which means that data will not go public until a date that you set.
+Vajaduse korral võib andmeid sageli avaldada embargoperioodiga, mis tähendab, et andmed ei avalikustata enne kuupäeva, mille olete seadnud.
 
-_Note that data from human individuals might need special considerations when it comes to publishing._
+_Pange tähele, et inimeste andmed vajavad erilisemat käsitlemist, kui on soov neid avalikuks teha._
 
-###### Storing the data at your university or SNIC
+###### Andmete hoiustamine ülikoolis
 
-In Sweden, raw measurement data that is generated in a project belongs to the university, while the results are owned by the researcher - the so called teacher's exception. Unless the data needs protection because of contractual obligations or personal privacy, for example in sensitive personal data such as biomedical measurements of humans, data is considered public.
+Eestis ei ole hetkel sätestatud reegleid ega nõudeid andmete hoisustamise kohta. Üldine soovitus on tagada toodetud andmete pikaajaline säilitamine kas ülikooliga seotud või valdkonna spetsiifilistes andmete repositooriumis. Soovi korral palun kontakteeruge [ELIXIR Eestiga](https://elixir.ut.ee/) (elixir@ut.ee), kes aitab leida teile sobiva lahenduse. 
 
-The university has the legal responsibility to archive the data. Data publishing as supported here is important for the research process, but does not replace the legal responsibility of the university. As a researcher, you are recommended to ensure long term storage of your data in facilities provided by your university. While a project is active, compute and storage services can be provided by [Swedish National Infrastructure for Computing, SNIC](https://snic.se).
+##### Muud ressursid
 
-##### Other resources
-
-* [SciLifeLab Data Guidelines](https://scilifelab-data-guidelines.readthedocs.io/en/latest/docs/index.html)
-* [The European COVID-19 Data Portal data submission information](https://www.covid19dataportal.org/submit-data)
+* [Eesti COVID-19 Andmeportaali soovitused andmete üles laadimise valdkonnas](https://covid19dataportal.ee/ee/support_services/submit/)

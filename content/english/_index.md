@@ -1,12 +1,12 @@
 ---
-title: Home
+title: Algus
 teststats:
-        name: Recent SARS-CoV-2 testing results
-        desc: Pages with recent data and visualizations on SARS-CoV-2 and COVID-19 tests carried out at various research facilities.
-        serologytitle: SARS-CoV-2 antibody tests at SciLifeLab
-
-        seemoretext: See all graphs
- 
+        name: Viimased SARS-CoV-2 testide tulemused
+        desc: Viimased tulemused ja visualiseeringud SARS-CoV-2 testide kohta
+        serologytitle: SARS-CoV-2 antikehade analüüs  
+        seemoretext: Vaata kõiki graafikuid
+       
 ---
 
-The Estonian COVID-19 Data Portal provides information, guidelines, tools and services to support researchers to utilise Swedish and European infrastructures for data sharing. The portal is a national node of the [European COVID-19 Data Portal](https://covid19dataportal.org). The portal is operated by the [ELIXIR Estonia](https://elixir.ut.ee/). Suggestions, corrections, and other comments are [most welcome](/contact/).
+Eesti COVID-19 Andmeportaal pakub teavet, juhiseid, tööriistu ja teenuseid, et toetada teadlasi Eesti ja Euroopa teadustaristute kasutamiseks andmete jagamisel. Portaal on [Euroopa COVID-19 Andmeportaali](https://covid19dataportal.org) Eesti versioon. Portaali haldab [ELIXIR Eesti](https://scilifelab.se/data/). Ettepanekud, parandused ja muud kommentaarid on [teretulnud](/contact/).
+

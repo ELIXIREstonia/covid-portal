@@ -1,13 +1,13 @@
 ---
-title: Contact and suggestions form
+title: Võta meiega ühendust
 menu:
     footer_about:
-        name: Suggestions and contact
+        name: Kontaktivorm
         weight: 5
 aliases:
     - /suggestions/
 ---
 
-If you have a dataset that you would like to share but you are not sure how to do it or if you have a data management question for your project on COVID-19, [the team behind the Swedish COVID-19 Data Portal](/about/) will be happy to help you find a good solution. Fill out the form below or send us an email: [datacentre@scilifelab.se](mailto:datacentre@scilifelab.se).
+Kui teil on andmestik, mida soovite jagada, kuid te pole kindel, kuidas seda teha, või kui teil on oma projekti jaoks COVID-19-ga seotud andmehaldusküsimus, siis [ELIXIR Eesti](/meist/) aitab hea meelega hea lahenduse leida. Täitke allolev vorm või saatke meile e-kiri: [elixir@ut.ee](mailto:elixir@ut.ee).
 
-The Swedish COVID-19 Data Portal keeps track of available datasets, ongoing research projects, upcoming funding opportunities, publications, and preprints by researchers and organisations in Sweden relevant for research into COVID-19 and SARS-CoV-2. We welcome suggestions for new items that could be added to the portal by the community. Simply fill out the form below, and we will consider adding the suggested resource to the data portal. You are welcome to send links to your own datasets, projects, publications, etc. or suggest items published by others.
+Eesti COVID-19 Andmeportaal hoiab silma peal avalikel andmebaasidel, käimasolevatel uurimisprojektidel,  rahastamisvõimalustel, publikatsioonidel ja Eesti teadlaste ja organisatsioonide pre-printidel, mis on seotud COVID-19 ja SARS-CoV-2 teadustööga. Ootame ettepanekuid uute teemade kohta, mida teadlaskond tahaks siia portaali lisada. Täitke lihtsalt allolev vorm ja arutame soovitatud ressursi või teenuse lisamist andmeportaali. Võite saata linke oma andmekogudele, projektidele, publikatsioonidele jne või soovitada teisi huvipakkuvaid infokilde. 

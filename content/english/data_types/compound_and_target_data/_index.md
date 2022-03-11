@@ -1,14 +1,14 @@
 ---
-title: Biochemistry
+title: Biokeemia
 menu:
     main:
         identifier: compound_and_target_data
         parent: data_types
-        weight: 40
+        weight: 50
         pre: <i class="fas fa-bullseye"></i>
 ---
 
-Data on compounds and targets primarily describe small molecules and their activity interacting with target molecules.
+Keemiliste ühendite ja sihtmärkide andmed, mis kirjeldavad väikseid molekule ja nende omavahelist aktiivsust. 
 
 * [Published data](data)
 * [Data guidelines](guidelines)

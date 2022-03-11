@@ -1,17 +1,8 @@
 ---
-title: Genomics & transcriptomics
-menu:
-    main:
-        identifier: genomics_transcriptomics
-        parent: data_types
-        weight: 10
-        pre: <i class="fas fa-dna"></i>
+title: Genoomika ja transkriptoomika andmed
 ---
 
-Genomics and transcriptomics refers to the study of DNA and RNA, typically using High-throughput sequencing.
+* [Genoomika ja transkriptoomika andmed](https://covid19dataportal.ee/genomics_transcriptomics/)
+* Eestis kogutud proovide sekventsidel põhinevat omavahelist sarnasust saab vaadata [Nextrain auspice rakenduses](https://auspice.biit.cs.ut.ee/ncov/est)
+* Eestis kogutud proovide sekveneerimisandmetest leitud viirustüvede analüüs [Observable rakenduses](https://covid19dataportal.ee/observable)
 
-To find out more, please visit the following pages:
-
-* [Published data](data)
-* [Guidelines for data producers](guidelines)
-* [Services for researchers](services)
