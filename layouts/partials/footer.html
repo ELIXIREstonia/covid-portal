@@ -19,14 +19,14 @@
       {{ end }}
       </ul>
     </div>
-    <div class="col-md">
-      <h2 class="small text-uppercase text-black-50">{{ if eq $.Site.Language.LanguageName "Eesti" }}Andmeportaali teenused{{ else }}Portal services{{ end }}</h2>
-      <ul class="list-unstyled">
-      {{ range .Site.Menus.footer_sections }}
-              <li><a href="{{ .Page.RelPermalink }}">{{ if eq .Page.Section "biobanks" }}<i class="fas fa-vials mr-1"></i>{{ end }}{{ .Name }}</a></li>
-      {{ end }}
-      </ul>
-    </div>
+<!--    <div class="col-md">-->
+<!--      <h2 class="small text-uppercase text-black-50">{{ if eq $.Site.Language.LanguageName "Eesti" }}Andmeportaali teenused{{ else }}Portal services{{ end }}</h2>-->
+<!--      <ul class="list-unstyled">-->
+<!--      {{ range .Site.Menus.footer_sections }}-->
+<!--              <li><a href="{{ .Page.RelPermalink }}">{{ if eq .Page.Section "biobanks" }}<i class="fas fa-vials mr-1"></i>{{ end }}{{ .Name }}</a></li>-->
+<!--      {{ end }}-->
+<!--      </ul>-->
+<!--    </div>-->
     <div class="col-md">
       <h2 class="small text-uppercase text-black-50">{{ if eq $.Site.Language.LanguageName "Eesti" }}Välised teenused{{ else }}External services{{ end }}</h2>
       {{ range .Site.Menus.main }}
