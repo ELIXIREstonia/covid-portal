@@ -43,7 +43,7 @@ KoroGeno-EST uuringus raames teevad koostööd:
 <img width="200" style="margin-top: -20px;" src="/img/logos/synlab_logo.png">
 <img width="200" style="margin-left: 30px;" src="/img/logos/terviseamet_logo.png">
 
-<strong>Rahastatakse liidu COVID-19 pandeemiale reageerimise raames</strong>
+<strong>Rahastatakse Euroopa Liidu COVID-19 pandeemiale reageerimise raames</strong>
 <img width="200" src="/img/logos/eu-ee_logo.jpg">
 
 ---
@@ -82,7 +82,7 @@ value="2021-01-01">
 * Eestis kogutud proovide sekventsidel põhinevat omavahelist sarnasust saab vaadata [Nextrain auspice rakenduses](https://auspice.biit.cs.ut.ee/ncov/est)
 * Eestis kogutud proovide sekveneerimisandmetest leitud viirustüvede analüüs [Observable rakenduses](https://covid19dataportal.ee/observable)
 
---- 
+---
 
 Andmeid uuendatakse kord nädalas.
 

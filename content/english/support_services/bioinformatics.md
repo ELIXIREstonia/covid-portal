@@ -1,5 +1,5 @@
 ---
-title: Bioinformaatika ja andmehaldus
+title: Bioinformatics & Data Management
 menu:
     main:
         name: Bioinformatics
@@ -10,23 +10,22 @@ menu:
 ---
 
 ![ELIXIR Estonia Logo](/img/logos/ELIXIR_ESTONIA_white_background.png#floatright)
-[ELIXIR Eesti](https://elixir.ut.ee/) pakub erinevaid võimalusi, et aidata teid COVID-19 seotud uurimisprojektiga.
-Meil töötavad mitmed eksperdid, kes saavad teid toetada bioinformaatika analüüsidega, süsteemide arendamisega ja andmehaldusega.
-Kõigis meie projektides oleme pühendunud õiglasele ja reprodutseeritavale teadustööle, mis vastab kõrgeimatele teaduslikele standarditele.
+[ELIXIR Estonia](https://elixir.ut.ee/) offers various options to help you with a COVID-19 related research project.
+We have a number of experts who can support you with bioinformatics analysis, systems development and data management.
+In all our projects, we are committed to FAIR and reproducible research that meets the highest scientific standards.
 
-Praegu on prioriteediks seatud COVID-19ga seotud uurimisprojekte.
+Research projects related to COVID-19 are currently a priority.
 
-## Bioinformaatika
+## Bioinformatics
 
-Meie töögrupp koosneb bioinformaatikutest, kellel on väga suur kogemuste pagas. Omame oskusi geneetiline variatsioonide analüüsides, ekspressiooni analüüsides, ühe raku/kogu genoomi assambleerimises ja annotatsioonis, fülogenoomikas, proteoomikas, metaboloomikas, masinaõppes, suure andmetega (_big data_) töötlemises, integratiivses analüüsis ja biostatistikas.
+Our team consists of bioinformatics with a wealth of experience. We have skills in genetic analysis of variation, expression analysis, single cell / whole genome assembly and annotation, phylogenomics, proteomics, metabolomics, machine learning, (_big data_) processing, integrative analysis, and biostatistics.
 
-## Süsteemi arendamine
+## Systems development
 
-Süsteemi arendajate meeskond saab aidata kõigega, alates tööriistades ja koodi optimeerimisest kuni portaalide, ressursside ja andmebaaside koostamiseni. 
+The system development team can help with everything from tools and code optimization to the creation of portals, resources and databases.
 
-## Andmehaldus
+## Data management
 
-Andmekogude kättesaadavaks tegemiseks Euroopa COVID-19 andmeportaalides (vaata peatükki [andmete sisetamine](https://covid19dataportal.ee/ee/support_services/submit/). [ELIXIR Eesti](https://elixir.ut.ee/) (elixir@ut.ee) saab teid aidata andmehalduse planeerimisel, andmete FAIR printsiipidele vastavaks tegemisel ning andmete avaldamisel avalikes repositooriumites vastavalt rahvusvaheliselt kokkulepitud standarditele.
+To make the databases available on the European COVID-19 data portals (see chapter [data entry](https://covid19dataportal.ee/ee/support_services/submit/). [ELIXIR Estonia](https://elixir.ut.ee/) (elixir @ ut.ee) can help you plan data management, make data compliant with FAIR principles and publish data in public repositories according to internationally agreed standards.
 
-Et muuta teie teadusuuringud ja andmete jagamine tõhusamaks, on soovitatav (mõnikord nõutav ka projekti rahastajate poolt) luua projekti alguses andmehaldusplaan. Andmehaldusplaan (DMP) on dokument, milles on öeldud, kuidas kavatsete töödelda uusi ja olemasolevaid andmeid, nii oma uurimisprojekti vältel kui ka pärast projekti lõppu. 
-
+To make your research and data sharing more efficient, it is recommended (sometimes also required by project funders) to create a data management plan at the beginning of the project. A Data Management Plan (DMP) is a document that tells you how you plan to process new and existing data, both during and after your research project.

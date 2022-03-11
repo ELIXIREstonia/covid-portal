@@ -1,5 +1,5 @@
 ---
-title: Biokeemia
+title: Biochemistry
 menu:
     main:
         identifier: compound_and_target_data
@@ -8,7 +8,7 @@ menu:
         pre: <i class="fas fa-bullseye"></i>
 ---
 
-Keemiliste ühendite ja sihtmärkide andmed, mis kirjeldavad väikseid molekule ja nende omavahelist aktiivsust. 
+Data on compounds and targets primarily describe small molecules and their activity interacting with target molecules. 
 
 * [Published data](data)
 * [Data guidelines](guidelines)

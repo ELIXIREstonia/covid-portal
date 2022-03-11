@@ -1,17 +1,17 @@
 ---
-title: Tugiteenused
+title: Support Services
 menu:
     top_nav:
         weight: 30
         identifier: support_services
     main:
         identifier: support_services
-        post: Teenused COVID-19 uurivatele Eesti teadlastele
+        post: General support services for Estonian COVID-19 researchers.
         weight: 20
 ---
 
-* [**Andmete avalikustamine ja andmehalduse planeerimine**](submit)
-* [Bioinformaatika & andmehaldus](bioinformatics)
-* [Üldised andmekogud](general_data_repository)
-* [Teenused](resources)
-* [Kirjandus](text_and_literature)
+* [**Submitting data and data management planning**](submit)
+* [Bioinformatics & Data Management](bioinformatics)
+* [General data repository](general_data_repository)
+* [Resources](resources)
+* [Text and literature](text_and_literature)
