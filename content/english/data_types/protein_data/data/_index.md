@@ -1,24 +1,30 @@
 ---
-title: Proteoomika
+title: Protein data
 menu:
     main:
-        name: Avalikud andmed
+        name: Published data
         identifier: protein_data_data
         parent: protein_data
         weight: 70
     horizontal:
-        name: Proteoomika
+        name: Proteins
         identifier: protein_data_data
         weight: 70
 ---
-###### Vaata ka: [Juhendid kuidas jagada proteoomika andmeid](../guidelines) | [Teenused: proteooika](../services)
+###### See also: [Guidelines for submitting protein data](../guidelines) | [Services: protein data](../services)
 
-## Avalikud andmed
+## Published Data
 
-#### Kasulikud andmestikud
+#### General useful data sources
 
-*  [Human Protein Atlas (HPA)](https://www.proteinatlas.org) pakub avatud juurdepääsu valgu ekspressiooniandmetele inimese organites, kudedes ja rakkudes. HPA-s on eraldi alamjaotused, mis keskenduvad jaotatud koe ekspressioonile, subtsellulaarne ekspressioonile, valkude ekpressioonile ajus või veres, patoloogiate ja metaboolsete radadega seotud valgud. COVID-19-le on pühendatud spetsiaalne HPA leht [inimese valgud ja SARS-CoV-2](https://www.proteinatlas.org/humanproteome/sars-cov-2).
+*  The [Human Protein Atlas (HPA)](https://www.proteinatlas.org)
+  provides open access to protein expression data across human organs,
+  tissues and cells. This protein resource is organized into focused
+  sections for tissue expression, subcellular expression, proteins in
+  the brain or in blood, proteins related to pathology and metabolic
+  pathways. A special page of HPA has been dedicated to [human proteins and
+  SARS-CoV-2](https://www.proteinatlas.org/humanproteome/sars-cov-2).
 
-#### Euroopa COVID-19 Andmeportaali proteoomika andmed
+#### Data available on the European COVID-19 Data Portal
 
-* [SARS-CoV-2 ja peremeesorganismide valkude järjestused, funktsioonide ja klassifikatsiooni andmed](https://www.covid19dataportal.org/proteins?db=uniprot-covid19)
+* [Sequence, functional and classification data on SARS-CoV-2 and host proteins](https://www.covid19dataportal.org/proteins?db=uniprot-covid19)

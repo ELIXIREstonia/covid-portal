@@ -14,19 +14,19 @@ menu:
 
 <figure class="figure float-right"><img width="500" src="/img/logos/ELIXIR_ESTONIA_white_background.png"></figure>
 
-Eesti COVID-19 andmeportaal pakub teavet, juhiseid, tööriistu ja teenuseid, et toetada teadlasi Eesti ja Euroopa teadustaristute kasutamiseks andmete jagamisel, eriti [Euroopa COVID-19 andmeportaalis](https://covid19dataportal.org). Veebilehte ajakohastatakse regulaarselt uute teenuste, tööriistade ja andmetega. Soovitused, parandused või muud kommentaarid on teretulnud.
+The Estonian COVID-19 Data Portal provides information, guidelines, tools and services to support researchers to utilise Estonian and European infrastructures for data sharing, in particular the European COVID-19 Data Portal. It is regularly updated with new services, tools and data. Suggestions, corrections or other comments are most welcome.
 
-Eesti COVID-19 andmeportaali haldab [ELIXIR Eesti](https://elixir.ut.ee/).
+The Estonian COVID-19 Data Portal is operated by the [ELIXIR Eesti](https://elixir.ut.ee/).
 
-See veebileht on loodud kasutades [Hugot](https://gohugo.io/), [Bootstrap](https://getbootstrap.com/) raamistikku. Lisaks kasutame [Vega/Vega-Lite](https://vega.github.io/vega-lite/) ja [Plotlyt](https://plotly.com/) interaktiivsete graafikute jaoks,  [DataTables](https://datatables.net/) ja [Select2](https://select2.org/) jQuery jaoks. Veebilehe kood on vabalt kättesaadaval vastavalt ([MIT litsentsile](https://choosealicense.com/licenses/mit/)) [GitHubis: github.com/ElixirEstonia/covid-portal](https://github.com/ELIXIREstonia/covid-portal)
+This website is built using[Hugot](https://gohugo.io/), and uses the [Bootstrap](https://getbootstrap.com/) framework.  In addition, we make use of [Vega/Vega-Lite](https://vega.github.io/vega-lite/) ja [Plotly](https://plotly.com/) for interactive graphics, [DataTables](https://datatables.net/) and [Select2](https://select2.org/) for jQuery. The code is open source ([MIT litsentsile](https://choosealicense.com/licenses/mit/)) and is available on [GitHub: github.com/ElixirEstonia/covid-portal](https://github.com/ELIXIREstonia/covid-portal)
 
-Kui soovid panustada, siis võta meiega ühendust [elixir@ut.ee](mailto:elixir@ut.ee).
+We welcome contributions to the website - to get involved, please contact [elixir@ut.ee](mailto:elixir@ut.ee).
 
-### Portaaliga seotud inimesed
+### People behind the portal
 
-Antud veebileht baseerub Rootsi kolleegide tööl. Nende kohta saad lähemalt lugeda [GitHubis](https://github.com/ScilifelabDataCentre/covid-portal/graphs/contributors). 
+This website is based on the work of our Swedish colleagues. You can read more about them on [GitHub] (https://github.com/ScilifelabDataCentre/covid-portal/graphs/contributors).
 
-Eesti COVID-19 andmeportaali haldavad ELIXIR Eesti liikmed. Oleme valmis vastama andmete kättesaadavuse, jagamise, halduse jms teemadele kui saadate meile emaili. 
+The Estonian COVID-19 data portal is managed by ELIXIR Estonia members. We are ready to answer your questions about data availability, sharing, administration, etc. when you send us an email.
 
 <div class="container mb-3">
   <div class="row">
@@ -34,7 +34,7 @@ Eesti COVID-19 andmeportaali haldavad ELIXIR Eesti liikmed. Oleme valmis vastama
       <div class="row-cor"><img src="/img/people/Hedi.png" width="150" /></div>
       <div style="margin-left: 23px;">
         <div class="row-cor"><b>Hedi Peterson</b></div>
-        <div class="row-cor"><span class="text-muted">ELIXIR Eesti</span></div>
+        <div class="row-cor"><span class="text-muted">ELIXIR Estonia</span></div>
       </div>
     </div>
   </div>
@@ -46,13 +46,13 @@ Eesti COVID-19 andmeportaali haldavad ELIXIR Eesti liikmed. Oleme valmis vastama
       <div class="row-cor"><img src="/img/people/Ivan.png" width="150" /></div>
       <div style="margin-left: 23px;">
         <div class="row-cor"><b>Ivan Kuzmin</b></div>
-        <div class="row-cor"><span class="text-muted">Eesti COVID-19 Andmeportaali veebimeister</span></div>
+        <div class="row-cor"><span class="text-muted">Estonian COVID-19 Data Portal webmaster </span></div>
       </div>
     </div>
   </div>
 </div>
 
-Portaali aitab teadlastel jõuda paljude erinevate COVID-19 projektidega seotud teenusteni. Andmehalduse küsimustega tegeleb ELIXIR Eesti andmehaldur [ELIXIR Eesti](https://elixir.ut.ee/). 
+The portal helps researchers access services related to many different COVID-19 projects. Data management issues are handled by ELIXIR Estonian Data Administrator [ELIXIR Estonia](https://elixir.ut.ee/). 
 
 <div class="container">
    <div class="row">
@@ -60,7 +60,7 @@ Portaali aitab teadlastel jõuda paljude erinevate COVID-19 projektidega seotud 
        <div class="row-cor"><img src="/img/people/Heleri.png" width="150" /></div>
        <div style="margin-left: 23px;">
          <div class="row"><b>Heleri Inno</b></div>
-         <div class="row"><span class="text-muted">Andmehaldur, ELIXIR Eesti</span></div>
+         <div class="row"><span class="text-muted">Data manager, ELIXIR Estonia</span></div>
        </div>
      </div>
     </div>
@@ -68,13 +68,14 @@ Portaali aitab teadlastel jõuda paljude erinevate COVID-19 projektidega seotud 
 
 <br>
 
-##### ELIXIR Eesti
+##### ELIXIR Estonia
 
 [https://elixir.ut.ee](https://elixir.ut.ee)
 
-ELIXIR Eesti, Eesti eluteaduste teadustaristu, on Euroopa eluteaduste teadustaristu liige aastast 2013. ELIXIR on 23 riiki ühendav Euroopa eluteaduste teadustaristu, mille kasutajad on sajad tuhanded molekulaarbioloogia, keskkonnateaduste, põllumajanduse ja arstiteaduse teadlased. Kõik need teadlased loovad väga eriilmelisi andmeid, mille analüüsiks on vaja tipptasemel tarkvarateenuseid ja halduseks kestlikke andmebaase. ELIXIRi teadustaristu eesmärk on ühendada eluteaduse andmete, tööriistade, arvutiressursi, standardite ja koolituse teenusepakkujad ühtseks taristuks, mille liikmetel on bioloogiliste andmete esitamise ja juhtimise kaasvastutus.Selle asemel, et koondada teadmisi ja vahendeid ühte kohta, on ELIXIRi hajusa ülesehituse eesmärk liikmete tugevustele toetumine. ELIXIR Eestit rahastatakse Euroopa Struktuurivahenditest, Eesti Teadusagentuuri tuumiktaristu toetusest ja Euroopa Komisjoni teadusprojektidest. ELIXIR Eesti keskendub peamiselt tipptasemel teenuste ja tööriistade arendamisele ja käigushoidmisele, eluteadlaste andmeanalüüsi suutlikkuse parandamisele koolituste pakkumise teel ning metagenoomika- ja populatsiooniandmete haldamisele. Koostöös Eesti Teadusarvutuste Infrastruktuuriga (ETAIS) tagatakse veebiteenuste pidev kättesaadavus nii Eesti teadlastele kui väga suurele rahvusvahelisele kasutajaskonnale. 
+ELIXIR Estonia, the Estonian Life Sciences Research Infrastructure, has been a member of the European Life Sciences Research Infrastructure since 2013. ELIXIR is a European life sciences research infrastructure uniting 23 countries, used by hundreds of thousands of researchers in molecular biology, environmental sciences, agriculture and medicine. All of these researchers create very diverse data that requires state-of-the-art software services to analyze and sustainable databases to manage. The purpose of ELIXIR's research infrastructure is to bring together life sciences data, tools, computing, standards and training providers into a single infrastructure whose members share responsibility for the presentation and management of biological data. ELIXIR Estonia is funded by the European Structural Funds, the support of the core infrastructure of the Estonian Research Agency and research projects of the European Commission. ELIXIR Estonia mainly focuses on the development and maintenance of state-of-the-art services and tools, the improvement of life researchers' data analysis capabilities through the provision of training, and the management of metagenomics and population data. In co-operation with the Estonian Research Computing Infrastructure (ETAIS), the continuous availability of web services is ensured for both Estonian researchers and a very large international user community.
 
-COVID-19 pandeemia algusest alates on ELIXIR Eesti panustanud avalike andmeanalüüsi vahendite loomisele, seireuuringu andmete töötlemisele ja visualiseerimisele ja 2021. aasta kevadest ka SARS-COV-2 viirusjärjestuste analüüsile, tulemuste visualiseerimisele.
+Since the beginning of the COVID-19 pandemic, ELIXIR Estonia has contributed to the creation of public data analysis tools, the processing and visualization of surveillance data and, from the spring of 2021, the analysis of SARS-COV-2 virus sequences and the visualization of results.
 
-ELIXIR Eesti loodi 2013 nelja teadusasutuse koostöös: [Tartu Ülikool](https://www.ut.ee/), [Tallinna Tehnikaülikool](https://www.ttu.ee/), [Keemilise ja bioloogilise füüsika instituut](https://www.kbfi.ee/) ja [Eesti Biokeskus (nüüdseks Tartu Ülikooli osa)](https://www.ut.ee/). ELIXIR Eesti teenuste sihtgrupiks on kõik Eesti teadlased.
+ELIXIR Estonia was established in 2013 in cooperation with four research institutions: [University of Tartu](https://www.ut.ee/), [Tallinn University of Technology] (https://www.ttu.ee/), [Institute of Chemical and Biological Physics](https://www.kbfi.ee/) and [Estonian Biocentre (now part of the University of Tartu)](https://www.ut.ee/). In 2021 [Tallinn University](https://tlu.ee) and [University of Life Sciences](https://emu.ee) joined ELIXIR Estonia. The target group of ELIXIR Estonia's services is all Estonian researchers.
+
 

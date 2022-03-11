@@ -1,8 +1,8 @@
 ---
-title: Genoomika ja transkriptoomika andmed
+title: Genomis and transcriptsomics data 
 ---
 
-* [Genoomika ja transkriptoomika andmed](https://covid19dataportal.ee/genomics_transcriptomics/)
-* Eestis kogutud proovide sekventsidel põhinevat omavahelist sarnasust saab vaadata [Nextrain auspice rakenduses](https://auspice.biit.cs.ut.ee/ncov/est)
-* Eestis kogutud proovide sekveneerimisandmetest leitud viirustüvede analüüs [Observable rakenduses](https://covid19dataportal.ee/observable)
+* [Genomis and transcriptsomics data](https://covid19dataportal.ee/genomics_transcriptomics/)
+* Estonian SARS-CoV-2 sample sequence similarity can be viewed in the [Nextrain auspice application] (https://auspice.biit.cs.ut.ee/ncov/est)
+* Estonian SARS-CoV-2 sample sequence analysis of virus strains can be viewed in the  [Observable application] (https://covid19dataportal.ee/observable) 
 
