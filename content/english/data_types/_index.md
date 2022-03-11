@@ -1,14 +1,14 @@
 ---
-title: Andmetüübid
+title: Data types
 menu:
     main:
         identifier: data_types
-        post: Kliki, et näha andmetüüpi ja kättesaadavaid andmestikke. 
+        post: Click to see data types and accessible datasets.
         weight: 10
     homepage_available_data:
-        name: Avalikud andmed
+        name: Available data
         identifier: available_data
-        post: Eesti teadlaste avalikud andmed. <a href="/data_types/all/data/">Vaata kõiki avalikke andmeid <i class="fas fa-arrow-circle-right"></i></a>
+        post: Estonian available data. <a href="/data_types/all/data/">Check out all available data sets <i class="fas fa-arrow-circle-right"></i></a>
 
 ---
 
