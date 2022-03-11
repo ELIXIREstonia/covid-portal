@@ -3,12 +3,12 @@ title: Open data
 menu:
     main:
         name: Open data
-        identifier: Open_data
+        identifier: open_data
         parent: Open data
         weight: 40
     horizontal:
         name: Open data
-        identifier: Open_data
+        identifier: open_data
         weight: 40
 ---
 
