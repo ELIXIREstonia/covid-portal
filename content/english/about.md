@@ -1,16 +1,16 @@
 ---
-title: Meist
+title: About
 toc: false
 menu:
     top_nav:
-        name: Meist
+        name: About
         weight: 10
         identifier: about
     footer_about:
-        name: Meist
+        name: About
 ---
 
-### Ülevaade
+### About
 
 <figure class="figure float-right"><img width="500" src="/img/logos/ELIXIR_ESTONIA_white_background.png"></figure>
 
