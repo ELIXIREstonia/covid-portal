@@ -29,7 +29,7 @@ ETAIS on riiklik teadustaristu, mis teeb Eesti teadlastele kättesaadavaks suure
 ## Andmed
 
 ### Teksti- ja kirjanduse andmed
-Vaata [kirjanduse peatükki(../text_and_literature).
+Vaata [kirjanduse peatükki](../text_and_literature).
 
 ### Kliinilised uuringud
 
