@@ -36,7 +36,7 @@ Here are our data submission guidelines for each specific data type:
 
 * ##### Proteomics data
 
-    To find a curated list of suitable proteomics repositories, it is recommended to consult the [FAIRsharing database](https://fairsharing.org/) using the query '[proteoomics](https://fairsharing.org/search/?q=proteomics&content=biodbcore&name=&taxonomies=&organisations = & shortname = & description = & supportlinks = & licenses = & countries = & maintainers = & expanded_onto_domains = & expanded_onto_disciplines = & user_defined_tags = & record_id = & miriam_id = & search_state = hidden)'.
+    To find a curated list of suitable proteomics repositories, it is recommended to consult the [FAIRsharing database](https://fairsharing.org/) using the query '[proteoomics](https://fairsharing.org/search/?q=proteomics&content=biodbcore&name=&taxonomies=&organisations=&shortname=&description=&supportlinks=&licenses=&countries=&maintainers=&expanded_onto_domains=&expanded_onto_disciplines=&user_defined_tags=&record_id=&miriam_id=&search_state=hidden)'.
 
     We recommend using the [PRIDE](https://www.ebi.ac.uk/pride/) repository, created by the [ProteomeXchange](http://www.proteomexchange.org/) consortium. The repository receives protein and peptide identification/quantification data along with accompanying mass spectrometry data, as well as other related data types. Data is uploaded via the [PRIDE Data Upload Tool](https://www.ebi.ac.uk/pride/markdownpage/pridesubmissiontool).
 
