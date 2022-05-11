@@ -68,11 +68,13 @@ value="2021-01-01">
 <hr>
 <div id="plotly-plot-county"></div>
 <hr>
+<div id="plotly-plot-region"></div>
+<hr>
 <div id="plotly-plot-age"></div>
 <hr>
 <div id="plotly-plot-gender"></div>
 
-<script src="/plotly-plot.js?updated=2022-04-26"></script>
+<script src="/plotly-plot.js?updated=2022-05-11"></script>
 
 * Vastavad proovide absoluutarvud on toodud iga joonise kohal
 * Nii nagu elus looduses organisme, nii saab ka viiruseid (sealhulgas SARS-CoV-2 variante) geneetilise sarnasuse järgi erinevatesse rühmadesse jagada. Teatud vaatenurgast on kõik sellised rühmitamised sarnased, kuigi kasutavad erinevaid arvulisi väärtusi piiride tõmbamiseks (Nexclade klaad, Pangolin’i tüvi, VOC, viimane on küll defineeritud funktsionaalsete omaduse järgi). Sellist rühmitamist saab teha eri täpsusastmega. Antud juhul on kasutatud sellist täpsusastet, mis võimaldab kogu pilti veel visuaalselt hoomata – selleks on klaad. Ka on toodud sulgudes milliste VOC-de (variant of concern ehk muret tekitavad tüved) vastav klaad kuulub. VOC-dest on meil esinenud alfa, beta, gamma, delta ja nüüd omikron.
@@ -86,4 +88,4 @@ value="2021-01-01">
 
 Andmeid uuendatakse kord nädalas.
 
-/2022-04-26/
+/2022-05-11/

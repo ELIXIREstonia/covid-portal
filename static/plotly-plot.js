@@ -70,7 +70,7 @@ const colorscheme = {
 let data, test_results;
 
 let date_from = "2021-05-01";
-let date_to = "2022-04-26";
+let date_to = "2022-05-11";
 
 let domestic = true;
 let imported = true;
@@ -541,7 +541,10 @@ function render() {
 
     barPlot2(document.getElementById('plotly-plot-pos'), "Sekveneeritud proovide osakaal kõigist positiivsetest proovidest", test_results, filtered_data);
 
-    barPlot(document.getElementById('plotly-plot-county'), "Clade_rerun", "Maakond_standard", "SARS-CoV-2 klaadide osakaalud maakondades", filtered_data);
+    barPlot(document.getElementById('plotly-plot-county'), "Clade_rerun", "Maakond_standard", "Arhiveeritud joonis. Andmed 01.05.2021-30.04.2022 maakondade lõikes.", filtered_data);
+
+    barPlot(document.getElementById('plotly-plot-region'), "Clade_rerun", "Piirkond", "SARS-CoV-2 klaadide osakaalud piirkondades", filtered_data);
+
     barPlot(document.getElementById('plotly-plot-age'), "Clade_rerun", "Vanus_10", "SARS-CoV-2 klaadide osakaalud vanusegruppides", filtered_data);
 }
 
@@ -580,7 +583,7 @@ $(document).ready(function () {
 
     $.ajax({
         async: true,
-        url: "/biobanks/seqdata_all_public.json?updated=2022-04-26",
+        url: "/biobanks/seqdata_all_public.json?updated=2022-05-11",
         dataType: "json",
         success: function (split) {
             let columns = split.columns;
@@ -591,7 +594,7 @@ $(document).ready(function () {
 
             $.ajax({
                 async: true,
-                url: "/biobanks/test_results.json?updated=2022-04-26",
+                url: "/biobanks/test_results.json?updated=2022-05-11",
                 dataType: "json",
                 success: function (split) {
                     let columns = split.columns;
