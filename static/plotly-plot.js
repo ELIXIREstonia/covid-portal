@@ -25,6 +25,9 @@ const clades = [
     "21L (Omicron)",
     "21M (Omicron)",
 
+    "22B (Omicron)",
+    "22C (Omicron)",
+
     "19A",
     "19B",
     "20A",
@@ -37,24 +40,26 @@ const clades = [
 ];
 
 const colorscheme = {
-    "20H (Beta, V2)": "#5330cd",
-    "20I (Alpha, V1)": "#4756e7",
+    "20H (Beta, V2)": "rgb(119, 37, 198)",
+    "20I (Alpha, V1)": "rgb(91, 54, 229)",
 
-    "20J (Gamma, V3)": "#4a80e9",
-    "21A (Delta)": "#55a2da",
-    "21I (Delta)": "#67bbbf",
-    "21J (Delta)": "#7bcb9d",
+    "20J (Gamma, V3)": "rgb(79, 87, 252)",
+    "21A (Delta)": "rgb(79, 124, 255)",
+    "21I (Delta)": "rgb(86, 158, 255)",
+    "21J (Delta)": "rgb(97, 184, 241)",
 
-    "21B (Kappa)": "#97d27e",
-    "21C (Epsilon)": "#b5d864",
-    "21D (Eta)": "#d3d553",
-    "21E (Theta)": "#edcb49",
-    "21F (Iota)": "#ffb442",
-    "21G (Lambda)": "#fe903a",
-    "21H (Mu)": "#ff6132",
-    "21K (Omicron)": "#ff5c30",
-    "21L (Omicron)": "#ff8939",
-    "21M (Omicron)": "#f82d28",
+    "21C (Epsilon)": "rgb(129, 219, 189)",
+    "21D (Eta)": "rgb(149, 229, 161)",
+    "21F (Iota)": "rgb(198, 240, 113)",
+    "21G (Lambda)": "rgb(224, 238, 97)",
+    "21H (Mu)": "rgb(248, 233, 87)",
+    "21K (Omicron)": "rgb(255, 222, 79)",
+    "21L (Omicron)": "rgb(255, 203, 73)",
+    "21M (Omicron)": "rgb(255, 175, 67)",
+    "22A (Omicron)": "rgb(255, 139, 61)",
+
+    "22B (Omicron)": "rgb(255, 95, 52)",
+    "22C (Omicron)": "rgb(255, 50, 44)",
 
     "19A": "#d6dde0",
     "19B": "#ced5d9",
@@ -70,7 +75,7 @@ const colorscheme = {
 let data, test_results;
 
 let date_from = "2021-05-01";
-let date_to = "2022-05-11";
+let date_to = "2022-05-17";
 
 let domestic = true;
 let imported = true;
@@ -211,6 +216,7 @@ function barPlot(el, variable1, variable2, title, data) {
         .sortBy('name')
         // .reverse()
         .map(v => v.name)
+        .filter()
         // .filter(v => v !== 'null')
         .value();
 
@@ -583,7 +589,7 @@ $(document).ready(function () {
 
     $.ajax({
         async: true,
-        url: "/biobanks/seqdata_all_public.json?updated=2022-05-11",
+        url: "/biobanks/seqdata_all_public.json?updated=2022-05-17",
         dataType: "json",
         success: function (split) {
             let columns = split.columns;
@@ -594,7 +600,7 @@ $(document).ready(function () {
 
             $.ajax({
                 async: true,
-                url: "/biobanks/test_results.json?updated=2022-05-11",
+                url: "/biobanks/test_results.json?updated=2022-05-17",
                 dataType: "json",
                 success: function (split) {
                     let columns = split.columns;
