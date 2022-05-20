@@ -517,6 +517,125 @@ function areaPlot(el, variable, data) {
 }
 
 
+function _nextWeek(epiweek) {
+    let [year, week] = epiweek.split('-');
+
+    year = parseInt(year);
+    week = parseInt(week);
+
+    if (week === 52) {
+        year += 1;
+        week = 1;
+    }
+    else {
+        week += 1;
+    }
+    return year + '-' + String(week).padStart(2, '0');
+
+}
+
+function experimentalPlot(el, data) {
+
+    let traces = [];
+
+    let groupedByClade = _.groupBy(data, 'Clade_rerun');
+    let groupedByEpiweek = _.groupBy(data, 'epiweek');
+
+    let lineages = Object.keys(groupedByClade);
+
+    for (let lineage of lineages) {
+        let clade = groupedByClade[lineage]
+
+        let epiweeks = _.sortBy(_.uniq(_.map(clade, v => v.epiweek)));
+
+        let yData = [];
+
+        let lastEpiweek = false;
+
+
+        for (let epiweek of epiweeks) {
+            let total = groupedByEpiweek[epiweek].length;
+            let counts = _.filter(groupedByEpiweek[epiweek], v=>v['Clade_rerun'] === lineage).length;
+            let fr = counts / total;
+
+            if (lastEpiweek) {
+                while (_nextWeek(lastEpiweek) !== epiweek) {
+                    yData.push(0);
+                    lastEpiweek = _nextWeek(lastEpiweek);
+                }
+            }
+
+            yData.push(fr);
+            lastEpiweek = epiweek;
+        }
+
+        traces.push({
+            x: _.range(0, 50),
+            y: yData,
+            name: lineage,
+            mode: "lines+markers",
+            marker: {
+                size: 2,
+                color: colorscheme[lineage],
+                line: {
+                    width: 3,
+                    color: colorscheme[lineage],
+                }
+            },
+            line: {
+                color: colorscheme[lineage],
+                width: 1,
+                shape: 'spline',
+            },
+            legendrank: clades.indexOf(lineage),
+            hoverlabel: {
+                bgcolor: colorscheme[lineage],
+            }
+        });
+    }
+
+
+
+
+    Plotly.newPlot(el, traces, {
+        title: "Experimental plot",
+        height: 600,
+        hovermode: "x",
+        xaxis: {
+            ticklen: 5,
+            tickcolor: '#ccc',
+            tickangle: 30,
+            title: "weeks from the variant's introduction"
+        },
+        yaxis: {
+            ticklen: 5,
+            tickcolor: '#ccc',
+            hoverformat: ".2%",
+            tickformat: ".0%",
+            title: ''
+        },
+        margin: {
+            t: 50,
+            b: 150
+        },
+        legend: {
+            title: { text: 'Nextstrain-i klaadid (muret tekitav variant)', side: 'top' },
+            traceorder: 'normal',
+            orientation: 'h',
+            y: -0.3,
+        }
+    }, {
+        'modeBarButtons': [
+            [
+                'toImage',
+                'hoverClosestCartesian',
+                'hoverCompareCartesian'
+            ]
+        ]
+    });
+}
+
+
 
 function render() {
 
@@ -542,6 +661,12 @@ function render() {
         return getDateOfWeek(parseInt(w), parseInt(year)).getTime() >= new Date(date_from).getTime() &&
             getDateOfWeek(parseInt(w), parseInt(year)).getTime() <= new Date(date_to).getTime();
     });
+
+
+    let el = document.getElementById('plotly-plot-experimental');
+    if (el) {
+        experimentalPlot(el, filtered_data);
+    }
 
     areaPlot(document.getElementById('plotly-plot-clade'), "Clade_rerun", filtered_data);
 
