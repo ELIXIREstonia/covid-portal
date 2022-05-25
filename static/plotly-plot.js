@@ -75,7 +75,7 @@ const colorscheme = {
 let data, test_results;
 
 let date_from = "2021-05-01";
-let date_to = "2022-05-17";
+let date_to = "2022-05-24";
 
 let domestic = true;
 let imported = true;
@@ -725,7 +725,7 @@ $(document).ready(function () {
 
             $.ajax({
                 async: true,
-                url: "/biobanks/test_results.json?updated=2022-05-17",
+                url: "/biobanks/test_results.json?updated=2022-05-24",
                 dataType: "json",
                 success: function (split) {
                     let columns = split.columns;
