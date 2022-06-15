@@ -725,7 +725,7 @@ $(document).ready(function () {
 
             $.ajax({
                 async: true,
-                url: "/biobanks/test_results.json?updated=2022-05-31",
+                url: "/biobanks/test_results.json?updated=2022-06-15",
                 dataType: "json",
                 success: function (split) {
                     let columns = split.columns;
