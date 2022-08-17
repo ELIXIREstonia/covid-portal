@@ -75,7 +75,7 @@ const colorscheme = {
 let data, test_results;
 
 let date_from = "2021-05-01";
-let date_to = "2022-08-09";
+let date_to = "2022-08-16";
 
 let domestic = true;
 let imported = true;
@@ -714,7 +714,7 @@ $(document).ready(function () {
 
     $.ajax({
         async: true,
-        url: "/biobanks/seqdata_all_public.json?updated=2022-08-09",
+        url: "/biobanks/seqdata_all_public.json?updated=2022-08-16",
         dataType: "json",
         success: function (split) {
             let columns = split.columns;
@@ -725,7 +725,7 @@ $(document).ready(function () {
 
             $.ajax({
                 async: true,
-                url: "/biobanks/test_results.json?updated=2022-08-09",
+                url: "/biobanks/test_results.json?updated=2022-08-16",
                 dataType: "json",
                 success: function (split) {
                     let columns = split.columns;
