@@ -27,6 +27,7 @@ const clades = [
 
     "22B (Omicron)",
     "22C (Omicron)",
+    "22D (Omicron)",
 
     "19A",
     "19B",
@@ -59,7 +60,8 @@ const colorscheme = {
     "22A (Omicron)": "rgb(255, 139, 61)",
 
     "22B (Omicron)": "rgb(255, 95, 52)",
-    "22C (Omicron)": "rgb(255, 50, 44)",
+    "22C (Omicron)": "rgb(255,83,44)",
+    "22D (Omicron)": "rgb(255,64,42)",
 
     "19A": "#d6dde0",
     "19B": "#ced5d9",
