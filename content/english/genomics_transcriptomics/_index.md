@@ -74,7 +74,7 @@ value="2021-01-01">
 <hr>
 <div id="plotly-plot-gender"></div>
 
-<script src="/plotly-plot.js?updated=2022-09-27"></script>
+<script src="/plotly-plot.js?updated=2022-10-05"></script>
 
 * The corresponding absolute sample numbers are given above each figure
 * Like living organisms in the wild, viruses (including SARS-CoV-2 variants) can be divided into different groups based on genetic similarity. From a certain point of view, all such groupings are similar, although they use different numerical values ​​to draw boundaries (Nexclade glass, Pangolin strain, VOC, the latter being defined by functional properties). Such grouping can be performed with varying degrees of accuracy. In this case, a degree of precision has been used that allows the whole image to be seen visually - it is glass. It is also indicated in brackets which VOCs (variant of concern) belong to the corresponding glass. We have alpha, beta, gamma, delta and now omicrons in VOCs.
@@ -88,4 +88,4 @@ value="2021-01-01">
 
 Data is updated once a week.
 
-/2022-09-27/
+/2022-10-05/
