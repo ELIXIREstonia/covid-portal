@@ -29,6 +29,7 @@ const clades = [
     "22C (Omicron)",
     "22D (Omicron)",
     "22E (Omicron)",
+    "22F (Omicron)",
 
     "19A",
     "19B",
@@ -42,44 +43,47 @@ const clades = [
 ];
 
 const colorscheme = {
-    "20H (Beta, V2)": "rgb(119, 37, 198)",
-    "20I (Alpha, V1)": "rgb(91, 54, 229)",
+    "20H (Beta, V2)": "#5E1D9D",
+    "20I (Alpha, V1)": "#4A28B3",
 
-    "20J (Gamma, V3)": "rgb(79, 87, 252)",
-    "21A (Delta)": "rgb(79, 124, 255)",
-    "21I (Delta)": "rgb(86, 158, 255)",
-    "21J (Delta)": "rgb(97, 184, 241)",
+    "20J (Gamma, V3)": "#403DC5",
+    "21A (Delta)": "#3F56CE",
+    "21I (Delta)": "#416DCE",
+    "21J (Delta)": "#4683C8",
 
-    "21C (Epsilon)": "rgb(129, 219, 189)",
-    "21D (Eta)": "rgb(149, 229, 161)",
-    "21F (Iota)": "rgb(198, 240, 113)",
-    "21G (Lambda)": "rgb(224, 238, 97)",
-    "21H (Mu)": "rgb(248, 233, 87)",
-    "21K (Omicron)": "rgb(255, 222, 79)",
-    "21L (Omicron)": "rgb(255, 203, 73)",
-    "21M (Omicron)": "rgb(255, 175, 67)",
-    "22A (Omicron)": "rgb(255, 139, 61)",
+    "21C (Epsilon)": "#58A2AC",
+    "21D (Eta)": "#64AC99",
+    "21F (Iota)": "#80B973",
+    "21G (Lambda)": "#91BC64",
+    "21H (Mu)": "#A3BE57",
+    "21K (Omicron)": "#B5BD4C",
+    "21L (Omicron)": "#C5B945",
+    "21M (Omicron)": "#D3B23F",
+    "22A (Omicron)": "#DEA63B",
+    "21E (Theta)": "#71B486",
+    "21B (Kappa)": "#4E95BD",
 
-    "22B (Omicron)": "rgb(255, 95, 52)",
-    "22C (Omicron)": "rgb(255,83,44)",
-    "22D (Omicron)": "rgb(255,64,42)",
-    "22E (Omicron)": "rgb(255,42,25)",
+    "22B (Omicron)": "#E59638",
+    "22C (Omicron)": "#E67F33",
+    "22D (Omicron)": "#E4642E",
+    "22E (Omicron)": "#DF4628",
+    "22F (Omicron)": "#DB2823",
 
-    "19A": "#d6dde0",
-    "19B": "#ced5d9",
-    "20A": "#c7ced2",
-    "20C": "#bfc6cb",
-    "20G": "#b9bfc5",
-    "20B": "#b2b9be",
-    "20D": "#abb1b8",
-    "20F": "#a4aab1",
-    "20E (EU1)": "#a0a2ac"
+    "19A": "#C8C8C8",
+    "19B": "#C0C0C0",
+    "20A": "#B8B8B8",
+    "20C": "#A8A8A8",
+    "20G": "#888888",
+    "20B": "#B0B0B0",
+    "20D": "#A0A0A0",
+    "20F": "#909090",
+    "20E (EU1)": "#989898"
 };
 
 let data, test_results;
 
 let date_from = "2021-05-01";
-let date_to = "2022-11-08";
+let date_to = "2022-11-15";
 
 let domestic = true;
 let imported = true;
@@ -718,7 +722,7 @@ $(document).ready(function () {
 
     $.ajax({
         async: true,
-        url: "/biobanks/seqdata_all_public.json?updated=2022-11-08",
+        url: "/biobanks/seqdata_all_public.json?updated=2022-11-15",
         dataType: "json",
         success: function (split) {
             let columns = split.columns;
@@ -729,7 +733,7 @@ $(document).ready(function () {
 
             $.ajax({
                 async: true,
-                url: "/biobanks/test_results.json?updated=2022-11-08",
+                url: "/biobanks/test_results.json?updated=2022-11-15",
                 dataType: "json",
                 success: function (split) {
                     let columns = split.columns;
