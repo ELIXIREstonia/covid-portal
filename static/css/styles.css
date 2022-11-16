@@ -464,3 +464,13 @@ table.highlight {
     background-color: #15478c;
     color: white;
 }
+
+.figure-title {
+    font-family: "Open Sans", verdana, arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    fill: rgb(68, 68, 68);
+    opacity: 1;
+    font-weight: normal;
+    overflow-wrap: break-word;
+}

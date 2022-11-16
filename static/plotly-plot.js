@@ -499,7 +499,7 @@ function areaPlot(el, variable, data) {
             b: 150
         },
         legend: {
-            title: { text: 'Nextstrain-i klaadid (muret tekitav variant)', side: 'top' },
+            title: { text: 'Nextstraini klaadid (muret tekitav variant)', side: 'top' },
             traceorder: 'normal',
             orientation: 'h',
             y: -0.3,
