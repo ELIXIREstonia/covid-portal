@@ -6,30 +6,30 @@ const colors = [
 ];
 
 const clades = [
-    "20H (Beta, V2)",
-    "20I (Alpha, V1)",
+    "20H",
+    "20I",
 
-    "20J (Gamma, V3)",
-    "21A (Delta)",
-    "21I (Delta)",
-    "21J (Delta)",
+    "20J",
+    "21A",
+    "21I",
+    "21J",
 
-    "21B (Kappa)",
-    "21C (Epsilon)",
-    "21D (Eta)",
-    "21E (Theta)",
-    "21F (Iota)",
-    "21G (Lambda)",
-    "21H (Mu)",
-    "21K (Omicron)",
-    "21L (Omicron)",
-    "21M (Omicron)",
+    "21B",
+    "21C",
+    "21D",
+    "21E",
+    "21F",
+    "21G",
+    "21H",
+    "21K",
+    "21L",
+    "21M",
 
-    "22B (Omicron)",
-    "22C (Omicron)",
-    "22D (Omicron)",
-    "22E (Omicron)",
-    "22F (Omicron)",
+    "22B",
+    "22C",
+    "22D",
+    "22E",
+    "22F",
 
     "19A",
     "19B",
@@ -39,51 +39,67 @@ const clades = [
     "20B",
     "20D",
     "20F",
-    "20E (EU1)"
+    "20E"
 ];
 
 const colorscheme = {
-    "20H (Beta, V2)": "#5E1D9D",
-    "20I (Alpha, V1)": "#4A28B3",
-
-    "20J (Gamma, V3)": "#403DC5",
-    "21A (Delta)": "#3F56CE",
-    "21I (Delta)": "#416DCE",
-    "21J (Delta)": "#4683C8",
-
-    "21C (Epsilon)": "#58A2AC",
-    "21D (Eta)": "#64AC99",
-    "21F (Iota)": "#80B973",
-    "21G (Lambda)": "#91BC64",
-    "21H (Mu)": "#A3BE57",
-    "21K (Omicron)": "#B5BD4C",
-    "21L (Omicron)": "#C5B945",
-    "21M (Omicron)": "#D3B23F",
-    "22A (Omicron)": "#DEA63B",
-    "21E (Theta)": "#71B486",
-    "21B (Kappa)": "#4E95BD",
-
-    "22B (Omicron)": "#E59638",
-    "22C (Omicron)": "#E67F33",
-    "22D (Omicron)": "#E4642E",
-    "22E (Omicron)": "#DF4628",
-    "22F (Omicron)": "#DB2823",
-
     "19A": "#C8C8C8",
-    "19B": "#C0C0C0",
     "20A": "#B8B8B8",
-    "20C": "#A8A8A8",
-    "20G": "#888888",
     "20B": "#B0B0B0",
-    "20D": "#A0A0A0",
+    "21M": "#CBB842",
+    "21K": "#AABD52",
+    "21L": "#BBBC49",
+    "22F": "#DF4528",
+    "23A": "#DB2823",
+    "22D": "#E67B32",
+    "22C": "#E69237",
+    "22B": "#E0A23A",
+    "22E": "#E3612D",
+    "22A": "#D7AF3E",
+    "21E": "#6BB18E",
+    "20J": "#403AC4",
+    "20I": "#4A27B2",
     "20F": "#909090",
-    "20E (EU1)": "#989898"
-};
+    "20D": "#A0A0A0",
+    "21G": "#89BB6B",
+    "21A": "#3F52CD",
+    "21I": "#4169CF",
+    "21J": "#457ECB",
+    "20C": "#A8A8A8",
+    "21F": "#79B77C",
+    "21C": "#559EB1",
+    "20H": "#5E1D9D",
+    "20G": "#888888",
+    "21H": "#99BD5D",
+    "21D": "#5FA9A0",
+    "21B": "#4C90C0",
+    "20E": "#989898",
+    "19B": "#C0C0C0"
+}
+
+/*
+const clades = ... <- https://raw.githubusercontent.com/nextstrain/ncov-clades-schema/master/src/clades.json
+const map = {}
+function traverse(node) {
+    map[node.name.split(' ')[0]] = node.color
+
+    if (!!node.children) {
+        for (let child of node.children) {
+            traverse(child);
+        }
+    }
+
+}
+
+traverse(clades)
+*/
+
+
 
 let data, test_results;
 
 let date_from = "2021-05-01";
-let date_to = "2023-01-30";
+let date_to = "2023-02-14";
 
 let domestic = true;
 let imported = true;
@@ -722,7 +738,7 @@ $(document).ready(function () {
 
     $.ajax({
         async: true,
-        url: "/biobanks/seqdata_all_public.json?updated=2023-01-30",
+        url: "/biobanks/seqdata_all_public.json?updated=2023-02-14",
         dataType: "json",
         success: function (split) {
             let columns = split.columns;
@@ -733,7 +749,7 @@ $(document).ready(function () {
 
             $.ajax({
                 async: true,
-                url: "/biobanks/test_results.json?updated=2023-01-30",
+                url: "/biobanks/test_results.json?updated=2023-02-14",
                 dataType: "json",
                 success: function (split) {
                     let columns = split.columns;
